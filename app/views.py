@@ -103,8 +103,7 @@ def test_model_with_data(request):
     
      # Step: Split into windows
     try:
-        window_duration = 0.079  # seconds
-        split_df = split_and_add_timestamps(df, window_duration)
+        split_df = split_and_add_timestamps(df)
         logger.info(f"Split data into windows, shape: {split_df.shape}")
     except Exception as e:
         logger.error(f"Windowing error: {e}")
