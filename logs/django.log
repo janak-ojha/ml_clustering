@@ -1,0 +1,803 @@
+[INFO] 2025-06-02 12:19:31,792 django.utils.autoreload 40 128986428152704 Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:19:47,611 django.server 40 128986002749120 "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2025-06-02 12:20:02,635 django.server 40 128986002749120 "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2025-06-02 12:20:42,693 django.server 40 128986002749120 "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2025-06-02 12:21:12,751 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:21:12,751 django.utils.autoreload 71 123996267199360 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:21:13
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 12:22:24,556 django.utils.autoreload 60 124403298085760 Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:22:24,556 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:22:25
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 12:24:01,395 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:24:01,395 django.utils.autoreload 60 134318942731136 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:24:02
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+length of raw query 287
+[INFO] 2025-06-02 12:40:00,747 app.utils 60 134318523414208 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 12:40:00,747 app.utils Parsed 287 records into DataFrame
+[INFO] 2025-06-02 12:40:00,766 app.views 60 134318523414208 DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-02 12:40:00,766 app.views DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-02 12:40:00,912 app.views 60 134318523414208 Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-02 12:40:00,912 app.views Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-02 12:40:01,491 app.views Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-02 12:40:01,491 app.views 60 134318523414208 Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-02 12:40:01,494 app.views Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-02 12:40:01,494 app.views 60 134318523414208 Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-02 12:40:01,498 app.views Scaled features using MinMaxScaler
+[INFO] 2025-06-02 12:40:01,498 app.views 60 134318523414208 Scaled features using MinMaxScaler
+[INFO] 2025-06-02 12:40:01,532 app.views Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-02 12:40:01,532 app.views 60 134318523414208 Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-02 12:40:01,812 app.views 60 134318523414208 Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-02 12:40:01,812 app.views Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-02 12:40:04,582 app.views 60 134318523414208 Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-02 12:40:04,582 app.views Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-02 12:40:04,583 app.views Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-02 12:40:04,583 app.views 60 134318523414208 Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-02 12:40:04,655 django.server "GET /api/train/?mount_id=3839 HTTP/1.1" 200 122
+[INFO] 2025-06-02 12:40:04,655 django.server 60 134318523414208 "GET /api/train/?mount_id=3839 HTTP/1.1" 200 122
+[INFO] 2025-06-02 12:40:16,121 app.views 60 134318523414208 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 12:40:16,121 app.views Testing model with data for mount_id: 3839
+[WARNING] 2025-06-02 12:40:16,155 app.views No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-02 12:40:16,155 app.views 60 134318523414208 No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-02 12:40:16,156 django.request Not Found: /api/test/
+[WARNING] 2025-06-02 12:40:16,156 django.request 60 134318523414208 Not Found: /api/test/
+[WARNING] 2025-06-02 12:40:16,156 django.server "GET /api/test/?mount_id=3839 HTTP/1.1" 404 50
+[WARNING] 2025-06-02 12:40:16,156 django.server 60 134318523414208 "GET /api/test/?mount_id=3839 HTTP/1.1" 404 50
+[INFO] 2025-06-02 12:42:01,541 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 12:42:01,541 django.utils.autoreload 60 134318942731136 /app/project/settings.py changed, reloading.
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/__init__.py", line 345, in execute
+    settings.INSTALLED_APPS
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/settings.py", line 144
+    'style': '{',
+    ^
+IndentationError: unexpected indent
+[INFO] 2025-06-02 12:42:14,588 django.utils.autoreload 60 128823355706240 Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:42:14,588 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:42:15
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 12:42:18,660 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 12:42:18,660 django.utils.autoreload 60 128823355706240 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 12:42:19,126 django.utils.autoreload 71 131717328579456 Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:42:19,126 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:42:20
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 12:42:33,556 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 12:42:33,556 django.utils.autoreload 71 131717328579456 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 12:42:34,050 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:42:34,050 django.utils.autoreload 82 135131574729600 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:42:34
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 12:53:12,947 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-02 12:53:12,947 django.utils.autoreload 82 135131574729600 /app/app/utils.py changed, reloading.
+[INFO] 2025-06-02 12:53:13,387 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:53:13,387 django.utils.autoreload 225 135417953561472 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:53:14
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 12:53:16,304 django.utils.autoreload 225 135417953561472 /app/app/utils.py changed, reloading.
+[INFO] 2025-06-02 12:53:16,304 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-02 12:53:16,744 django.utils.autoreload 236 138281043700608 Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:53:16,744 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:53:17
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 12:53:19,685 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-02 12:53:19,685 django.utils.autoreload 236 138281043700608 /app/app/utils.py changed, reloading.
+[INFO] 2025-06-02 12:53:20,156 django.utils.autoreload 247 132467779287936 Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:53:20,156 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:53:21
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 12:56:53,844 django.utils.autoreload 247 132467779287936 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 12:56:53,844 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 12:56:54,296 django.utils.autoreload 294 139264694627200 Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:56:54,296 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:56:55
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 12:57:10,655 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 12:57:10,655 django.utils.autoreload 294 139264694627200 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 12:57:11,110 django.utils.autoreload 317 129011078294400 Watching for file changes with StatReloader
+[INFO] 2025-06-02 12:57:11,110 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 12:57:11
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 13:00:00,634 django.utils.autoreload 317 129011078294400 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 13:00:00,634 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 13:00:00,955 django.utils.autoreload 352 123605333142400 Watching for file changes with StatReloader
+[INFO] 2025-06-02 13:00:00,955 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 13:00:01
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 13:00:50,625 django.utils.autoreload 352 123605333142400 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 13:00:50,625 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-02 13:00:50,957 django.utils.autoreload 375 133172615789440 Watching for file changes with StatReloader
+[INFO] 2025-06-02 13:00:50,957 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 13:00:51
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 13:15:06,950 django.utils.autoreload 59 135863674792832 Watching for file changes with StatReloader
+[INFO] 2025-06-02 13:15:06,950 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 13:15:07
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 13:17:20,514 django.utils.autoreload 59 135863674792832 /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 13:17:20,514 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 13:17:20,884 django.utils.autoreload 97 123709108145024 Watching for file changes with StatReloader
+[INFO] 2025-06-02 13:17:20,884 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 13:17:21
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 13:17:22,558 django.utils.autoreload 97 123709108145024 /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 13:17:22,558 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 13:17:22,883 django.utils.autoreload 108 129112230022016 Watching for file changes with StatReloader
+[INFO] 2025-06-02 13:17:22,883 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 02, 2025 - 13:17:23
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-02 13:18:02,305 app.views 121 124362099649408 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:18:03,112 app.utils 121 124362099649408 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:18:03,112 app.views 121 124362099649408 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:18:03,112 app.views 121 124362099649408 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:19:02,064 app.views 133 139674956172160 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:19:02,840 app.utils 133 139674956172160 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:19:02,840 app.views 133 139674956172160 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:19:02,840 app.views 133 139674956172160 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:20:01,803 app.views 145 125858656095104 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:20:02,560 app.utils 145 125858656095104 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:20:02,560 app.views 145 125858656095104 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:20:02,560 app.views 145 125858656095104 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:21:02,516 app.views 157 129051345349504 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:21:03,264 app.utils 157 129051345349504 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:21:03,264 app.views 157 129051345349504 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:21:03,265 app.views 157 129051345349504 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:22:02,210 app.views 169 126119770614656 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:22:03,014 app.utils 169 126119770614656 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:22:03,014 app.views 169 126119770614656 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:22:03,014 app.views 169 126119770614656 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:23:01,977 app.views 181 132410771426176 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:23:03,101 app.utils 181 132410771426176 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:23:03,101 app.views 181 132410771426176 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:23:03,101 app.views 181 132410771426176 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:24:02,069 app.views 193 136909189929856 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:24:02,826 app.utils 193 136909189929856 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:24:02,826 app.views 193 136909189929856 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:24:02,826 app.views 193 136909189929856 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:24:49,928 app.views 108 129111804606144 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:24:49,928 app.views Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:24:50,833 app.utils Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:24:50,833 app.utils 108 129111804606144 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:24:50,833 app.views DataFrame created with 287 records
+[INFO] 2025-06-02 13:24:50,833 app.views 108 129111804606144 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:24:50,833 app.views Windowing error: local variable 'split_df' referenced before assignment
+[ERROR] 2025-06-02 13:24:50,833 app.views 108 129111804606144 Windowing error: local variable 'split_df' referenced before assignment
+[ERROR] 2025-06-02 13:24:50,860 django.request Internal Server Error: /api/test/
+[ERROR] 2025-06-02 13:24:50,860 django.request 108 129111804606144 Internal Server Error: /api/test/
+[ERROR] 2025-06-02 13:24:50,861 django.server "GET /api/test/?mount_id=3839 HTTP/1.1" 500 83
+[ERROR] 2025-06-02 13:24:50,861 django.server 108 129111804606144 "GET /api/test/?mount_id=3839 HTTP/1.1" 500 83
+[INFO] 2025-06-02 13:25:01,837 app.views 206 132337178037120 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:25:02,857 app.utils 206 132337178037120 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:25:02,857 app.views 206 132337178037120 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:25:02,857 app.views 206 132337178037120 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:26:01,820 app.views 218 126687794531200 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:26:02,794 app.utils 218 126687794531200 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:26:02,794 app.views 218 126687794531200 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:26:02,794 app.views 218 126687794531200 Windowing error: local variable 'split_df' referenced before assignment
+length of raw query 287
+[INFO] 2025-06-02 13:26:53,364 app.utils 108 129111848646336 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:26:53,364 app.utils Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:26:53,384 app.views 108 129111848646336 DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-02 13:26:53,384 app.views DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-02 13:26:53,484 app.views 108 129111848646336 Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-02 13:26:53,484 app.views Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-02 13:26:53,842 app.views Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-02 13:26:53,842 app.views 108 129111848646336 Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-02 13:26:53,844 app.views Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-02 13:26:53,844 app.views 108 129111848646336 Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-02 13:26:53,847 app.views Scaled features using MinMaxScaler
+[INFO] 2025-06-02 13:26:53,847 app.views 108 129111848646336 Scaled features using MinMaxScaler
+[INFO] 2025-06-02 13:26:53,857 app.views Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-02 13:26:53,857 app.views 108 129111848646336 Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-02 13:26:53,895 app.views 108 129111848646336 Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-02 13:26:53,895 app.views Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-02 13:26:55,810 app.views Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-02 13:26:55,810 app.views 108 129111848646336 Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-02 13:26:55,811 app.views Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-02 13:26:55,811 app.views 108 129111848646336 Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-02 13:26:55,866 django.server "GET /api/train/?mount_id=3839 HTTP/1.1" 200 122
+[INFO] 2025-06-02 13:26:55,866 django.server 108 129111848646336 "GET /api/train/?mount_id=3839 HTTP/1.1" 200 122
+[INFO] 2025-06-02 13:27:02,734 app.views 272 131528857082752 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:27:03,556 app.utils 272 131528857082752 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:27:03,556 app.views 272 131528857082752 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:27:03,556 app.views 272 131528857082752 Windowing error: local variable 'split_df' referenced before assignment
+length of raw query 287
+[INFO] 2025-06-02 13:27:20,350 app.utils 108 129111848646336 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:27:20,350 app.utils Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:27:20,362 app.views 108 129111848646336 DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-02 13:27:20,362 app.views DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-02 13:27:20,484 app.views 108 129111848646336 Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-02 13:27:20,484 app.views Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-02 13:27:20,789 app.views 108 129111848646336 Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-02 13:27:20,789 app.views Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-02 13:27:20,791 app.views Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-02 13:27:20,791 app.views 108 129111848646336 Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-02 13:27:20,794 app.views Scaled features using MinMaxScaler
+[INFO] 2025-06-02 13:27:20,794 app.views 108 129111848646336 Scaled features using MinMaxScaler
+[INFO] 2025-06-02 13:27:20,799 app.views Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-02 13:27:20,799 app.views 108 129111848646336 Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-02 13:27:20,831 app.views 108 129111848646336 Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-02 13:27:20,831 app.views Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-02 13:27:22,958 app.views Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-02 13:27:22,958 app.views 108 129111848646336 Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-02 13:27:22,960 app.views Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-02 13:27:22,960 app.views 108 129111848646336 Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-02 13:27:23,006 django.server "GET /api/train/?mount_id=3839 HTTP/1.1" 200 122
+[INFO] 2025-06-02 13:27:23,006 django.server 108 129111848646336 "GET /api/train/?mount_id=3839 HTTP/1.1" 200 122
+[INFO] 2025-06-02 13:28:02,617 app.views 311 129424275598208 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:28:03,515 app.utils 311 129424275598208 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:28:03,515 app.views 311 129424275598208 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:28:03,515 app.views 311 129424275598208 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:29:02,493 app.views 323 127854327004032 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:29:03,270 app.utils 323 127854327004032 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:29:03,270 app.views 323 127854327004032 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:29:03,270 app.views 323 127854327004032 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:29:09,224 app.views 108 129110810556096 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:29:09,224 app.views Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:29:10,174 app.utils Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:29:10,174 app.utils 108 129110810556096 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:29:10,174 app.views DataFrame created with 287 records
+[INFO] 2025-06-02 13:29:10,174 app.views 108 129110810556096 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:29:10,174 app.views Windowing error: local variable 'split_df' referenced before assignment
+[ERROR] 2025-06-02 13:29:10,174 app.views 108 129110810556096 Windowing error: local variable 'split_df' referenced before assignment
+[ERROR] 2025-06-02 13:29:10,199 django.request 108 129110810556096 Internal Server Error: /api/test/
+[ERROR] 2025-06-02 13:29:10,199 django.request Internal Server Error: /api/test/
+[ERROR] 2025-06-02 13:29:10,199 django.server "GET /api/test/?mount_id=3839 HTTP/1.1" 500 83
+[ERROR] 2025-06-02 13:29:10,199 django.server 108 129110810556096 "GET /api/test/?mount_id=3839 HTTP/1.1" 500 83
+[INFO] 2025-06-02 13:30:02,241 app.views 336 140416778529664 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:30:03,247 app.utils 336 140416778529664 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:30:03,247 app.views 336 140416778529664 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:30:03,247 app.views 336 140416778529664 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:31:02,216 app.views 348 134928245115776 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:31:03,363 app.utils 348 134928245115776 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:31:03,363 app.views 348 134928245115776 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:31:03,363 app.views 348 134928245115776 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:32:02,313 app.views 360 124083042806656 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:32:03,318 app.utils 360 124083042806656 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:32:03,318 app.views 360 124083042806656 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:32:03,318 app.views 360 124083042806656 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:33:02,384 app.views 372 126404983815040 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:33:03,259 app.utils 372 126404983815040 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:33:03,260 app.views 372 126404983815040 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:33:03,260 app.views 372 126404983815040 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 13:34:02,257 app.views 384 138657094040448 Testing model with data for mount_id: 3839
+[INFO] 2025-06-02 13:34:03,082 app.utils 384 138657094040448 Parsed 287 records into DataFrame
+[INFO] 2025-06-02 13:34:03,082 app.views 384 138657094040448 DataFrame created with 287 records
+[ERROR] 2025-06-02 13:34:03,082 app.views 384 138657094040448 Windowing error: local variable 'split_df' referenced before assignment
+[INFO] 2025-06-02 17:26:59,047 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 17:26:59,047 django.utils.autoreload 108 129112230022016 /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 17:26:59,521 django.utils.autoreload 430 130129671326592 Watching for file changes with StatReloader
+[INFO] 2025-06-02 17:26:59,521 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+[INFO] 2025-06-02 17:27:01,528 django.utils.autoreload 430 130129671326592 /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 17:27:01,528 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 17:27:01,969 django.utils.autoreload 441 130513196551040 Watching for file changes with StatReloader
+[INFO] 2025-06-02 17:27:01,969 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+[INFO] 2025-06-02 17:27:04,924 django.utils.autoreload 441 130513196551040 /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 17:27:04,924 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 17:27:05,376 django.utils.autoreload 464 139628481510272 Watching for file changes with StatReloader
+[INFO] 2025-06-02 17:27:05,376 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+[INFO] 2025-06-02 17:28:08,411 django.utils.autoreload 464 139628481510272 /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 17:28:08,411 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-02 17:28:08,864 django.utils.autoreload 487 131756233517952 Watching for file changes with StatReloader
+[INFO] 2025-06-02 17:28:08,864 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check_migrations()
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 459, in check_migrations
+    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
+  File "/usr/local/lib/python3.7/site-packages/django/db/migrations/executor.py", line 18, in __init__
+    self.loader = MigrationLoader(self.connection)
+  File "/usr/local/lib/python3.7/site-packages/django/db/migrations/loader.py", line 53, in __init__
+    self.build_graph()
+  File "/usr/local/lib/python3.7/site-packages/django/db/migrations/loader.py", line 216, in build_graph
+    self.applied_migrations = recorder.applied_migrations()
+  File "/usr/local/lib/python3.7/site-packages/django/db/migrations/recorder.py", line 77, in applied_migrations
+    if self.has_table():
+  File "/usr/local/lib/python3.7/site-packages/django/db/migrations/recorder.py", line 55, in has_table
+    with self.connection.cursor() as cursor:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+[INFO] 2025-06-03 05:02:20,305 app.views 872 132370575141760 Testing model with data for mount_id: 3839
+[INFO] 2025-06-03 05:02:21,055 app.utils 872 132370575141760 Parsed 287 records into DataFrame
+[INFO] 2025-06-03 05:02:21,055 app.views 872 132370575141760 DataFrame created with 287 records
+[INFO] 2025-06-03 05:02:21,174 app.views 872 132370575141760 Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-03 05:02:21,654 app.views 872 132370575141760 Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-03 05:02:21,675 app.utils 872 132370575141760 Predicted clusters for 1148 samples
+[INFO] 2025-06-03 05:02:21,730 app.utils 872 132370575141760 Updated flag to False for 287 timestamps
+[INFO] 2025-06-03 05:02:21,733 app.views 872 132370575141760 sassshape, shape: (1148, 72)
+[INFO] 2025-06-03 05:02:21,733 app.views 872 132370575141760 Status labels assigned based on test_score
+[INFO] 2025-06-03 05:04:56,778 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:04:56,778 django.utils.autoreload 487 131756233517952 /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:04:57,129 django.utils.autoreload 913 124744171502464 Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:04:57,129 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:04:57
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:04:59,764 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:04:59,764 django.utils.autoreload 913 124744171502464 /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:05:00,123 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:05:00,123 django.utils.autoreload 924 127263532120960 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:05:00
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:05:56,746 app.views 924 127263146243776 Testing model with data for mount_id: 3839
+[INFO] 2025-06-03 05:05:56,746 app.views Testing model with data for mount_id: 3839
+[WARNING] 2025-06-03 05:05:56,965 app.views 924 127263146243776 No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-03 05:05:56,965 app.views No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-03 05:05:56,966 django.request 924 127263146243776 Not Found: /api/test/
+[WARNING] 2025-06-03 05:05:56,966 django.request Not Found: /api/test/
+[WARNING] 2025-06-03 05:05:56,966 django.server "GET /api/test/?mount_id=3839 HTTP/1.1" 404 50
+[WARNING] 2025-06-03 05:05:56,966 django.server 924 127263146243776 "GET /api/test/?mount_id=3839 HTTP/1.1" 404 50
+[INFO] 2025-06-03 05:06:07,176 django.utils.autoreload 924 127263532120960 /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:06:07,176 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:06:07,505 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:06:07,505 django.utils.autoreload 960 129776835107712 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:06:08
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:06:11,210 django.utils.autoreload 960 129776835107712 /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:06:11,210 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:06:11,544 django.utils.autoreload 971 127579366349696 Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:06:11,544 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:06:12
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:12:44,521 app.views Testing model with data for mount_id: 3839
+[INFO] 2025-06-03 05:12:44,521 app.views 971 127578943780544 Testing model with data for mount_id: 3839
+[WARNING] 2025-06-03 05:12:44,677 app.views 971 127578943780544 No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-03 05:12:44,677 app.views No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-03 05:12:44,678 django.request Not Found: /api/test/
+[WARNING] 2025-06-03 05:12:44,678 django.request 971 127578943780544 Not Found: /api/test/
+[WARNING] 2025-06-03 05:12:44,678 django.server "GET /api/test/?mount_id=3839 HTTP/1.1" 404 50
+[WARNING] 2025-06-03 05:12:44,678 django.server 971 127578943780544 "GET /api/test/?mount_id=3839 HTTP/1.1" 404 50
+[INFO] 2025-06-03 05:13:39,041 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:13:39,041 django.utils.autoreload 971 127579366349696 /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:13:39,414 django.utils.autoreload 1067 138364195572608 Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:13:39,414 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 85
+    raw_queryset =
+                  ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-03 05:13:43,529 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:13:43,529 django.utils.autoreload 1067 138364195572608 /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:13:43,775 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:13:43,775 django.utils.autoreload 1069 123469523151744 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:13:44
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:14:02,265 app.views 1082 123926465829760 Testing model with data for mount_id: 3839
+[INFO] 2025-06-03 05:14:03,295 app.utils 1082 123926465829760 Parsed 287 records into DataFrame
+[INFO] 2025-06-03 05:14:03,295 app.views 1082 123926465829760 DataFrame created with 287 records
+[INFO] 2025-06-03 05:14:03,390 app.views 1082 123926465829760 Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-03 05:14:03,734 app.views 1082 123926465829760 Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-03 05:14:03,743 app.utils 1082 123926465829760 Predicted clusters for 1148 samples
+[INFO] 2025-06-03 05:14:03,796 app.utils 1082 123926465829760 Updated flag to False for 287 timestamps
+[INFO] 2025-06-03 05:14:03,799 app.views 1082 123926465829760 sassshape, shape: (1148, 72)
+[INFO] 2025-06-03 05:14:03,799 app.views 1082 123926465829760 Status labels assigned based on test_score
+[INFO] 2025-06-03 05:14:03,850 app.views 1082 123926465829760 Testing model with data for mount_id: 3840
+[INFO] 2025-06-03 05:14:04,605 app.utils 1082 123926465829760 Parsed 287 records into DataFrame
+[INFO] 2025-06-03 05:14:04,606 app.views 1082 123926465829760 DataFrame created with 287 records
+[INFO] 2025-06-03 05:14:04,695 app.views 1082 123926465829760 Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-03 05:14:04,981 app.views 1082 123926465829760 Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-03 05:14:04,986 app.utils 1082 123926465829760 Predicted clusters for 1148 samples
+[INFO] 2025-06-03 05:14:05,034 app.utils 1082 123926465829760 Updated flag to False for 287 timestamps
+[INFO] 2025-06-03 05:14:05,036 app.views 1082 123926465829760 sassshape, shape: (1148, 72)
+[INFO] 2025-06-03 05:14:05,036 app.views 1082 123926465829760 Status labels assigned based on test_score
+[INFO] 2025-06-03 05:14:05,083 app.views 1082 123926465829760 Testing model with data for mount_id: 3841
+[INFO] 2025-06-03 05:14:05,829 app.utils 1082 123926465829760 Parsed 289 records into DataFrame
+[INFO] 2025-06-03 05:14:05,829 app.views 1082 123926465829760 DataFrame created with 289 records
+[INFO] 2025-06-03 05:14:05,926 app.views 1082 123926465829760 Split data into windows, shape: (1156, 8)
+[INFO] 2025-06-03 05:14:06,216 app.views 1082 123926465829760 Extracted PSD features and combined data, shape: (1156, 69)
+[INFO] 2025-06-03 05:14:06,222 app.utils 1082 123926465829760 Predicted clusters for 1156 samples
+[INFO] 2025-06-03 05:14:06,284 app.utils 1082 123926465829760 Updated flag to False for 289 timestamps
+[INFO] 2025-06-03 05:14:06,286 app.views 1082 123926465829760 sassshape, shape: (1156, 72)
+[INFO] 2025-06-03 05:14:06,287 app.views 1082 123926465829760 Status labels assigned based on test_score
+[INFO] 2025-06-03 05:20:26,792 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:20:26,792 django.utils.autoreload 59 130443407776640 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:20:27
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:26:01,537 django.utils.autoreload 59 130443407776640 /app/app/utils.py changed, reloading.
+[INFO] 2025-06-03 05:26:01,537 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-03 05:26:01,901 django.utils.autoreload 142 131367412861824 Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:26:01,901 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:26:02
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:40:01,917 django.utils.autoreload 59 137070561381248 Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:40:01,917 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:40:02
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:41:25,191 django.utils.autoreload 59 129794228636544 Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:41:25,191 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:41:26
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:44:10,671 django.utils.autoreload 59 133877493828480 Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:44:10,671 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:44:11
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:52:13,969 django.utils.autoreload 59 129847013620608 Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:52:13,969 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:52:14
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:53:02,386 app.views 72 137041520716672 Testing model with data for mount_id: 3839
+[INFO] 2025-06-03 05:53:03,463 app.utils 72 137041520716672 Parsed 287 records into DataFrame
+[INFO] 2025-06-03 05:53:03,463 app.views 72 137041520716672 DataFrame created with 287 records
+[INFO] 2025-06-03 05:53:03,574 app.views 72 137041520716672 Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-03 05:53:03,880 app.views 72 137041520716672 Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-03 05:53:03,893 app.utils 72 137041520716672 Predicted clusters for 1148 samples
+[INFO] 2025-06-03 05:53:03,941 app.utils 72 137041520716672 Updated flag to False for 287 timestamps
+[INFO] 2025-06-03 05:53:03,945 app.views 72 137041520716672 sassshape, shape: (1148, 72)
+[INFO] 2025-06-03 05:53:03,946 app.views 72 137041520716672 Status labels assigned based on test_score
+[INFO] 2025-06-03 05:53:03,948 app.utils 72 137041520716672 Dropped duplicate timestamps, keeping only one occurrence of each.
+[INFO] 2025-06-03 05:53:14,809 app.utils 72 137041520716672 Saved 287 records to AssetOperatingModeMaster
+[INFO] 2025-06-03 05:53:14,848 app.views 72 137041520716672 Testing model with data for mount_id: 3840
+[INFO] 2025-06-03 05:53:17,915 app.utils 72 137041520716672 Parsed 287 records into DataFrame
+[INFO] 2025-06-03 05:53:17,915 app.views 72 137041520716672 DataFrame created with 287 records
+[INFO] 2025-06-03 05:53:18,010 app.views 72 137041520716672 Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-03 05:53:18,295 app.views 72 137041520716672 Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-03 05:53:18,306 app.utils 72 137041520716672 Predicted clusters for 1148 samples
+[INFO] 2025-06-03 05:53:18,354 app.utils 72 137041520716672 Updated flag to False for 287 timestamps
+[INFO] 2025-06-03 05:53:18,356 app.views 72 137041520716672 sassshape, shape: (1148, 72)
+[INFO] 2025-06-03 05:53:18,356 app.views 72 137041520716672 Status labels assigned based on test_score
+[INFO] 2025-06-03 05:53:18,358 app.utils 72 137041520716672 Dropped duplicate timestamps, keeping only one occurrence of each.
+[INFO] 2025-06-03 05:53:27,818 app.utils 72 137041520716672 Saved 287 records to AssetOperatingModeMaster
+[INFO] 2025-06-03 05:53:27,855 app.views 72 137041520716672 Testing model with data for mount_id: 3841
+[INFO] 2025-06-03 05:53:29,890 app.utils 72 137041520716672 Parsed 289 records into DataFrame
+[INFO] 2025-06-03 05:53:29,890 app.views 72 137041520716672 DataFrame created with 289 records
+[INFO] 2025-06-03 05:53:29,990 app.views 72 137041520716672 Split data into windows, shape: (1156, 8)
+[INFO] 2025-06-03 05:53:30,257 app.views 72 137041520716672 Extracted PSD features and combined data, shape: (1156, 69)
+[INFO] 2025-06-03 05:53:30,263 app.utils 72 137041520716672 Predicted clusters for 1156 samples
+[INFO] 2025-06-03 05:53:30,311 app.utils 72 137041520716672 Updated flag to False for 289 timestamps
+[INFO] 2025-06-03 05:53:30,313 app.views 72 137041520716672 sassshape, shape: (1156, 72)
+[INFO] 2025-06-03 05:53:30,313 app.views 72 137041520716672 Status labels assigned based on test_score
+[INFO] 2025-06-03 05:53:30,319 app.utils 72 137041520716672 Dropped duplicate timestamps, keeping only one occurrence of each.
+[INFO] 2025-06-03 05:53:40,427 app.utils 72 137041520716672 Saved 289 records to AssetOperatingModeMaster
+[INFO] 2025-06-03 05:57:11,362 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:57:11,362 django.utils.autoreload 59 129847013620608 /app/app/views.py changed, reloading.
+[INFO] 2025-06-03 05:57:11,712 django.utils.autoreload 137 137435624651648 Watching for file changes with StatReloader
+[INFO] 2025-06-03 05:57:11,712 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 05:57:12
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 05:57:33,923 app.views 137 137435205859008 Testing model with data for mount_id: 3839
+[INFO] 2025-06-03 05:57:33,923 app.views Testing model with data for mount_id: 3839
+[WARNING] 2025-06-03 05:57:34,134 app.views 137 137435205859008 No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-03 05:57:34,134 app.views No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-03 05:57:34,136 django.request Not Found: /api/test/
+[WARNING] 2025-06-03 05:57:34,136 django.request 137 137435205859008 Not Found: /api/test/
+[WARNING] 2025-06-03 05:57:34,137 django.server "GET /api/test/?mount_id=3839 HTTP/1.1" 404 50
+[WARNING] 2025-06-03 05:57:34,137 django.server 137 137435205859008 "GET /api/test/?mount_id=3839 HTTP/1.1" 404 50
+[INFO] 2025-06-03 06:33:30,244 django.utils.autoreload 59 123706026687360 Watching for file changes with StatReloader
+[INFO] 2025-06-03 06:33:30,244 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 06:33:31
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 06:35:54,009 django.utils.autoreload 59 136531988663168 Watching for file changes with StatReloader
+[INFO] 2025-06-03 06:35:54,009 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 06:35:54
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.

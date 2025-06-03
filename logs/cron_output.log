@@ -1,0 +1,586 @@
+[INFO] 2025-06-02 12:25:02,653 cron 73 138044228811648 Starting model prediction cron job
+[INFO] 2025-06-02 12:25:02,816 cron 73 138044228811648 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:26:01,921 cron 85 128673361030016 Starting model prediction cron job
+[INFO] 2025-06-02 12:26:02,081 cron 85 128673361030016 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:27:02,139 cron 97 137035243846528 Starting model prediction cron job
+[INFO] 2025-06-02 12:27:02,299 cron 97 137035243846528 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:28:02,343 cron 109 132217123945344 Starting model prediction cron job
+[INFO] 2025-06-02 12:28:02,510 cron 109 132217123945344 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:29:02,556 cron 121 125843650587520 Starting model prediction cron job
+[INFO] 2025-06-02 12:29:02,725 cron 121 125843650587520 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:30:02,766 cron 133 134895427038080 Starting model prediction cron job
+[INFO] 2025-06-02 12:30:02,928 cron 133 134895427038080 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:31:01,973 cron 145 134051879119744 Starting model prediction cron job
+[INFO] 2025-06-02 12:31:02,146 cron 145 134051879119744 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:32:02,380 cron 157 134887612582784 Starting model prediction cron job
+[INFO] 2025-06-02 12:32:02,544 cron 157 134887612582784 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:33:02,563 cron 169 124682658085760 Starting model prediction cron job
+[INFO] 2025-06-02 12:33:02,729 cron 169 124682658085760 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:34:02,739 cron 181 126003767167872 Starting model prediction cron job
+[INFO] 2025-06-02 12:34:02,903 cron 181 126003767167872 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:35:01,916 cron 193 125218983578496 Starting model prediction cron job
+[INFO] 2025-06-02 12:35:02,079 cron 193 125218983578496 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:36:02,104 cron 205 123203339901824 Starting model prediction cron job
+[INFO] 2025-06-02 12:36:02,265 cron 205 123203339901824 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:37:02,314 cron 217 129044260760448 Starting model prediction cron job
+[INFO] 2025-06-02 12:37:02,525 cron 217 129044260760448 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:38:02,538 cron 229 140041844497280 Starting model prediction cron job
+[INFO] 2025-06-02 12:38:02,705 cron 229 140041844497280 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:39:02,779 cron 241 140534482545536 Starting model prediction cron job
+[INFO] 2025-06-02 12:39:02,942 cron 241 140534482545536 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:40:02,759 cron 254 132825369230208 Starting model prediction cron job
+[INFO] 2025-06-02 12:40:02,979 cron 254 132825369230208 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:41:02,148 cron 307 131268360657792 Starting model prediction cron job
+[INFO] 2025-06-02 12:41:02,316 cron 307 131268360657792 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:43:02,846 cron 95 136516614306688 Starting model prediction cron job
+[INFO] 2025-06-02 12:43:03,008 cron 95 136516614306688 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:44:02,052 cron 107 131987854691200 Starting model prediction cron job
+[INFO] 2025-06-02 12:44:02,214 cron 107 131987854691200 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:45:02,245 cron 119 127757362187136 Starting model prediction cron job
+[INFO] 2025-06-02 12:45:02,408 cron 119 127757362187136 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:46:02,522 cron 131 132054916008832 Starting model prediction cron job
+[INFO] 2025-06-02 12:46:02,685 cron 131 132054916008832 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:47:02,768 cron 143 126783164808064 Starting model prediction cron job
+[INFO] 2025-06-02 12:47:02,927 cron 143 126783164808064 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:48:02,075 cron 155 128441179265920 Starting model prediction cron job
+[INFO] 2025-06-02 12:48:02,235 cron 155 128441179265920 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:49:02,385 cron 167 138767855119232 Starting model prediction cron job
+[INFO] 2025-06-02 12:49:02,551 cron 167 138767855119232 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:50:02,624 cron 179 131612246956928 Starting model prediction cron job
+[INFO] 2025-06-02 12:50:02,784 cron 179 131612246956928 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:51:02,818 cron 191 140637471955840 Starting model prediction cron job
+[INFO] 2025-06-02 12:51:02,992 cron 191 140637471955840 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:52:02,043 cron 203 136391215385472 Starting model prediction cron job
+[INFO] 2025-06-02 12:52:02,209 cron 203 136391215385472 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:53:02,389 cron 215 134060842097536 Starting model prediction cron job
+[INFO] 2025-06-02 12:53:02,555 cron 215 134060842097536 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:54:02,617 cron 260 128705194478464 Starting model prediction cron job
+[INFO] 2025-06-02 12:54:02,781 cron 260 128705194478464 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:55:02,850 cron 272 124419395419008 Starting model prediction cron job
+[INFO] 2025-06-02 12:55:03,012 cron 272 124419395419008 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:56:02,110 cron 284 135073472985984 Starting model prediction cron job
+[INFO] 2025-06-02 12:56:02,271 cron 284 135073472985984 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:57:02,338 cron 307 130323655207808 Starting model prediction cron job
+[INFO] 2025-06-02 12:57:02,500 cron 307 130323655207808 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:58:02,632 cron 330 131993038109568 Starting model prediction cron job
+[INFO] 2025-06-02 12:58:02,794 cron 330 131993038109568 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 12:59:02,853 cron 342 134761616722816 Starting model prediction cron job
+[INFO] 2025-06-02 12:59:03,066 cron 342 134761616722816 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:00:01,929 cron 365 134149204523904 Starting model prediction cron job
+[INFO] 2025-06-02 13:00:02,138 cron 365 134149204523904 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:01:01,963 cron 388 132545784990592 Starting model prediction cron job
+[INFO] 2025-06-02 13:01:02,182 cron 388 132545784990592 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:02:01,944 cron 400 123481712135040 Starting model prediction cron job
+[INFO] 2025-06-02 13:02:02,099 cron 400 123481712135040 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:03:01,867 cron 412 133119095028608 Starting model prediction cron job
+[INFO] 2025-06-02 13:03:02,031 cron 412 133119095028608 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:04:01,800 cron 424 137463409662848 Starting model prediction cron job
+[INFO] 2025-06-02 13:04:01,960 cron 424 137463409662848 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:05:01,744 cron 436 135117368380288 Starting model prediction cron job
+[INFO] 2025-06-02 13:05:01,903 cron 436 135117368380288 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:06:01,672 cron 448 133192096652160 Starting model prediction cron job
+[INFO] 2025-06-02 13:06:01,831 cron 448 133192096652160 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:07:02,613 cron 460 127839316593536 Starting model prediction cron job
+[INFO] 2025-06-02 13:07:02,779 cron 460 127839316593536 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:08:02,715 cron 472 138243866688384 Starting model prediction cron job
+[INFO] 2025-06-02 13:08:02,883 cron 472 138243866688384 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:09:01,657 cron 484 137599164619648 Starting model prediction cron job
+[INFO] 2025-06-02 13:09:01,825 cron 484 137599164619648 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:10:02,593 cron 496 133945298774912 Starting model prediction cron job
+[INFO] 2025-06-02 13:10:02,786 cron 496 133945298774912 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:11:02,557 cron 508 131013145418624 Starting model prediction cron job
+[INFO] 2025-06-02 13:11:02,722 cron 508 131013145418624 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:12:02,504 cron 520 125790171470720 Starting model prediction cron job
+[INFO] 2025-06-02 13:12:02,668 cron 520 125790171470720 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:13:02,514 cron 532 137523129764736 Starting model prediction cron job
+[INFO] 2025-06-02 13:13:02,678 cron 532 137523129764736 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:14:02,490 cron 544 138091099224960 Starting model prediction cron job
+[INFO] 2025-06-02 13:14:02,653 cron 544 138091099224960 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:16:02,250 cron 72 128620687997824 Starting model prediction cron job
+[INFO] 2025-06-02 13:16:02,413 cron 72 128620687997824 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:17:02,193 cron 86 130901017246592 Starting model prediction cron job
+[INFO] 2025-06-02 13:17:02,358 cron 86 130901017246592 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-02 13:18:02,143 cron 121 124362099649408 Starting model prediction cron job
+[INFO] 2025-06-02 13:18:02,304 cron 121 124362099649408 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:18:02,304 cron 121 124362099649408 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:18:03,135 cron 121 124362099649408 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:18:03,135 cron 121 124362099649408 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:19:01,897 cron 133 139674956172160 Starting model prediction cron job
+[INFO] 2025-06-02 13:19:02,064 cron 133 139674956172160 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:19:02,064 cron 133 139674956172160 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:19:02,864 cron 133 139674956172160 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:19:02,864 cron 133 139674956172160 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:20:01,644 cron 145 125858656095104 Starting model prediction cron job
+[INFO] 2025-06-02 13:20:01,802 cron 145 125858656095104 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:20:01,802 cron 145 125858656095104 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:20:02,583 cron 145 125858656095104 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:20:02,583 cron 145 125858656095104 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:21:02,351 cron 157 129051345349504 Starting model prediction cron job
+[INFO] 2025-06-02 13:21:02,515 cron 157 129051345349504 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:21:02,515 cron 157 129051345349504 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:21:03,290 cron 157 129051345349504 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:21:03,290 cron 157 129051345349504 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:22:02,050 cron 169 126119770614656 Starting model prediction cron job
+[INFO] 2025-06-02 13:22:02,209 cron 169 126119770614656 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:22:02,209 cron 169 126119770614656 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:22:03,037 cron 169 126119770614656 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:22:03,038 cron 169 126119770614656 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:23:01,813 cron 181 132410771426176 Starting model prediction cron job
+[INFO] 2025-06-02 13:23:01,976 cron 181 132410771426176 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:23:01,977 cron 181 132410771426176 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:23:03,127 cron 181 132410771426176 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:23:03,127 cron 181 132410771426176 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:24:01,906 cron 193 136909189929856 Starting model prediction cron job
+[INFO] 2025-06-02 13:24:02,068 cron 193 136909189929856 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:24:02,068 cron 193 136909189929856 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:24:02,850 cron 193 136909189929856 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:24:02,850 cron 193 136909189929856 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:25:01,676 cron 206 132337178037120 Starting model prediction cron job
+[INFO] 2025-06-02 13:25:01,836 cron 206 132337178037120 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:25:01,836 cron 206 132337178037120 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:25:02,883 cron 206 132337178037120 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:25:02,883 cron 206 132337178037120 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:26:01,652 cron 218 126687794531200 Starting model prediction cron job
+[INFO] 2025-06-02 13:26:01,819 cron 218 126687794531200 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:26:01,819 cron 218 126687794531200 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:26:02,817 cron 218 126687794531200 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:26:02,817 cron 218 126687794531200 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:27:02,572 cron 272 131528857082752 Starting model prediction cron job
+[INFO] 2025-06-02 13:27:02,733 cron 272 131528857082752 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:27:02,733 cron 272 131528857082752 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:27:03,581 cron 272 131528857082752 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:27:03,581 cron 272 131528857082752 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:28:02,457 cron 311 129424275598208 Starting model prediction cron job
+[INFO] 2025-06-02 13:28:02,616 cron 311 129424275598208 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:28:02,617 cron 311 129424275598208 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:28:03,538 cron 311 129424275598208 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:28:03,538 cron 311 129424275598208 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:29:02,331 cron 323 127854327004032 Starting model prediction cron job
+[INFO] 2025-06-02 13:29:02,492 cron 323 127854327004032 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:29:02,492 cron 323 127854327004032 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:29:03,296 cron 323 127854327004032 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:29:03,297 cron 323 127854327004032 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:30:02,075 cron 336 140416778529664 Starting model prediction cron job
+[INFO] 2025-06-02 13:30:02,240 cron 336 140416778529664 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:30:02,241 cron 336 140416778529664 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:30:03,274 cron 336 140416778529664 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:30:03,274 cron 336 140416778529664 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:31:02,043 cron 348 134928245115776 Starting model prediction cron job
+[INFO] 2025-06-02 13:31:02,215 cron 348 134928245115776 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:31:02,215 cron 348 134928245115776 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:31:03,390 cron 348 134928245115776 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:31:03,390 cron 348 134928245115776 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:32:02,151 cron 360 124083042806656 Starting model prediction cron job
+[INFO] 2025-06-02 13:32:02,312 cron 360 124083042806656 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:32:02,313 cron 360 124083042806656 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:32:03,344 cron 360 124083042806656 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:32:03,344 cron 360 124083042806656 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:33:02,225 cron 372 126404983815040 Starting model prediction cron job
+[INFO] 2025-06-02 13:33:02,384 cron 372 126404983815040 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:33:02,384 cron 372 126404983815040 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:33:03,289 cron 372 126404983815040 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:33:03,289 cron 372 126404983815040 Model prediction cron job completed successfully
+[INFO] 2025-06-02 13:34:02,097 cron 384 138657094040448 Starting model prediction cron job
+[INFO] 2025-06-02 13:34:02,256 cron 384 138657094040448 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-02 13:34:02,257 cron 384 138657094040448 Processing mount_id: 3839
+[ERROR] 2025-06-02 13:34:03,108 cron 384 138657094040448 Failed to process mount_id: 3839, Status: 500, Data: {'error': "Windowing error: local variable 'split_df' referenced before assignment"}
+[INFO] 2025-06-02 13:34:03,108 cron 384 138657094040448 Model prediction cron job completed successfully
+[INFO] 2025-06-02 17:24:54,956 cron 396 137813948144512 Starting model prediction cron job
+[INFO] 2025-06-02 17:25:02,790 cron 408 133538992814976 Starting model prediction cron job
+[INFO] 2025-06-02 17:26:02,795 cron 420 133341520423808 Starting model prediction cron job
+[INFO] 2025-06-02 17:27:02,864 cron 445 127556014517120 Starting model prediction cron job
+[ERROR] 2025-06-02 17:27:11,204 cron 396 137813948144512 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[ERROR] 2025-06-02 17:27:15,300 cron 408 133538992814976 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:28:02,375 cron 477 135060299631488 Starting model prediction cron job
+[ERROR] 2025-06-02 17:28:16,740 cron 420 133341520423808 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:29:02,742 cron 500 130425271176064 Starting model prediction cron job
+[ERROR] 2025-06-02 17:29:18,180 cron 445 127556014517120 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:30:02,162 cron 512 138749003713408 Starting model prediction cron job
+[ERROR] 2025-06-02 17:30:15,524 cron 477 135060299631488 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:31:02,511 cron 524 127204198181760 Starting model prediction cron job
+[ERROR] 2025-06-02 17:31:16,964 cron 500 130425271176064 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:32:01,980 cron 536 139957589314432 Starting model prediction cron job
+[ERROR] 2025-06-02 17:32:18,404 cron 512 138749003713408 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:33:02,447 cron 548 133324446985088 Starting model prediction cron job
+[ERROR] 2025-06-02 17:33:15,748 cron 524 127204198181760 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:34:02,839 cron 560 126711319116672 Starting model prediction cron job
+[ERROR] 2025-06-02 17:34:17,188 cron 536 139957589314432 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:35:02,205 cron 572 139013185444736 Starting model prediction cron job
+[ERROR] 2025-06-02 17:35:18,628 cron 548 133324446985088 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:36:02,708 cron 584 136367980743552 Starting model prediction cron job
+[ERROR] 2025-06-02 17:36:15,973 cron 560 126711319116672 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:37:02,071 cron 596 126489576934272 Starting model prediction cron job
+[ERROR] 2025-06-02 17:37:17,412 cron 572 139013185444736 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:38:02,542 cron 608 124060303121280 Starting model prediction cron job
+[ERROR] 2025-06-02 17:38:18,852 cron 584 136367980743552 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:39:01,961 cron 620 124730816072576 Starting model prediction cron job
+[ERROR] 2025-06-02 17:39:16,196 cron 596 126489576934272 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:40:02,266 cron 632 126467918482304 Starting model prediction cron job
+[ERROR] 2025-06-02 17:40:17,637 cron 608 124060303121280 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:41:02,739 cron 644 133619532622720 Starting model prediction cron job
+[ERROR] 2025-06-02 17:41:14,980 cron 620 124730816072576 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:42:02,053 cron 656 139768455105408 Starting model prediction cron job
+[ERROR] 2025-06-02 17:42:16,420 cron 632 126467918482304 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:43:02,482 cron 668 134458817080192 Starting model prediction cron job
+[ERROR] 2025-06-02 17:43:17,861 cron 644 133619532622720 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:44:01,938 cron 680 126005729151872 Starting model prediction cron job
+[ERROR] 2025-06-02 17:44:15,204 cron 656 139768455105408 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:45:02,243 cron 692 125549430762368 Starting model prediction cron job
+[ERROR] 2025-06-02 17:45:16,644 cron 668 134458817080192 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:46:02,648 cron 704 123352064625536 Starting model prediction cron job
+[ERROR] 2025-06-02 17:46:18,084 cron 680 126005729151872 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:47:02,126 cron 716 124249653525376 Starting model prediction cron job
+[ERROR] 2025-06-02 17:47:15,428 cron 692 125549430762368 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:48:02,452 cron 728 131826954578816 Starting model prediction cron job
+[ERROR] 2025-06-02 17:48:16,868 cron 704 123352064625536 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:49:01,911 cron 740 133869640309632 Starting model prediction cron job
+[ERROR] 2025-06-02 17:49:18,308 cron 716 124249653525376 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:50:02,302 cron 752 125093931961216 Starting model prediction cron job
+[ERROR] 2025-06-02 17:50:15,652 cron 728 131826954578816 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:51:02,714 cron 764 131767169874816 Starting model prediction cron job
+[ERROR] 2025-06-02 17:51:17,092 cron 740 133869640309632 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:52:02,115 cron 776 129515306285952 Starting model prediction cron job
+[ERROR] 2025-06-02 17:52:18,532 cron 752 125093931961216 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:53:02,523 cron 788 136078272228224 Starting model prediction cron job
+[ERROR] 2025-06-02 17:53:15,876 cron 764 131767169874816 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:54:01,898 cron 800 138265867012992 Starting model prediction cron job
+[ERROR] 2025-06-02 17:54:17,316 cron 776 129515306285952 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:55:02,338 cron 812 126776964418432 Starting model prediction cron job
+[ERROR] 2025-06-02 17:55:18,756 cron 788 136078272228224 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:56:02,769 cron 824 131314112400256 Starting model prediction cron job
+[ERROR] 2025-06-02 17:56:16,101 cron 800 138265867012992 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:57:02,134 cron 836 138967767481216 Starting model prediction cron job
+[ERROR] 2025-06-02 17:57:17,540 cron 812 126776964418432 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:58:02,581 cron 848 129207147281280 Starting model prediction cron job
+[ERROR] 2025-06-02 17:58:18,980 cron 824 131314112400256 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-02 17:59:02,443 cron 860 129292240092032 Starting model prediction cron job
+[ERROR] 2025-06-02 17:59:16,747 cron 836 138967767481216 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-03 05:02:20,089 cron 872 132370575141760 Starting model prediction cron job
+[INFO] 2025-06-03 05:02:20,303 cron 872 132370575141760 Found 1 mount_ids to process: ['3839']
+[INFO] 2025-06-03 05:02:20,304 cron 872 132370575141760 Processing mount_id: 3839
+[INFO] 2025-06-03 05:02:21,788 cron 872 132370575141760 Successfully processed mount_id: 3839
+[INFO] 2025-06-03 05:02:21,788 cron 872 132370575141760 Model prediction cron job completed successfully
+[ERROR] 2025-06-03 05:02:35,514 cron 848 129207147281280 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-03 05:03:03,006 cron 891 132677972982656 Starting model prediction cron job
+[INFO] 2025-06-03 05:03:03,228 cron 891 132677972982656 No mount_ids found with flag=True. Skipping cron job.
+[ERROR] 2025-06-03 05:03:33,615 cron 860 129292240092032 Error in model prediction cron job: connection to server at "3.110.58.149", port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+
+[INFO] 2025-06-03 05:04:02,345 cron 903 123700499540864 Starting model prediction cron job
+[INFO] 2025-06-03 05:04:02,563 cron 903 123700499540864 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:05:02,326 cron 937 131895925640064 Starting model prediction cron job
+[INFO] 2025-06-03 05:05:02,536 cron 937 131895925640064 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:06:02,349 cron 950 131687443172224 Starting model prediction cron job
+[INFO] 2025-06-03 05:06:02,563 cron 950 131687443172224 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:07:02,318 cron 984 140639490714496 Starting model prediction cron job
+[INFO] 2025-06-03 05:07:02,538 cron 984 140639490714496 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:08:02,312 cron 996 136316317965184 Starting model prediction cron job
+[INFO] 2025-06-03 05:08:02,471 cron 996 136316317965184 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:09:02,257 cron 1008 134123666881408 Starting model prediction cron job
+[INFO] 2025-06-03 05:09:02,431 cron 1008 134123666881408 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:10:02,242 cron 1020 132830013983616 Starting model prediction cron job
+[INFO] 2025-06-03 05:10:02,412 cron 1020 132830013983616 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:11:02,196 cron 1032 137734496852864 Starting model prediction cron job
+[INFO] 2025-06-03 05:11:02,371 cron 1032 137734496852864 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:12:02,163 cron 1044 131432311286656 Starting model prediction cron job
+[INFO] 2025-06-03 05:12:02,333 cron 1044 131432311286656 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:13:02,108 cron 1057 125798865525632 Starting model prediction cron job
+[INFO] 2025-06-03 05:13:02,268 cron 1057 125798865525632 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:14:02,070 cron 1082 123926465829760 Starting model prediction cron job
+[INFO] 2025-06-03 05:14:02,265 cron 1082 123926465829760 Found 3 mount_ids to process: ['3839', '3840', '3841']
+[INFO] 2025-06-03 05:14:02,265 cron 1082 123926465829760 Processing mount_id: 3839
+[INFO] 2025-06-03 05:14:03,849 cron 1082 123926465829760 Successfully processed mount_id: 3839
+[INFO] 2025-06-03 05:14:03,850 cron 1082 123926465829760 Processing mount_id: 3840
+[INFO] 2025-06-03 05:14:05,083 cron 1082 123926465829760 Successfully processed mount_id: 3840
+[INFO] 2025-06-03 05:14:05,083 cron 1082 123926465829760 Processing mount_id: 3841
+[INFO] 2025-06-03 05:14:06,338 cron 1082 123926465829760 Successfully processed mount_id: 3841
+[INFO] 2025-06-03 05:14:06,338 cron 1082 123926465829760 Model prediction cron job completed successfully
+[INFO] 2025-06-03 05:15:02,130 cron 1101 139712614136704 Starting model prediction cron job
+[INFO] 2025-06-03 05:15:02,304 cron 1101 139712614136704 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:16:02,097 cron 1113 133200158792576 Starting model prediction cron job
+[INFO] 2025-06-03 05:16:02,256 cron 1113 133200158792576 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:17:02,045 cron 1128 126930037644160 Starting model prediction cron job
+[INFO] 2025-06-03 05:17:02,261 cron 1128 126930037644160 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:18:02,058 cron 1140 139242139605888 Starting model prediction cron job
+[INFO] 2025-06-03 05:18:02,227 cron 1140 139242139605888 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:21:02,978 cron 72 128192763046784 Starting model prediction cron job
+[INFO] 2025-06-03 05:21:03,138 cron 72 128192763046784 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:22:01,942 cron 84 130620496948096 Starting model prediction cron job
+[INFO] 2025-06-03 05:22:02,100 cron 84 130620496948096 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:23:01,886 cron 96 138155701353344 Starting model prediction cron job
+[INFO] 2025-06-03 05:23:02,042 cron 96 138155701353344 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:24:01,851 cron 108 137137326025600 Starting model prediction cron job
+[INFO] 2025-06-03 05:24:02,014 cron 108 137137326025600 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:25:01,848 cron 120 135385471392640 Starting model prediction cron job
+[INFO] 2025-06-03 05:25:02,009 cron 120 135385471392640 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:26:01,900 cron 132 128975056157568 Starting model prediction cron job
+[INFO] 2025-06-03 05:26:02,070 cron 132 128975056157568 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:27:01,967 cron 155 133259846466432 Starting model prediction cron job
+[INFO] 2025-06-03 05:27:02,129 cron 155 133259846466432 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:28:01,990 cron 167 124679626734464 Starting model prediction cron job
+[INFO] 2025-06-03 05:28:02,153 cron 167 124679626734464 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:29:02,000 cron 179 140574976871296 Starting model prediction cron job
+[INFO] 2025-06-03 05:29:02,164 cron 179 140574976871296 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:30:01,950 cron 191 131514591587200 Starting model prediction cron job
+[INFO] 2025-06-03 05:30:02,120 cron 191 131514591587200 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:31:02,013 cron 203 127007906048896 Starting model prediction cron job
+[INFO] 2025-06-03 05:31:02,179 cron 203 127007906048896 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:32:01,991 cron 215 123456805100416 Starting model prediction cron job
+[INFO] 2025-06-03 05:32:02,161 cron 215 123456805100416 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:42:02,455 cron 72 140206104357760 Starting model prediction cron job
+[INFO] 2025-06-03 05:42:02,658 cron 72 140206104357760 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:45:02,831 cron 72 128795826318208 Starting model prediction cron job
+[INFO] 2025-06-03 05:45:02,999 cron 72 128795826318208 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:46:01,870 cron 84 132673237871488 Starting model prediction cron job
+[INFO] 2025-06-03 05:46:02,031 cron 84 132673237871488 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:47:01,851 cron 96 133699976616832 Starting model prediction cron job
+[INFO] 2025-06-03 05:47:02,004 cron 96 133699976616832 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:48:01,793 cron 108 131363091872640 Starting model prediction cron job
+[INFO] 2025-06-03 05:48:01,951 cron 108 131363091872640 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:49:01,830 cron 120 130197246679936 Starting model prediction cron job
+[INFO] 2025-06-03 05:49:01,997 cron 120 130197246679936 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:50:01,832 cron 132 124504997464960 Starting model prediction cron job
+[INFO] 2025-06-03 05:50:01,995 cron 132 124504997464960 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:53:02,205 cron 72 137041520716672 Starting model prediction cron job
+[INFO] 2025-06-03 05:53:02,385 cron 72 137041520716672 Found 3 mount_ids to process: ['3839', '3840', '3841']
+[INFO] 2025-06-03 05:53:02,386 cron 72 137041520716672 Processing mount_id: 3839
+[INFO] 2025-06-03 05:53:14,848 cron 72 137041520716672 Successfully processed mount_id: 3839
+[INFO] 2025-06-03 05:53:14,848 cron 72 137041520716672 Processing mount_id: 3840
+[INFO] 2025-06-03 05:53:27,854 cron 72 137041520716672 Successfully processed mount_id: 3840
+[INFO] 2025-06-03 05:53:27,854 cron 72 137041520716672 Processing mount_id: 3841
+[INFO] 2025-06-03 05:53:40,460 cron 72 137041520716672 Successfully processed mount_id: 3841
+[INFO] 2025-06-03 05:53:40,460 cron 72 137041520716672 Model prediction cron job completed successfully
+[INFO] 2025-06-03 05:54:02,383 cron 91 128403130784640 Starting model prediction cron job
+[INFO] 2025-06-03 05:54:02,554 cron 91 128403130784640 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:55:02,444 cron 103 125357593246592 Starting model prediction cron job
+[INFO] 2025-06-03 05:55:02,628 cron 103 125357593246592 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:56:02,488 cron 115 123811858127744 Starting model prediction cron job
+[INFO] 2025-06-03 05:56:02,665 cron 115 123811858127744 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:57:02,573 cron 127 124387086207872 Starting model prediction cron job
+[INFO] 2025-06-03 05:57:02,735 cron 127 124387086207872 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:58:02,568 cron 151 129116319243136 Starting model prediction cron job
+[INFO] 2025-06-03 05:58:02,786 cron 151 129116319243136 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 05:59:02,658 cron 163 127738223811456 Starting model prediction cron job
+[INFO] 2025-06-03 05:59:02,822 cron 163 127738223811456 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:00:02,628 cron 175 124001800764288 Starting model prediction cron job
+[INFO] 2025-06-03 06:00:02,781 cron 175 124001800764288 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:01:02,590 cron 187 131925970197376 Starting model prediction cron job
+[INFO] 2025-06-03 06:01:02,768 cron 187 131925970197376 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:02:02,542 cron 199 133968503802752 Starting model prediction cron job
+[INFO] 2025-06-03 06:02:02,723 cron 199 133968503802752 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:03:02,479 cron 211 124435430161280 Starting model prediction cron job
+[INFO] 2025-06-03 06:03:02,640 cron 211 124435430161280 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:04:02,374 cron 223 136217957940096 Starting model prediction cron job
+[INFO] 2025-06-03 06:04:02,599 cron 223 136217957940096 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:05:02,354 cron 235 129066506595200 Starting model prediction cron job
+[INFO] 2025-06-03 06:05:02,522 cron 235 129066506595200 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:06:02,310 cron 247 132524093410176 Starting model prediction cron job
+[INFO] 2025-06-03 06:06:02,478 cron 247 132524093410176 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:07:02,319 cron 259 139744160504704 Starting model prediction cron job
+[INFO] 2025-06-03 06:07:02,477 cron 259 139744160504704 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:08:02,357 cron 271 135684223409024 Starting model prediction cron job
+[INFO] 2025-06-03 06:08:02,517 cron 271 135684223409024 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:09:02,385 cron 283 124444831185792 Starting model prediction cron job
+[INFO] 2025-06-03 06:09:02,538 cron 283 124444831185792 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:10:02,298 cron 295 128631999810432 Starting model prediction cron job
+[INFO] 2025-06-03 06:10:02,453 cron 295 128631999810432 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:11:02,205 cron 307 138124436999040 Starting model prediction cron job
+[INFO] 2025-06-03 06:11:02,357 cron 307 138124436999040 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:12:02,097 cron 319 137014428269440 Starting model prediction cron job
+[INFO] 2025-06-03 06:12:02,263 cron 319 137014428269440 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:13:02,021 cron 331 139627363441536 Starting model prediction cron job
+[INFO] 2025-06-03 06:13:02,170 cron 331 139627363441536 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:14:01,925 cron 343 138118285101952 Starting model prediction cron job
+[INFO] 2025-06-03 06:14:02,084 cron 343 138118285101952 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:15:01,830 cron 355 131866883947392 Starting model prediction cron job
+[INFO] 2025-06-03 06:15:01,986 cron 355 131866883947392 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:16:01,733 cron 367 127785733831552 Starting model prediction cron job
+[INFO] 2025-06-03 06:16:01,888 cron 367 127785733831552 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:17:01,647 cron 382 138239268187008 Starting model prediction cron job
+[INFO] 2025-06-03 06:17:01,817 cron 382 138239268187008 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:18:02,571 cron 394 135563444423552 Starting model prediction cron job
+[INFO] 2025-06-03 06:18:02,741 cron 394 135563444423552 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:19:02,496 cron 406 134991062739840 Starting model prediction cron job
+[INFO] 2025-06-03 06:19:02,659 cron 406 134991062739840 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:20:02,483 cron 418 129778480204672 Starting model prediction cron job
+[INFO] 2025-06-03 06:20:02,666 cron 418 129778480204672 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:21:02,469 cron 430 133707662838656 Starting model prediction cron job
+[INFO] 2025-06-03 06:21:02,645 cron 430 133707662838656 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:22:02,420 cron 442 130098656742272 Starting model prediction cron job
+[INFO] 2025-06-03 06:22:02,632 cron 442 130098656742272 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:23:02,404 cron 454 123181115755392 Starting model prediction cron job
+[INFO] 2025-06-03 06:23:02,587 cron 454 123181115755392 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:24:02,338 cron 466 137840290900864 Starting model prediction cron job
+[INFO] 2025-06-03 06:24:02,507 cron 466 137840290900864 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:25:02,279 cron 481 127812086512512 Starting model prediction cron job
+[INFO] 2025-06-03 06:25:02,440 cron 481 127812086512512 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:26:02,202 cron 501 140243809766272 Starting model prediction cron job
+[INFO] 2025-06-03 06:26:02,366 cron 501 140243809766272 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:27:02,119 cron 513 140590989298560 Starting model prediction cron job
+[INFO] 2025-06-03 06:27:02,271 cron 513 140590989298560 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:28:02,063 cron 525 125860864711552 Starting model prediction cron job
+[INFO] 2025-06-03 06:28:02,231 cron 525 125860864711552 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:29:02,071 cron 537 140082104126336 Starting model prediction cron job
+[INFO] 2025-06-03 06:29:02,225 cron 537 140082104126336 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:30:01,993 cron 549 136610673437568 Starting model prediction cron job
+[INFO] 2025-06-03 06:30:02,190 cron 549 136610673437568 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:31:02,000 cron 561 136857371605888 Starting model prediction cron job
+[INFO] 2025-06-03 06:31:02,226 cron 561 136857371605888 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:32:01,755 cron 686 130122861349760 Starting model prediction cron job
+[INFO] 2025-06-03 06:32:01,919 cron 686 130122861349760 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:33:01,746 cron 698 138779462433664 Starting model prediction cron job
+[INFO] 2025-06-03 06:33:01,958 cron 698 138779462433664 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:36:02,210 cron 72 124868851796864 Starting model prediction cron job
+[INFO] 2025-06-03 06:36:02,391 cron 72 124868851796864 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:37:02,154 cron 84 131457490434944 Starting model prediction cron job
+[INFO] 2025-06-03 06:37:02,316 cron 84 131457490434944 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:38:02,058 cron 96 134951178685312 Starting model prediction cron job
+[INFO] 2025-06-03 06:38:02,222 cron 96 134951178685312 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:39:01,957 cron 108 136164483591040 Starting model prediction cron job
+[INFO] 2025-06-03 06:39:02,123 cron 108 136164483591040 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:40:01,936 cron 120 133372320594816 Starting model prediction cron job
+[INFO] 2025-06-03 06:40:02,099 cron 120 133372320594816 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:41:01,853 cron 132 134163391208320 Starting model prediction cron job
+[INFO] 2025-06-03 06:41:02,014 cron 132 134163391208320 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:42:01,783 cron 144 140588403440512 Starting model prediction cron job
+[INFO] 2025-06-03 06:42:01,940 cron 144 140588403440512 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:43:01,706 cron 156 123368474528640 Starting model prediction cron job
+[INFO] 2025-06-03 06:43:01,879 cron 156 123368474528640 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:44:01,716 cron 168 126696075197312 Starting model prediction cron job
+[INFO] 2025-06-03 06:44:01,878 cron 168 126696075197312 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:45:01,772 cron 180 124908631247744 Starting model prediction cron job
+[INFO] 2025-06-03 06:45:01,950 cron 180 124908631247744 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:46:01,814 cron 192 128631792446336 Starting model prediction cron job
+[INFO] 2025-06-03 06:46:01,965 cron 192 128631792446336 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:47:01,824 cron 204 137896941464448 Starting model prediction cron job
+[INFO] 2025-06-03 06:47:01,987 cron 204 137896941464448 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:48:01,758 cron 216 129052563839872 Starting model prediction cron job
+[INFO] 2025-06-03 06:48:01,911 cron 216 129052563839872 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:49:01,650 cron 228 130246789987200 Starting model prediction cron job
+[INFO] 2025-06-03 06:49:01,822 cron 228 130246789987200 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:50:02,565 cron 240 131741554195328 Starting model prediction cron job
+[INFO] 2025-06-03 06:50:02,740 cron 240 131741554195328 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:51:02,476 cron 252 131390548736896 Starting model prediction cron job
+[INFO] 2025-06-03 06:51:02,651 cron 252 131390548736896 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:52:02,395 cron 264 132474132065152 Starting model prediction cron job
+[INFO] 2025-06-03 06:52:02,548 cron 264 132474132065152 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:53:02,337 cron 276 129011008220032 Starting model prediction cron job
+[INFO] 2025-06-03 06:53:02,484 cron 276 129011008220032 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:54:02,211 cron 288 135359768808320 Starting model prediction cron job
+[INFO] 2025-06-03 06:54:02,377 cron 288 135359768808320 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:55:02,146 cron 300 139056438688640 Starting model prediction cron job
+[INFO] 2025-06-03 06:55:02,307 cron 300 139056438688640 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:56:02,078 cron 312 123541471538048 Starting model prediction cron job
+[INFO] 2025-06-03 06:56:02,266 cron 312 123541471538048 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:57:02,020 cron 324 137841695517568 Starting model prediction cron job
+[INFO] 2025-06-03 06:57:02,179 cron 324 137841695517568 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:58:01,917 cron 336 125027389123456 Starting model prediction cron job
+[INFO] 2025-06-03 06:58:02,089 cron 336 125027389123456 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 06:59:01,846 cron 348 134362709912448 Starting model prediction cron job
+[INFO] 2025-06-03 06:59:02,003 cron 348 134362709912448 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:00:01,824 cron 360 134462607891328 Starting model prediction cron job
+[INFO] 2025-06-03 07:00:01,985 cron 360 134462607891328 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:01:01,774 cron 372 137256911915904 Starting model prediction cron job
+[INFO] 2025-06-03 07:01:01,936 cron 372 137256911915904 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:02:01,680 cron 384 125639093169024 Starting model prediction cron job
+[INFO] 2025-06-03 07:02:01,837 cron 384 125639093169024 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:03:02,585 cron 396 124515074526080 Starting model prediction cron job
+[INFO] 2025-06-03 07:03:02,889 cron 396 124515074526080 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:04:01,694 cron 408 123359771921280 Starting model prediction cron job
+[INFO] 2025-06-03 07:04:01,844 cron 408 123359771921280 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:05:01,625 cron 420 129493216160640 Starting model prediction cron job
+[INFO] 2025-06-03 07:05:01,846 cron 420 129493216160640 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:06:02,653 cron 432 130906971622272 Starting model prediction cron job
+[INFO] 2025-06-03 07:06:02,872 cron 432 130906971622272 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:07:01,696 cron 444 137205522160512 Starting model prediction cron job
+[INFO] 2025-06-03 07:07:01,908 cron 444 137205522160512 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:08:01,705 cron 456 136675795532672 Starting model prediction cron job
+[INFO] 2025-06-03 07:08:01,879 cron 456 136675795532672 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:09:01,632 cron 468 130070295497600 Starting model prediction cron job
+[INFO] 2025-06-03 07:09:01,806 cron 468 130070295497600 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:10:02,540 cron 480 137998331911040 Starting model prediction cron job
+[INFO] 2025-06-03 07:10:02,705 cron 480 137998331911040 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:11:02,502 cron 492 129212717558656 Starting model prediction cron job
+[INFO] 2025-06-03 07:11:02,664 cron 492 129212717558656 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:12:02,403 cron 504 127833139800960 Starting model prediction cron job
+[INFO] 2025-06-03 07:12:02,578 cron 504 127833139800960 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:13:02,324 cron 516 137222689209216 Starting model prediction cron job
+[INFO] 2025-06-03 07:13:02,478 cron 516 137222689209216 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:14:02,217 cron 528 135594967829376 Starting model prediction cron job
+[INFO] 2025-06-03 07:14:02,377 cron 528 135594967829376 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:15:02,120 cron 540 123164330797952 Starting model prediction cron job
+[INFO] 2025-06-03 07:15:02,284 cron 540 123164330797952 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:16:02,031 cron 552 139069685853056 Starting model prediction cron job
+[INFO] 2025-06-03 07:16:02,181 cron 552 139069685853056 No mount_ids found with flag=True. Skipping cron job.
+[INFO] 2025-06-03 07:17:01,934 cron 567 139321429134208 Starting model prediction cron job
+[INFO] 2025-06-03 07:17:02,091 cron 567 139321429134208 No mount_ids found with flag=True. Skipping cron job.

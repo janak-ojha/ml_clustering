@@ -4,19 +4,16 @@ services:
   web:
     build: .
     ports:
-      - "8000:8000"
+      - "8003:8000"
     volumes:
       - .:/app
-    depends_on:
-      - db
+      - ./logs:/app/logs  # Mount logs directory for persistent logging
     environment:
-      DEBUG: "1"
-
-  db:
-    image: postgres:12
-    environment:
-      POSTGRES_DB: pdm
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-    ports:
-      - "5432:5432"
+      - DEBUG=1
+      - PYTHONUNBUFFERED=1
+    network_mode: host
+    env_file:
+      - .env
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

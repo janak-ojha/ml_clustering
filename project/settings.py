@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'rest_framework',
+    'django_crontab',
 ]
 
 MIDDLEWARE = [
@@ -74,16 +75,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 DATABASES = {
     'default': {
@@ -141,46 +132,73 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+import sys
+
+
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,  # Keep the default loggers
-
+    'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
-            'format': '[{asctime}] {levelname} [{name}] {message}',
+            'format': '[{levelname}] {asctime} {name} {process:d} {thread:d} {message}',
             'style': '{',
         },
         'simple': {
-            'format': '{levelname} {message}',
+            'format': '[{levelname}] {asctime} {name} {message}',
             'style': '{',
         },
     },
-
     'handlers': {
         'console': {
+            'level': 'INFO',
             'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': '/app/logs/django.log',
+            'formatter': 'verbose',
+        },
+        'cron_file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': '/app/logs/cron_output.log',
             'formatter': 'verbose',
         },
     },
-
+    'root': {
+        'handlers': ['console', 'file'],
+        'level': 'INFO',
+    },
     'loggers': {
-        # Root logger
-        '': {
-            'handlers': ['console'],
-            'level': 'INFO',  # Set minimum level to INFO
-            'propagate': True,
-        },
-        # Django's own logger (optional, but can set level here)
         'django': {
-            'handlers': ['console'],
+            'handlers': ['console', 'file'],
             'level': 'INFO',
             'propagate': False,
         },
-        # Your app's logger (adjust 'yourapp' to your app name)
-        'app': {
-            'handlers': ['console'],
+        'cron': {
+            'handlers': ['console', 'cron_file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'app': {  # Replace 'app' with your actual app name
+            'handlers': ['console', 'file'],
             'level': 'INFO',
             'propagate': False,
         },
     },
 }
+
+
+
+CRONJOBS = [
+    # Run every minute - calls the cron function
+    ('* * * * *', 'app.cron.run_model_prediction_cron', '>> /tmp/cron_model_prediction.log 2>&1'),
+
+
+    # Alternative: Run every 5 minutes (uncomment if needed)
+    # ('*/5 * * * *', 'your_app_name.cron.run_model_prediction_cron', '>> /tmp/cron_model_prediction.log 2>&1'),
+]
+
+CRON_TZ = 'UTC'

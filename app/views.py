@@ -19,7 +19,7 @@ def train_model_with_data(request):
         logger.error("mount_id parameter is required")
         return Response({"error": "mount_id parameter is required"}, status=400)
 
-    raw_queryset = RawDataMaster.objects.filter(
+    raw_queryset = TestRawDataMaster.objects.filter(
         mount_id=mount_id,
         axis='Vertical'
     ).values('timestamp', 'fs', 'no_of_samples', 'raw_data', 'axis', 'mount_id','composite','asset_id' ).order_by('timestamp')
@@ -34,7 +34,6 @@ def train_model_with_data(request):
     try:
         df = parse_raw_queryset_to_df(raw_queryset)
         logger.info(f"DataFrame created with {df.head()} records")
-        print(df.head(20))
     except ValueError as e:
         logger.error(f"Data parsing error: {e}")
         return Response({"error": str(e)}, status=500)
@@ -43,7 +42,6 @@ def train_model_with_data(request):
     try:
         split_df = split_and_add_timestamps(df)
         logger.info(f"Split data into time windows, resulting shape: {split_df.shape}")
-        print(split_df.head(20))
     except Exception as e:
         logger.error(f"Windowing error: {e}")
         return Response({"error": f"Windowing error: {e}"}, status=500)
@@ -52,7 +50,6 @@ def train_model_with_data(request):
     try:
         psd_df = extract_psd_featuresv(split_df)
         logger.info(f"Extracted PSD features, resulting shape: {psd_df.shape}")
-        print(psd_df.head(20))
     except Exception as e:
         logger.error(f"PSD extraction error: {e}")
         return Response({"error": f"PSD extraction error: {e}"}, status=500)
@@ -104,6 +101,7 @@ def test_model_with_data(request):
      # Step: Split into windows
     try:
         split_df = split_and_add_timestamps(df)
+        # df_time_stamp_mid = split_df.drop(['axis', 'no_of_samples', 'fs', 'raw_data'], axis=1)
         logger.info(f"Split data into windows, shape: {split_df.shape}")
     except Exception as e:
         logger.error(f"Windowing error: {e}")
@@ -134,6 +132,7 @@ def test_model_with_data(request):
     except Exception as e:
         logger.warning(f"Could not assign status labels: {e}")
 
+
     #saving to db   
     try:
         saved_count = save_operating_mode_data(result, mount_id)
@@ -147,6 +146,7 @@ def test_model_with_data(request):
         
     })
     
+
 
 
 

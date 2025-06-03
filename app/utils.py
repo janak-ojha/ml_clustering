@@ -49,19 +49,6 @@ def parse_raw_queryset_to_df(raw_queryset):
 
 
 def split_and_add_timestamps(df, n_splits=4, min_remain_ratio=0.3):
-    """
-    Splits raw_data into approximately `n_splits` parts.
-    If the last part is smaller than `min_remain_ratio` of window size,
-    it is merged with the previous part.
-
-    Args:
-        df (pd.DataFrame): Input DataFrame.
-        n_splits (int): Desired number of splits per raw_data.
-        min_remain_ratio (float): Minimum remainder threshold for splitting.
-
-    Returns:
-        pd.DataFrame or dict: Windowed segments DataFrame or error dict.
-    """
     all_windows = []
 
     try:
@@ -278,10 +265,12 @@ def predict_gmm_clusters(psd_df_clean, mount_id):
         # Prepare result DataFrame
         result_df = psd_df_clean.copy()
 
-        # Mark raw data flags as False
-        used_timestamps = psd_df_clean['timestamp'].apply(
-            lambda x: timezone.make_aware(datetime.fromtimestamp(int(x)))
-        ).tolist()
+        # Ensure timestamps are unique before filtering
+        used_timestamps = psd_df_clean['timestamp'].unique()  # Get unique timestamps
+        used_timestamps = [
+        timezone.make_aware(datetime.fromtimestamp(int(ts)))
+        for ts in used_timestamps
+        ]
 
        # Adjust import as per your project
         TestRawDataMaster.objects.filter(
