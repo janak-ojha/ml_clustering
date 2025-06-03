@@ -801,3 +801,27 @@ June 03, 2025 - 06:35:54
 Django version 3.1.7, using settings 'project.settings'
 Starting development server at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.
+[INFO] 2025-06-03 07:52:44,659 django.utils.autoreload 59 127318523231104 Watching for file changes with StatReloader
+[INFO] 2025-06-03 07:52:44,659 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 07:52:45
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-03 07:58:02,693 app.views 132 123518077217664 Testing model with data for mount_id: 3839
+[INFO] 2025-06-03 07:58:03,786 app.utils 132 123518077217664 Parsed 287 records into DataFrame
+[INFO] 2025-06-03 07:58:03,786 app.views 132 123518077217664 DataFrame created with 287 records
+[INFO] 2025-06-03 07:58:03,885 app.views 132 123518077217664 Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-03 07:58:04,227 app.views 132 123518077217664 Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-03 07:58:04,240 app.utils 132 123518077217664 Predicted clusters for 1148 samples
+[INFO] 2025-06-03 07:58:04,292 app.utils 132 123518077217664 Updated flag to False for 287 timestamps
+[INFO] 2025-06-03 07:58:04,295 app.views 132 123518077217664 sassshape, shape: (1148, 72)
+[INFO] 2025-06-03 07:58:04,295 app.views 132 123518077217664 Status labels assigned based on test_score
+[INFO] 2025-06-03 07:58:04,298 app.utils 132 123518077217664 Dropped duplicate timestamps, keeping only one occurrence of each.
+[INFO] 2025-06-03 07:58:16,401 app.utils 132 123518077217664 Saved 287 records to AssetOperatingModeMaster
+[INFO] 2025-06-03 07:58:16,430 app.views 132 123518077217664 Testing model with data for mount_id: 3840
+[WARNING] 2025-06-03 07:58:16,461 app.views 132 123518077217664 No data found with flag=True for mount_id: 3840
+[INFO] 2025-06-03 07:58:16,462 app.views 132 123518077217664 Testing model with data for mount_id: 3841
+[WARNING] 2025-06-03 07:58:16,493 app.views 132 123518077217664 No data found with flag=True for mount_id: 3841

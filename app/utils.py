@@ -276,6 +276,7 @@ def predict_gmm_clusters(psd_df_clean, mount_id):
         TestRawDataMaster.objects.filter(
             mount_id=mount_id,
             timestamp__in=used_timestamps,
+            axis='Vertical',
             flag=False
         ).update(flag=True)
         logger.info(f"Updated flag to False for {len(used_timestamps)} timestamps")
