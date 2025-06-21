@@ -194,11 +194,11 @@ LOGGING = {
 
 CRONJOBS = [
     # Run every minute - calls the cron function
-    ('* * * * *', 'app.cron.run_model_prediction_cron', '>> /tmp/cron_model_prediction.log 2>&1'),
+    ('0 */12 * * *', 'app.cron.run_model_prediction_cron', '>> /tmp/cron_model_prediction.log 2>&1'),
 
 
     # Alternative: Run every 5 minutes (uncomment if needed)
-    # ('*/5 * * * *', 'your_app_name.cron.run_model_prediction_cron', '>> /tmp/cron_model_prediction.log 2>&1'),
+    # ('* * * * *', 'app.cron.run_model_prediction_cron', '>> /tmp/cron_model_prediction.log 2>&1'),
 ]
 
 CRON_TZ = 'UTC'

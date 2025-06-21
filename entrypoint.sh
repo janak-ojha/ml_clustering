@@ -33,9 +33,9 @@ echo "📊 Starting log monitoring in background..."
     wait
 ) &
 
-echo "🚀 Starting Django development server on 0.0.0.0:8000..."
+echo "🚀 Starting Django development server on 0.0.0.0:8001..."
 echo "📝 Live logs will appear below..."
 echo "=================================================="
 
 # Start Django with logging to both file and console
-python manage.py runserver 0.0.0.0:8000 2>&1 | tee -a /app/logs/django.log
+python manage.py runserver 0.0.0.0:8001 2>&1 | tee -a /app/logs/django.log

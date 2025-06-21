@@ -44,7 +44,7 @@ RUN chmod +x /app/entrypoint.sh
 COPY log_monitor.sh /app/log_monitor.sh
 RUN chmod +x /app/log_monitor.sh
 
-EXPOSE 8000
+EXPOSE 8001
 
 # Run the shell script that starts both cron and Django
 CMD ["/app/entrypoint.sh"]

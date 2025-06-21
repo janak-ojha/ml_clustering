@@ -630,3 +630,13 @@
 [ERROR] 2025-06-03 07:58:16,493 cron 132 123518077217664 Failed to process mount_id: 3841, Status: 404, Data: {'message': 'No data found for the given mount_id'}
 [INFO] 2025-06-03 07:58:16,493 cron 132 123518077217664 Model prediction cron job completed successfully
 [INFO] 2025-06-03 07:58:16,493 cron 132 123518077217664 Data saved in db succesfully
+[INFO] 2025-06-21 07:10:02,631 cron 72 138712192531328 Starting model prediction cron job
+[INFO] 2025-06-21 07:10:02,786 cron 72 138712192531328 Found 3 mount_ids to process: ['3839', '3840', '3841']
+[INFO] 2025-06-21 07:10:02,786 cron 72 138712192531328 Processing mount_id: 3839
+[INFO] 2025-06-21 07:10:04,613 cron 72 138712192531328 Successfully processed mount_id: 3839
+[INFO] 2025-06-21 07:10:04,613 cron 72 138712192531328 Processing mount_id: 3840
+[INFO] 2025-06-21 07:10:06,193 cron 72 138712192531328 Successfully processed mount_id: 3840
+[INFO] 2025-06-21 07:10:06,194 cron 72 138712192531328 Processing mount_id: 3841
+[INFO] 2025-06-21 07:10:07,687 cron 72 138712192531328 Successfully processed mount_id: 3841
+[INFO] 2025-06-21 07:10:07,687 cron 72 138712192531328 Model prediction cron job completed successfully
+[INFO] 2025-06-21 07:10:07,687 cron 72 138712192531328 Data saved in db succesfully

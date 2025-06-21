@@ -10,13 +10,15 @@ from django.conf import settings
 import logging
 import os
 from .models import TestRawDataMaster
-from datetime import datetime
+from app.models import AssetOperatingModeMaster
 from django.utils import timezone
+from scipy import signal
 import logging
-from .serializers import AssetOperatingModeMasterSerializer
-from rest_framework.exceptions import ValidationError
-from django.utils import timezone
+from django.utils.timezone import make_aware, is_aware
 from datetime import datetime
+from django.utils import timezone
+from django.db import transaction
+from app.models import AssetOperatingModeMaster
 import logging
 logger= logging.getLogger(__name__)
 
@@ -124,6 +126,55 @@ def split_and_add_timestamps(df, n_splits=4, min_remain_ratio=0.3):
 
 
 
+
+def add_rms_column(df, raw_column='raw_data', fs_column='fs', 
+                           filtered_column='filtered_signal', rms_column='rms',
+                           high_cutoff=10, low_cutoff=6000):
+    """
+    Applies a Chebyshev bandpass filter and computes RMS on the filtered signal.
+
+    Parameters:
+        df (pd.DataFrame): Input DataFrame with raw signal and sampling rate.
+        raw_column (str): Column containing raw data arrays.
+        fs_column (str): Column containing sampling frequency per row.
+        filtered_column (str): Name for the new filtered signal column.
+        rms_column (str): Name for the new RMS column.
+        high_cutoff (float): High-pass filter cutoff frequency in Hz.
+        low_cutoff (float): Low-pass filter cutoff frequency in Hz.
+
+    Returns:
+        pd.DataFrame: DataFrame with added filtered and RMS columns.
+    """
+
+    def bandpass_and_rms(row):
+        try:
+            raw = np.array(row[raw_column], dtype=np.float32)
+            fs = row[fs_column]
+
+            # High-pass filter
+            sos_high = signal.cheby1(10, 1, high_cutoff, 'hp', fs=fs, output='sos')
+            filtered_high = signal.sosfilt(sos_high, raw)
+
+            # Low-pass filter
+            sos_low = signal.cheby1(8, 1, low_cutoff, 'lp', fs=fs, output='sos')
+            filtered = signal.sosfilt(sos_low, filtered_high)
+
+            # Round and compute RMS
+            filtered_rounded = np.round(filtered, 5)
+            rms = round(float(np.sqrt(np.mean(filtered_rounded ** 2))), 2)
+
+            return pd.Series([filtered_rounded, rms])
+
+        except Exception as e:
+            print(f"Error in row: {e}")
+            return pd.Series([np.nan, np.nan])
+
+    df[[filtered_column, rms_column]] = df.apply(bandpass_and_rms, axis=1)
+    return df
+
+
+
+
 def extract_psd_featuresv(df, series_col='raw_data', fs_col='fs', num_coeffs=65, nperseg=128):
     
     psd_feature_dicts = []
@@ -155,6 +206,7 @@ def extract_psd_featuresv(df, series_col='raw_data', fs_col='fs', num_coeffs=65,
         psd_feature_dicts.append(psd_dict)
 
     return pd.DataFrame(psd_feature_dicts)
+
 
 
 
@@ -279,7 +331,7 @@ def predict_gmm_clusters(psd_df_clean, mount_id):
             axis='Vertical',
             flag=False
         ).update(flag=True)
-        logger.info(f"Updated flag to False for {len(used_timestamps)} timestamps")
+        logger.info(f"Updated flag to True for {len(used_timestamps)} timestamps")
 
         return result_df
 
@@ -312,46 +364,157 @@ def assign_cluster_labels(df, score_col='v_coeff_mean', cluster_col='cluster_id'
 
 
 
-#save data into db
+
+def assign_cluster_labelrms(df, score_col='rms', cluster_col='cluster_id'):
+    """
+    Compute and return the average RMS value for each cluster.
+
+    Args:
+        df (pd.DataFrame): Input DataFrame with RMS values and cluster IDs.
+        score_col (str): Column name containing RMS scores.
+        cluster_col (str): Column name containing cluster IDs.
+
+    Returns:
+        dict: Mapping of cluster_id to average RMS score.
+    """
+    # Group by cluster and compute mean RMS
+    cluster_avg = df.groupby(cluster_col)[score_col].mean().sort_values()
+    print("Average RMS of each cluster:\n", cluster_avg)
+
+    # Return as dictionary
+    return cluster_avg.to_dict()
+
+
+
+
+
+def assign_mode_labels_rms_Vertical(df, dict_rms_avg, score_col='rms_vertical', mode_col='operating_mode', cluster_col='cluster_id'):
+    """
+    Assign mode labels based on RMS proximity to known cluster averages.
+    Exact matches are prioritized, and labels are sorted by increasing RMS.
+
+    Args:
+        df (pd.DataFrame): Input DataFrame containing RMS values.
+        dict_rms_avg (dict): Dictionary mapping cluster_id to average RMS.
+        score_col (str): Column in df containing RMS values.
+        mode_col (str): Output column for assigned mode labels.
+        cluster_col (str): Output column for assigned cluster IDs.
+
+    Returns:
+        pd.DataFrame: Updated DataFrame with mode and cluster columns.
+    """
+
+    # Step 1: Sort cluster IDs by their average RMS
+    sorted_clusters = sorted(dict_rms_avg.items(), key=lambda x: x[1])  # ascending RMS
+
+    # Step 2: Create label map: first one is off mode
+    mode_labels = {}
+    for i, (cluster_id, _) in enumerate(sorted_clusters):
+        mode_labels[cluster_id] = 'off_mode' if i == 0 else f'mode_{i}'
+
+    # Step 3: Clean and validate input
+    df[score_col] = pd.to_numeric(df[score_col], errors='coerce')
+    df = df.dropna(subset=[score_col])  # Drop rows with invalid RMS
+
+    # Step 4: Find mode and cluster for each RMS value
+    def get_mode_and_cluster(rms_val):
+        try:
+            rms_val = float(rms_val)
+            # Exact match check
+            for cid, val in dict_rms_avg.items():
+                if np.isclose(rms_val, float(val), atol=1e-5):  # float-safe
+                    return pd.Series([mode_labels[cid], cid])
+            # Else, find nearest
+            nearest_cluster = min(dict_rms_avg, key=lambda c: abs(rms_val - float(dict_rms_avg[c])))
+            return pd.Series([mode_labels[nearest_cluster], nearest_cluster])
+        except Exception as e:
+            print(f"Error in RMS comparison: {e} | value: {rms_val}")
+            return pd.Series([np.nan, np.nan])
+
+    # Step 5: Apply the function
+    df[[mode_col, cluster_col]] = df[score_col].apply(get_mode_and_cluster)
+
+    return df
+
+
+
+
+
+
 def save_operating_mode_data(result_df, mount_id):
     """
-    Converts the result DataFrame into model records and saves using the serializer.
-    Keeps only one row per duplicated timestamp.
+    Saves new rows from the DataFrame into the DB using bulk_create.
+    Skips rows where timestamp already exists for the given mount_id.
     """
-    # Keep only the required columns
     new_df = result_df[['timestamp', 'mount_id', 'asset_id', 'composite', 'operating_mode', 'cluster_id']].copy()
-
-    # Drop duplicates — keep only the first occurrence of each timestamp
     new_df = new_df.drop_duplicates(subset='timestamp', keep='first')
-    logger.info("Dropped duplicate timestamps, keeping only one occurrence of each.")
+    logger.info("Dropped duplicate timestamps in input DataFrame.")
 
-    # Create records
+    # Normalize timestamps: convert all to UTC-aware datetime
+    new_df['timestamp'] = new_df['timestamp'].apply(
+        lambda ts: (
+            datetime.fromtimestamp(ts, tz=timezone.utc)
+            if isinstance(ts, (int, float)) else
+            ts if is_aware(ts) else make_aware(ts)
+        )
+    )
+
+    # Convert new_df timestamps to Unix seconds for comparison
+    new_df['timestamp_unix'] = new_df['timestamp'].apply(lambda x: int(x.timestamp()))
+
+    # Get existing timestamps from DB and convert to Unix seconds
+    existing_timestamps = AssetOperatingModeMaster.objects.filter(mount_id=mount_id) \
+        .values_list('timestamp', flat=True)
+    existing_unix = set(int(ts.timestamp()) for ts in existing_timestamps)
+
+    logger.info(f"Fetched {len(existing_unix)} existing timestamps from DB.")
+
+    # Filter: only rows with unique Unix timestamps
+    new_df = new_df[~new_df['timestamp_unix'].isin(existing_unix)]
+    if new_df.empty:
+        logger.warning("All timestamps already exist in DB. No new records to insert.")
+        return 0
+
+    logger.info(f"{len(new_df)} new records to save after filtering existing timestamps.")
+
     records = []
     for _, row in new_df.iterrows():
         try:
-            record = {
-                'timestamp': timezone.make_aware(datetime.fromtimestamp(int(row['timestamp']))),
-                'mount_id': mount_id,
-                'asset_id': row.get('asset_id'),
-                'composite': row.get('composite'),
-                'operating_mode': row.get('operating_mode', None),
-                'cluster_id': str(row.get('cluster_id')),
-            }
+            record = AssetOperatingModeMaster(
+                timestamp=row['timestamp'],  # Already timezone-aware
+                mount_id=mount_id,
+                asset_id=row.get('asset_id'),
+                composite=row.get('composite'),
+                operating_mode=row.get('operating_mode'),
+                cluster_id=str(row.get('cluster_id'))
+            )
             records.append(record)
         except Exception as e:
             logger.warning(f"Skipping row due to error: {e}")
 
-    # If nothing to save
     if not records:
-        logger.warning("No valid records to save.")
+        logger.warning("No valid records to save after preprocessing.")
         return 0
 
-    # Save via serializer
-    serializer = AssetOperatingModeMasterSerializer(data=records, many=True)
-    if serializer.is_valid():
-        serializer.save()
-        logger.info(f"Saved {len(records)} records to AssetOperatingModeMaster")
+    try:
+        with transaction.atomic():
+            AssetOperatingModeMaster.objects.bulk_create(records, batch_size=1000)
+        logger.info(f"Successfully saved {len(records)} new records via bulk_create.")
         return len(records)
-    else:
-        logger.error(f"Serializer validation failed: {serializer.errors}")
-        raise ValidationError(serializer.errors)
+    except Exception as e:
+        logger.error(f"Error during bulk_create: {e}")
+        raise e
+
+
+
+
+
+
+
+
+
+
+
+
+
+

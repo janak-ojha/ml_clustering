@@ -825,3 +825,2623 @@ Quit the server with CONTROL-C.
 [WARNING] 2025-06-03 07:58:16,461 app.views 132 123518077217664 No data found with flag=True for mount_id: 3840
 [INFO] 2025-06-03 07:58:16,462 app.views 132 123518077217664 Testing model with data for mount_id: 3841
 [WARNING] 2025-06-03 07:58:16,493 app.views 132 123518077217664 No data found with flag=True for mount_id: 3841
+[INFO] 2025-06-03 12:31:35,453 django.utils.autoreload 59 123962304416640 Watching for file changes with StatReloader
+[INFO] 2025-06-03 12:31:35,453 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 12:31:36
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+length of raw query 287
+[INFO] 2025-06-03 12:32:19,080 app.utils 59 123961880868544 Parsed 287 records into DataFrame
+[INFO] 2025-06-03 12:32:19,080 app.utils Parsed 287 records into DataFrame
+[INFO] 2025-06-03 12:32:19,121 app.views 59 123961880868544 DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-03 12:32:19,121 app.views DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-03 12:32:19,267 app.views 59 123961880868544 Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-03 12:32:19,267 app.views Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-03 12:32:19,851 app.views 59 123961880868544 Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-03 12:32:19,851 app.views Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-03 12:32:19,854 app.views Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-03 12:32:19,854 app.views 59 123961880868544 Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-03 12:32:19,859 app.views Scaled features using MinMaxScaler
+[INFO] 2025-06-03 12:32:19,859 app.views 59 123961880868544 Scaled features using MinMaxScaler
+[INFO] 2025-06-03 12:32:19,880 app.views Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-03 12:32:19,880 app.views 59 123961880868544 Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-03 12:32:19,963 app.views Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-03 12:32:19,963 app.views 59 123961880868544 Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-03 12:32:22,485 app.views 59 123961880868544 Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-03 12:32:22,485 app.views Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-03 12:32:22,486 app.views 59 123961880868544 Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-03 12:32:22,486 app.views Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-03 12:32:22,544 django.server "GET /api/train/?mount_id=3839 HTTP/1.0" 200 122
+[INFO] 2025-06-03 12:32:22,544 django.server 59 123961880868544 "GET /api/train/?mount_id=3839 HTTP/1.0" 200 122
+[INFO] 2025-06-03 12:38:16,898 django.utils.autoreload 59 123849455205248 Watching for file changes with StatReloader
+[INFO] 2025-06-03 12:38:16,898 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 03, 2025 - 12:38:17
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+length of raw query 287
+[INFO] 2025-06-03 12:38:37,565 app.utils Parsed 287 records into DataFrame
+[INFO] 2025-06-03 12:38:37,565 app.utils 59 123849033119424 Parsed 287 records into DataFrame
+[INFO] 2025-06-03 12:38:37,579 app.views 59 123849033119424 DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-03 12:38:37,579 app.views DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-03 12:38:37,733 app.views 59 123849033119424 Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-03 12:38:37,733 app.views Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-03 12:38:38,284 app.views 59 123849033119424 Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-03 12:38:38,284 app.views Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-03 12:38:38,287 app.views Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-03 12:38:38,287 app.views 59 123849033119424 Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-03 12:38:38,292 app.views Scaled features using MinMaxScaler
+[INFO] 2025-06-03 12:38:38,292 app.views 59 123849033119424 Scaled features using MinMaxScaler
+[INFO] 2025-06-03 12:38:38,304 app.views 59 123849033119424 Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-03 12:38:38,304 app.views Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-03 12:38:38,350 app.views Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-03 12:38:38,350 app.views 59 123849033119424 Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-03 12:38:40,651 app.views Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-03 12:38:40,651 app.views 59 123849033119424 Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-03 12:38:40,652 app.views Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-03 12:38:40,652 app.views 59 123849033119424 Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-03 12:38:40,718 django.server 59 123849033119424 "GET /api/train/?mount_id=3839 HTTP/1.0" 200 122
+[INFO] 2025-06-03 12:38:40,718 django.server "GET /api/train/?mount_id=3839 HTTP/1.0" 200 122
+length of raw query 287
+[INFO] 2025-06-03 12:42:16,519 app.utils Parsed 287 records into DataFrame
+[INFO] 2025-06-03 12:42:16,519 app.utils 59 123849033119424 Parsed 287 records into DataFrame
+[INFO] 2025-06-03 12:42:16,529 app.views 59 123849033119424 DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-03 12:42:16,529 app.views DataFrame created with                   timestamp  ...                  asset_id
+0 2024-12-27 01:18:00+00:00  ...  676a5915ab10102330025798
+1 2024-12-27 13:18:00+00:00  ...  676a5915ab10102330025798
+2 2024-12-28 01:18:00+00:00  ...  676a5915ab10102330025798
+3 2024-12-28 13:18:00+00:00  ...  676a5915ab10102330025798
+4 2024-12-29 01:18:00+00:00  ...  676a5915ab10102330025798
+
+[5 rows x 8 columns] records
+[INFO] 2025-06-03 12:42:16,637 app.views 59 123849033119424 Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-03 12:42:16,637 app.views Split data into time windows, resulting shape: (1148, 8)
+[INFO] 2025-06-03 12:42:16,967 app.views Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-03 12:42:16,967 app.views 59 123849033119424 Extracted PSD features, resulting shape: (1148, 65)
+[INFO] 2025-06-03 12:42:16,969 app.views Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-03 12:42:16,969 app.views 59 123849033119424 Dropped NaNs from PSD features, clean shape: (1148, 65)
+[INFO] 2025-06-03 12:42:16,972 app.views Scaled features using MinMaxScaler
+[INFO] 2025-06-03 12:42:16,972 app.views 59 123849033119424 Scaled features using MinMaxScaler
+[INFO] 2025-06-03 12:42:16,976 app.views 59 123849033119424 Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-03 12:42:16,976 app.views Selected 43 PCA components with cumulative variance: 0.9895
+[INFO] 2025-06-03 12:42:17,001 app.views Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-03 12:42:17,001 app.views 59 123849033119424 Applied PCA, reduced shape: (1148, 43)
+[INFO] 2025-06-03 12:42:19,133 app.views Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-03 12:42:19,133 app.views 59 123849033119424 Final GMM selected with 3 clusters and covariance type 'full'
+[INFO] 2025-06-03 12:42:19,134 app.views Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-03 12:42:19,134 app.views 59 123849033119424 Saved trained model to /app/saved_models/gmm_model_mount_3839.pickle
+[INFO] 2025-06-03 12:42:19,184 django.server "GET /api/train/?mount_id=3839 HTTP/1.0" 200 122
+[INFO] 2025-06-03 12:42:19,184 django.server 59 123849033119424 "GET /api/train/?mount_id=3839 HTTP/1.0" 200 122
+[INFO] 2025-06-04 05:07:06,007 django.utils.autoreload 59 136963018701696 Watching for file changes with StatReloader
+[INFO] 2025-06-04 05:07:06,007 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 05:07:06
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 09:17:50,566 django.utils.autoreload 59 136963018701696 /app/app/models.py changed, reloading.
+[INFO] 2025-06-04 09:17:50,566 django.utils.autoreload /app/app/models.py changed, reloading.
+[INFO] 2025-06-04 09:17:51,784 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 09:17:51,784 django.utils.autoreload 209 124353513532288 Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 76, in raise_last_exception
+    raise _exception[1]
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/__init__.py", line 357, in execute
+    autoreload.check_errors(django.setup)()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python3.7/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/usr/local/lib/python3.7/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/models.py", line 54, in <module>
+    class AccelerationStatTimeOptimized(models.Model):
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 320, in __new__
+    new_class._prepare()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 333, in _prepare
+    opts._prepare(cls)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/options.py", line 254, in _prepare
+    model.add_to_class('id', auto)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 326, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 2395, in contribute_to_class
+    % cls._meta.label
+AssertionError: Model app.AccelerationStatTimeOptimized can't have more than one auto-generated field.
+
+[INFO] 2025-06-04 10:59:27,248 django.utils.autoreload 59 124483528219520 Watching for file changes with StatReloader
+[INFO] 2025-06-04 10:59:27,248 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 10:59:28
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:01:37,592 app.views 59 124483100735168 Testing model with data for mount_id: 3839
+[INFO] 2025-06-04 11:01:37,592 app.views Testing model with data for mount_id: 3839
+[WARNING] 2025-06-04 11:01:37,827 app.views 59 124483100735168 No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-04 11:01:37,827 app.views No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-04 11:01:37,829 django.request Not Found: /api/test/
+[WARNING] 2025-06-04 11:01:37,829 django.request 59 124483100735168 Not Found: /api/test/
+[WARNING] 2025-06-04 11:01:37,829 django.server 59 124483100735168 "GET /api/test/?mount_id=3839 HTTP/1.0" 404 50
+[WARNING] 2025-06-04 11:01:37,829 django.server "GET /api/test/?mount_id=3839 HTTP/1.0" 404 50
+[INFO] 2025-06-04 11:49:04,263 django.utils.autoreload 59 124483528219520 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:04,263 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:05,157 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:49:05,157 django.utils.autoreload 74 131302948416384 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:49:06
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:49:27,602 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:27,602 django.utils.autoreload 74 131302948416384 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:28,182 django.utils.autoreload 85 126626527869824 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:49:28,182 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 5
+    from app.utils import extract_psd_featuresv, split_and_add_timestamps,parse_raw_queryset_to_df,perform_gmm_clustering,predict_gmm_clusters,assign_cluster_labels,save_operating_mode_data,add_rms_column,assign_cluster_labels_rms,as
+                                                                                                                                                                                                                                        ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 11:49:34,331 django.utils.autoreload 85 126626527869824 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:34,331 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:34,794 django.utils.autoreload 87 125133937437568 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:49:34,794 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:49:35
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:49:44,615 django.utils.autoreload 87 125133937437568 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:44,615 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:45,154 django.utils.autoreload 98 129711552215936 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:49:45,154 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 144
+    result = (new_df, score_col='v_coeff_mean', cluster_col='cluster_id')
+                               ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 11:49:50,275 django.utils.autoreload 98 129711552215936 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:50,275 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:50,790 django.utils.autoreload 100 124934974098304 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:49:50,790 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 5
+    from app.utils import extract_psd_featuresv, split_and_add_timestamps,parse_raw_queryset_to_df,perform_gmm_clustering,predict_gmm_clusters,assign_cluster_labels,save_operating_mode_data,add_rms_column,as
+                                                                                                                                                                                                              ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 11:49:54,906 django.utils.autoreload 100 124934974098304 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:54,906 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:49:55,385 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:49:55,385 django.utils.autoreload 102 128385903627136 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:49:56
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:50:02,217 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:02,217 django.utils.autoreload 102 128385903627136 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:02,865 django.utils.autoreload 113 138315034397568 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:50:02,865 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:50:03
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:50:20,967 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:20,967 django.utils.autoreload 113 138315034397568 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:21,570 django.utils.autoreload 124 128560175225728 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:50:21,570 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:50:22
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:50:23,369 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:23,369 django.utils.autoreload 124 128560175225728 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:23,978 django.utils.autoreload 135 125131013155712 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:50:23,978 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:50:24
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:50:25,687 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:25,687 django.utils.autoreload 135 125131013155712 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:26,301 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:50:26,301 django.utils.autoreload 146 131770851994496 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:50:27
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:50:30,095 django.utils.autoreload 146 131770851994496 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:30,095 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:30,653 django.utils.autoreload 157 130107522366336 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:50:30,653 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:50:31
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:50:32,406 django.utils.autoreload 157 130107522366336 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:32,406 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:32,961 django.utils.autoreload 168 133211828988800 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:50:32,961 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:50:33
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:50:51,115 django.utils.autoreload 168 133211828988800 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:51,115 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:51,736 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:50:51,736 django.utils.autoreload 179 124402268035968 Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 113
+    try:
+      ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 11:50:57,891 django.utils.autoreload 179 124402268035968 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:57,891 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:50:58,403 django.utils.autoreload 181 136880397151104 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:50:58,403 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 111
+    df_rms =
+           ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 11:51:03,541 django.utils.autoreload 181 136880397151104 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:51:03,541 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:51:04,043 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:51:04,043 django.utils.autoreload 183 132775579929472 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:51:04
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:51:16,939 django.utils.autoreload 183 132775579929472 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:51:16,939 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 11:51:17,489 django.utils.autoreload 194 140637910301568 Watching for file changes with StatReloader
+[INFO] 2025-06-04 11:51:17,489 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 11:51:18
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 11:51:24,300 app.views 194 140637523408576 Testing model with data for mount_id: 3839
+[INFO] 2025-06-04 11:51:24,300 app.views Testing model with data for mount_id: 3839
+[WARNING] 2025-06-04 11:51:24,458 app.views No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-04 11:51:24,458 app.views 194 140637523408576 No data found with flag=True for mount_id: 3839
+[WARNING] 2025-06-04 11:51:24,460 django.request Not Found: /api/test/
+[WARNING] 2025-06-04 11:51:24,460 django.request 194 140637523408576 Not Found: /api/test/
+[WARNING] 2025-06-04 11:51:24,461 django.server 194 140637523408576 "GET /api/test/?mount_id=3839 HTTP/1.0" 404 50
+[WARNING] 2025-06-04 11:51:24,461 django.server "GET /api/test/?mount_id=3839 HTTP/1.0" 404 50
+[INFO] 2025-06-04 12:55:16,673 django.utils.autoreload 194 140637910301568 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 12:55:16,673 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 12:55:17,554 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 12:55:17,554 django.utils.autoreload 209 127937351166848 Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 153
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+
+[INFO] 2025-06-04 12:55:26,746 django.utils.autoreload 209 127937351166848 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 12:55:26,746 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 12:55:27,203 django.utils.autoreload 211 129978787769216 Watching for file changes with StatReloader
+[INFO] 2025-06-04 12:55:27,203 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 152
+    def predict
+               ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 13:04:14,369 django.utils.autoreload 211 129978787769216 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:04:14,369 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:04:14,888 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:04:14,888 django.utils.autoreload 213 137454716029824 Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 152
+    def predict_rms
+                  ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 13:05:05,639 django.utils.autoreload 213 137454716029824 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:05:05,639 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:05:06,087 django.utils.autoreload 215 135259925609344 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:05:06,087 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 152
+    def predict_rms()
+                    ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 13:10:09,092 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:10:09,092 django.utils.autoreload 215 135259925609344 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:10:09,553 django.utils.autoreload 217 138322497325952 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:10:09,553 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 152
+    def predict_rms(request)
+                           ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 13:10:30,856 django.utils.autoreload 217 138322497325952 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:10:30,856 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:10:31,312 django.utils.autoreload 219 129640191454080 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:10:31,312 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:10:32
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:10:33,239 django.utils.autoreload 219 129640191454080 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:10:33,239 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:10:33,831 django.utils.autoreload 230 138868579273600 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:10:33,831 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:10:34
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:10:57,055 django.utils.autoreload 230 138868579273600 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:10:57,055 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:10:57,633 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:10:57,633 django.utils.autoreload 241 134497688943488 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:10:58
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:11:21,806 django.utils.autoreload 241 134497688943488 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:11:21,806 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:11:22,367 django.utils.autoreload 252 136414718061440 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:11:22,367 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:11:23
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:11:31,266 django.utils.autoreload 252 136414718061440 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:11:31,266 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:11:31,808 django.utils.autoreload 263 130617634818944 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:11:31,808 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:11:32
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:12:01,116 django.utils.autoreload 263 130617634818944 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:12:01,116 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:12:01,685 django.utils.autoreload 274 129687461690240 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:12:01,685 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:12:02
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:12:07,570 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:12:07,570 django.utils.autoreload 274 129687461690240 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:12:08,172 django.utils.autoreload 285 128772359076736 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:12:08,172 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 160
+    ).values(, 'raw_data')
+             ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 13:12:10,247 django.utils.autoreload 285 128772359076736 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:12:10,247 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:12:10,746 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:12:10,746 django.utils.autoreload 287 135592389692288 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:12:11
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:12:12,466 django.utils.autoreload 287 135592389692288 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:12:12,466 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:12:13,078 django.utils.autoreload 298 139859725085568 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:12:13,078 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:12:13
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:13:17,098 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:13:17,098 django.utils.autoreload 298 139859725085568 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:13:17,744 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:13:17,744 django.utils.autoreload 309 140287510637440 Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 162
+    df = pd.DataFrame(list(raw_queryset))
+    ^
+IndentationError: unexpected indent
+
+[INFO] 2025-06-04 13:13:22,885 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:13:22,885 django.utils.autoreload 309 140287510637440 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:13:23,347 django.utils.autoreload 311 131840436452224 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:13:23,347 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:13:24
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:14:13,086 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:13,086 django.utils.autoreload 311 131840436452224 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:13,686 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:14:13,686 django.utils.autoreload 322 137644292053888 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:14:14
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:14:16,472 django.utils.autoreload 322 137644292053888 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:16,472 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:17,035 django.utils.autoreload 333 131465172732800 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:14:17,035 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:14:17
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:14:38,186 django.utils.autoreload 333 131465172732800 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:38,186 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:38,735 django.utils.autoreload 344 128795738491776 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:14:38,735 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:14:39
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:14:40,474 django.utils.autoreload 344 128795738491776 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:40,474 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:41,138 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:14:41,138 django.utils.autoreload 355 136037034339200 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:14:42
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:14:43,948 django.utils.autoreload 355 136037034339200 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:43,948 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:44,520 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:14:44,520 django.utils.autoreload 366 134488498637696 Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 165
+    rms_df=
+           ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 13:14:46,614 django.utils.autoreload 366 134488498637696 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:46,614 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:47,125 django.utils.autoreload 368 130070810942336 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:14:47,125 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:14:48
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:14:48,924 django.utils.autoreload 368 130070810942336 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:48,924 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:49,567 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:14:49,567 django.utils.autoreload 379 130441000975232 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:14:50
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:14:51,306 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:51,306 django.utils.autoreload 379 130441000975232 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:51,870 django.utils.autoreload 390 125462252129152 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:14:51,870 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 165
+    rms_df=
+           ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 13:14:58,018 django.utils.autoreload 390 125462252129152 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:58,018 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:14:58,496 django.utils.autoreload 392 135228825762688 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:14:58,496 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 165
+    rms_df=
+           ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 13:15:06,669 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:06,669 django.utils.autoreload 392 135228825762688 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:07,197 django.utils.autoreload 394 126864276921216 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:15:07,197 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:15:08
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:15:08,962 django.utils.autoreload 394 126864276921216 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:08,962 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:09,583 django.utils.autoreload 405 124219600968576 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:15:09,583 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:15:10
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:15:17,409 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:17,409 django.utils.autoreload 405 124219600968576 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:18,058 django.utils.autoreload 416 137250501536640 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:15:18,058 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 164
+    rms_df= add_rms_column(df)
+                             ^
+IndentationError: unindent does not match any outer indentation level
+
+[INFO] 2025-06-04 13:15:20,143 django.utils.autoreload 416 137250501536640 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:20,143 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:20,635 django.utils.autoreload 418 127691663424384 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:15:20,635 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:15:21
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:15:22,334 django.utils.autoreload 418 127691663424384 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:22,334 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:22,899 django.utils.autoreload 429 133334861581184 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:15:22,899 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:15:23
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:15:25,617 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:25,617 django.utils.autoreload 429 133334861581184 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:26,192 django.utils.autoreload 440 128873869499264 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:15:26,192 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:15:26
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:15:31,955 django.utils.autoreload 440 128873869499264 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:31,955 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:32,533 django.utils.autoreload 451 140014852610944 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:15:32,533 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:15:33
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:15:56,795 django.utils.autoreload 451 140014852610944 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:56,795 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:15:57,392 django.utils.autoreload 462 131973852867456 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:15:57,392 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:15:58
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:16:10,360 django.utils.autoreload 462 131973852867456 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:10,360 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:10,902 django.utils.autoreload 473 138179339627392 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:16:10,902 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:16:11
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:16:19,741 django.utils.autoreload 473 138179339627392 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:19,741 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:20,335 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:16:20,335 django.utils.autoreload 484 130609139968896 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:16:21
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:16:34,352 django.utils.autoreload 484 130609139968896 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:34,352 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:34,928 django.utils.autoreload 495 127391645297536 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:16:34,928 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:16:35
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:16:41,750 django.utils.autoreload 495 127391645297536 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:41,750 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:42,376 django.utils.autoreload 506 140537236839296 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:16:42,376 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:16:43
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:16:44,071 django.utils.autoreload 506 140537236839296 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:44,071 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:16:44,613 django.utils.autoreload 517 134531680123776 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:16:44,613 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:16:45
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:17:14,972 django.utils.autoreload 517 134531680123776 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:14,972 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:15,586 django.utils.autoreload 531 137090929482624 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:17:15,586 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:17:16
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:17:18,378 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:18,378 django.utils.autoreload 531 137090929482624 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:18,920 django.utils.autoreload 542 139933735615360 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:17:18,920 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:17:19
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:17:30,804 django.utils.autoreload 542 139933735615360 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:30,804 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:31,349 django.utils.autoreload 553 140196735871872 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:17:31,349 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:17:32
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:17:50,432 django.utils.autoreload 553 140196735871872 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:50,432 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:51,039 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:17:51,039 django.utils.autoreload 564 124225772923776 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:17:51
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:17:55,856 django.utils.autoreload 564 124225772923776 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:55,856 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:56,459 django.utils.autoreload 575 123426265631616 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:17:56,459 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:17:57
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:17:59,191 django.utils.autoreload 575 123426265631616 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:59,191 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:17:59,735 django.utils.autoreload 586 135038156446592 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:17:59,735 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:18:00
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:18:41,158 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:18:41,158 django.utils.autoreload 586 135038156446592 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:18:41,783 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:18:41,783 django.utils.autoreload 597 131897303239552 Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 166
+    raw_queryset = .objects.filter(
+                   ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-04 13:18:48,963 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:18:48,963 django.utils.autoreload 597 131897303239552 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:18:49,429 django.utils.autoreload 599 138422452906880 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:18:49,429 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:18:50
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:18:56,300 django.utils.autoreload 599 138422452906880 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:18:56,300 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:18:56,855 django.utils.autoreload 610 124364713360256 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:18:56,855 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 6
+    from .models import TestRawDataMaster,RawDataMaster,
+                       ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+
+[INFO] 2025-06-04 13:18:59,967 django.utils.autoreload 610 124364713360256 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:18:59,967 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:19:00,517 django.utils.autoreload 612 125906732358528 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:19:00,517 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:19:01
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:19:02,251 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:19:02,251 django.utils.autoreload 612 125906732358528 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:19:02,914 django.utils.autoreload 623 136427475753856 Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:19:02,914 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:19:03
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:19:27,130 django.utils.autoreload 623 136427475753856 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:19:27,130 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:19:27,764 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:19:27,764 django.utils.autoreload 634 123977481800576 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 04, 2025 - 13:19:28
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-04 13:19:33,549 django.utils.autoreload 634 123977481800576 /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:19:33,549 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-04 13:19:34,187 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-04 13:19:34,187 django.utils.autoreload 645 137598909827968 Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data
+  File "/app/app/views.py", line 171
+    df_combined =
+                 ^
+SyntaxError: invalid syntax
+
+[INFO] 2025-06-20 11:20:23,564 django.utils.autoreload 59 125696510151552 Watching for file changes with StatReloader
+[INFO] 2025-06-20 11:20:23,564 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 11:20:24
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 11:22:08,757 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-20 11:22:08,757 django.utils.autoreload 59 125696510151552 /app/app/utils.py changed, reloading.
+[INFO] 2025-06-20 11:22:09,449 django.utils.autoreload 70 134395376270208 Watching for file changes with StatReloader
+[INFO] 2025-06-20 11:22:09,449 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 11:22:10
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 11:24:24,349 django.utils.autoreload 70 134395376270208 /app/app/urls.py changed, reloading.
+[INFO] 2025-06-20 11:24:24,349 django.utils.autoreload /app/app/urls.py changed, reloading.
+[INFO] 2025-06-20 11:24:25,024 django.utils.autoreload 81 131698667920256 Watching for file changes with StatReloader
+[INFO] 2025-06-20 11:24:25,024 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 11:24:25
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 11:24:26,871 django.utils.autoreload /app/app/urls.py changed, reloading.
+[INFO] 2025-06-20 11:24:26,871 django.utils.autoreload 81 131698667920256 /app/app/urls.py changed, reloading.
+[INFO] 2025-06-20 11:24:27,538 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-20 11:24:27,538 django.utils.autoreload 92 138016976948096 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 11:24:28
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 11:25:06,931 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-20 11:25:06,931 django.utils.autoreload 59 128251193465728 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 11:25:07
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 11:58:01,747 django.utils.autoreload 59 126395834284928 Watching for file changes with StatReloader
+[INFO] 2025-06-20 11:58:01,747 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 11:58:02
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 12:00:27,689 django.utils.autoreload 59 126292294925184 Watching for file changes with StatReloader
+[INFO] 2025-06-20 12:00:27,689 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 12:00:28
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 12:01:26,357 app.views Testing model with data for mount_id: 3840
+[INFO] 2025-06-20 12:01:26,357 app.views 59 126291911112384 Testing model with data for mount_id: 3840
+[INFO] 2025-06-20 12:01:27,820 app.utils Parsed 287 records into DataFrame
+[INFO] 2025-06-20 12:01:27,820 app.utils 59 126291911112384 Parsed 287 records into DataFrame
+[INFO] 2025-06-20 12:01:27,821 app.views 59 126291911112384 DataFrame created with 287 records
+[INFO] 2025-06-20 12:01:27,821 app.views DataFrame created with 287 records
+[INFO] 2025-06-20 12:01:27,953 app.views 59 126291911112384 Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-20 12:01:27,953 app.views Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-20 12:01:28,343 app.views Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-20 12:01:28,343 app.views 59 126291911112384 Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-20 12:01:28,368 app.utils 59 126291911112384 Predicted clusters for 1148 samples
+[INFO] 2025-06-20 12:01:28,368 app.utils Predicted clusters for 1148 samples
+[INFO] 2025-06-20 12:01:28,450 app.utils 59 126291911112384 Updated flag to True for 287 timestamps
+[INFO] 2025-06-20 12:01:28,450 app.utils Updated flag to True for 287 timestamps
+[INFO] 2025-06-20 12:01:28,458 app.views sassshape, shape: (1148, 72)
+[INFO] 2025-06-20 12:01:28,458 app.views 59 126291911112384 sassshape, shape: (1148, 72)
+[INFO] 2025-06-20 12:01:28,459 app.views 59 126291911112384 Status labels assigned based on test_score
+[INFO] 2025-06-20 12:01:28,459 app.views Status labels assigned based on test_score
+API RUN SUCCESSFULLY-------------------
+[INFO] 2025-06-20 12:01:28,462 app.utils 59 126291911112384 Dropped duplicate timestamps in input DataFrame.
+[INFO] 2025-06-20 12:01:28,462 app.utils Dropped duplicate timestamps in input DataFrame.
+[INFO] 2025-06-20 12:01:28,500 app.utils 59 126291911112384 Fetched 0 existing timestamps from DB.
+[INFO] 2025-06-20 12:01:28,500 app.utils Fetched 0 existing timestamps from DB.
+[INFO] 2025-06-20 12:01:28,504 app.utils 287 new records to save after filtering existing timestamps.
+[INFO] 2025-06-20 12:01:28,504 app.utils 59 126291911112384 287 new records to save after filtering existing timestamps.
+[INFO] 2025-06-20 12:01:28,721 app.utils Successfully saved 287 new records via bulk_create.
+[INFO] 2025-06-20 12:01:28,721 app.utils 59 126291911112384 Successfully saved 287 new records via bulk_create.
+[INFO] 2025-06-20 12:01:28,794 django.server "GET /api/test/?mount_id=3840 HTTP/1.1" 200 64
+[INFO] 2025-06-20 12:01:28,794 django.server 59 126291911112384 "GET /api/test/?mount_id=3840 HTTP/1.1" 200 64
+[INFO] 2025-06-20 12:01:47,793 app.views Raw data shape: (287, 3)
+[INFO] 2025-06-20 12:01:47,793 app.views 59 126291911112384 Raw data shape: (287, 3)
+[INFO] 2025-06-20 12:01:48,902 app.views 59 126291911112384 RMS computed for raw data, shape: (287, 5)
+[INFO] 2025-06-20 12:01:48,902 app.views RMS computed for raw data, shape: (287, 5)
+[INFO] 2025-06-20 12:01:48,998 app.views Operating mode data shape: (287, 2)
+[INFO] 2025-06-20 12:01:48,998 app.views 59 126291911112384 Operating mode data shape: (287, 2)
+[INFO] 2025-06-20 12:01:49,004 app.views Combined data for cluster label assignment
+[INFO] 2025-06-20 12:01:49,004 app.views 59 126291911112384 Combined data for cluster label assignment
+Average RMS of each cluster:
+ cluster_id
+1    0.119671
+0    0.291556
+Name: rms, dtype: float64
+[INFO] 2025-06-20 12:01:49,010 app.views Cluster RMS averages: {'1': 0.11967105263157893, '0': 0.29155555555555557}
+[INFO] 2025-06-20 12:01:49,010 app.views 59 126291911112384 Cluster RMS averages: {'1': 0.11967105263157893, '0': 0.29155555555555557}
+[INFO] 2025-06-20 12:01:49,647 app.views 59 126291911112384 RMS values shape: (7766, 5)
+[INFO] 2025-06-20 12:01:49,647 app.views RMS values shape: (7766, 5)
+[INFO] 2025-06-20 12:01:51,275 app.views RMS mode assignment completed
+[INFO] 2025-06-20 12:01:51,275 app.views 59 126291911112384 RMS mode assignment completed
+                    timestamp mount_id  ...  operating_mode cluster_id
+200 2024-12-31 22:48:43+00:00     3840  ...        off mode          1
+201 2024-12-31 23:19:19+00:00     3840  ...        off mode          1
+202 2024-12-31 23:49:55+00:00     3840  ...        off mode          1
+203 2025-01-01 00:20:31+00:00     3840  ...        off mode          1
+204 2025-01-01 00:51:07+00:00     3840  ...        off mode          1
+205 2025-01-01 00:51:08+00:00     3840  ...        off mode          1
+206 2025-01-01 01:21:41+00:00     3840  ...        off mode          1
+207 2025-01-01 01:21:42+00:00     3840  ...        off mode          1
+208 2025-01-01 01:52:16+00:00     3840  ...        off mode          1
+209 2025-01-01 02:22:50+00:00     3840  ...        off mode          1
+210 2025-01-01 02:53:25+00:00     3840  ...        off mode          1
+211 2025-01-01 03:23:59+00:00     3840  ...        off mode          1
+212 2025-01-01 03:24:00+00:00     3840  ...        off mode          1
+213 2025-01-01 04:25:08+00:00     3840  ...        off mode          1
+214 2025-01-01 04:55:43+00:00     3840  ...        off mode          1
+215 2025-01-01 05:26:19+00:00     3840  ...        off mode          1
+216 2025-01-01 05:56:55+00:00     3840  ...        off mode          1
+217 2025-01-01 05:56:56+00:00     3840  ...        off mode          1
+218 2025-01-01 06:58:07+00:00     3840  ...        off mode          1
+219 2025-01-01 07:28:43+00:00     3840  ...        off mode          1
+220 2025-01-01 07:59:20+00:00     3840  ...        off mode          1
+221 2025-01-01 08:29:57+00:00     3840  ...        off mode          1
+222 2025-01-01 08:30:00+00:00     3840  ...        off mode          1
+223 2025-01-01 09:00:34+00:00     3840  ...        off mode          1
+224 2025-01-01 09:31:11+00:00     3840  ...        off mode          1
+225 2025-01-01 09:31:12+00:00     3840  ...        off mode          1
+226 2025-01-01 11:03:02+00:00     3840  ...        off mode          1
+227 2025-01-01 11:33:40+00:00     3840  ...        off mode          1
+228 2025-01-01 12:04:17+00:00     3840  ...        off mode          1
+229 2025-01-01 12:04:19+00:00     3840  ...        off mode          1
+230 2025-01-01 12:34:54+00:00     3840  ...        off mode          1
+231 2025-01-01 13:05:31+00:00     3840  ...        off mode          1
+232 2025-01-01 13:36:08+00:00     3840  ...        off mode          1
+233 2025-01-01 14:06:45+00:00     3840  ...        off mode          1
+234 2025-01-01 14:37:22+00:00     3840  ...        off mode          1
+235 2025-01-01 15:07:58+00:00     3840  ...        off mode          1
+236 2025-01-01 15:07:59+00:00     3840  ...        off mode          1
+237 2025-01-01 15:38:35+00:00     3840  ...        off mode          1
+238 2025-01-01 16:39:48+00:00     3840  ...        off mode          1
+239 2025-01-01 16:39:49+00:00     3840  ...        off mode          1
+240 2025-01-01 17:10:24+00:00     3840  ...        off mode          1
+241 2025-01-01 17:10:25+00:00     3840  ...        off mode          1
+242 2025-01-01 17:41:01+00:00     3840  ...        off mode          1
+243 2025-01-01 18:11:38+00:00     3840  ...        off mode          1
+244 2025-01-01 18:42:14+00:00     3840  ...        off mode          1
+245 2025-01-01 19:12:50+00:00     3840  ...        off mode          1
+246 2025-01-01 19:43:27+00:00     3840  ...        off mode          1
+247 2025-01-01 20:14:03+00:00     3840  ...        off mode          1
+248 2025-01-01 20:44:38+00:00     3840  ...        off mode          1
+249 2025-01-01 20:44:39+00:00     3840  ...        off mode          1
+
+[50 rows x 7 columns]
+[INFO] 2025-06-20 12:01:51,310 app.utils Dropped duplicate timestamps in input DataFrame.
+[INFO] 2025-06-20 12:01:51,310 app.utils 59 126291911112384 Dropped duplicate timestamps in input DataFrame.
+[INFO] 2025-06-20 12:01:51,430 app.utils Fetched 287 existing timestamps from DB.
+[INFO] 2025-06-20 12:01:51,430 app.utils 59 126291911112384 Fetched 287 existing timestamps from DB.
+[INFO] 2025-06-20 12:01:51,432 app.utils 7766 new records to save after filtering existing timestamps.
+[INFO] 2025-06-20 12:01:51,432 app.utils 59 126291911112384 7766 new records to save after filtering existing timestamps.
+[INFO] 2025-06-20 12:01:53,560 app.utils Successfully saved 7766 new records via bulk_create.
+[INFO] 2025-06-20 12:01:53,560 app.utils 59 126291911112384 Successfully saved 7766 new records via bulk_create.
+[INFO] 2025-06-20 12:01:53,608 django.server 59 126291911112384 "GET /api/predict_mode_rms/?mount_id=3840 HTTP/1.1" 200 65
+[INFO] 2025-06-20 12:01:53,608 django.server "GET /api/predict_mode_rms/?mount_id=3840 HTTP/1.1" 200 65
+[INFO] 2025-06-20 12:05:00,213 django.utils.autoreload 59 126292294925184 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-20 12:05:00,213 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-20 12:05:01,334 django.utils.autoreload 78 136457839496064 Watching for file changes with StatReloader
+[INFO] 2025-06-20 12:05:01,334 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 12:05:02
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 12:05:06,643 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-20 12:05:06,643 django.utils.autoreload 78 136457839496064 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-20 12:05:07,341 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-20 12:05:07,341 django.utils.autoreload 89 131351588301696 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 12:05:08
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 12:05:14,330 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-20 12:05:14,330 django.utils.autoreload 89 131351588301696 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-20 12:05:14,997 django.utils.autoreload 100 123866995600256 Watching for file changes with StatReloader
+[INFO] 2025-06-20 12:05:14,997 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 12:05:15
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 12:06:46,868 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-20 12:06:46,868 django.utils.autoreload 100 123866995600256 /app/app/views.py changed, reloading.
+[INFO] 2025-06-20 12:06:47,786 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-20 12:06:47,786 django.utils.autoreload 111 136673456638848 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 12:06:48
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 12:09:49,073 django.utils.autoreload 111 136673456638848 /app/app/views.py changed, reloading.
+[INFO] 2025-06-20 12:09:49,073 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-20 12:09:50,189 django.utils.autoreload 122 137792515820416 Watching for file changes with StatReloader
+[INFO] 2025-06-20 12:09:50,189 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 12:09:51
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 12:10:05,746 django.utils.autoreload 122 137792515820416 /app/app/views.py changed, reloading.
+[INFO] 2025-06-20 12:10:05,746 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-20 12:10:06,452 django.utils.autoreload 133 127293585206144 Watching for file changes with StatReloader
+[INFO] 2025-06-20 12:10:06,452 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 12:10:07
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-20 12:10:10,413 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-20 12:10:10,413 django.utils.autoreload 133 127293585206144 /app/app/views.py changed, reloading.
+[INFO] 2025-06-20 12:10:11,100 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-20 12:10:11,100 django.utils.autoreload 144 138346669652864 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 12:10:12
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 05:52:17,655 django.utils.autoreload 144 138346669652864 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 05:52:17,655 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 05:52:18,275 django.utils.autoreload 164 130059025152896 Watching for file changes with StatReloader
+[INFO] 2025-06-21 05:52:18,275 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 05:52:19
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 07:03:46,875 django.utils.autoreload 164 130059025152896 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:03:46,875 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:03:47,512 django.utils.autoreload 302 125702518729600 Watching for file changes with StatReloader
+[INFO] 2025-06-21 07:03:47,512 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 07:03:48
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 07:03:51,370 django.utils.autoreload 302 125702518729600 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:03:51,370 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:03:52,025 django.utils.autoreload 313 139927795116928 Watching for file changes with StatReloader
+[INFO] 2025-06-21 07:03:52,025 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 07:03:52
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 07:03:56,899 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:03:56,899 django.utils.autoreload 313 139927795116928 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:03:57,540 django.utils.autoreload 324 140008447064960 Watching for file changes with StatReloader
+[INFO] 2025-06-21 07:03:57,540 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 07:03:58
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 07:06:05,988 django.utils.autoreload 59 133155358395264 Watching for file changes with StatReloader
+[INFO] 2025-06-21 07:06:05,988 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 07:06:06
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 07:07:00,972 django.utils.autoreload 59 133155358395264 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:07:00,972 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:07:01,589 django.utils.autoreload 73 132259290405760 Watching for file changes with StatReloader
+[INFO] 2025-06-21 07:07:01,589 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 07:07:02
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 07:07:09,594 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:07:09,594 django.utils.autoreload 73 132259290405760 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-21 07:07:09,984 django.utils.autoreload 93 125493305469824 Watching for file changes with StatReloader
+[INFO] 2025-06-21 07:07:09,984 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 07:07:10
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 07:09:58,417 django.utils.autoreload 59 135899061349248 Watching for file changes with StatReloader
+[INFO] 2025-06-21 07:09:58,417 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 07:09:59
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 07:10:02,787 app.views 72 138712192531328 Testing model with data for mount_id: 3839
+[INFO] 2025-06-21 07:10:03,896 app.utils 72 138712192531328 Parsed 287 records into DataFrame
+[INFO] 2025-06-21 07:10:03,896 app.views 72 138712192531328 DataFrame created with 287 records
+[INFO] 2025-06-21 07:10:04,006 app.views 72 138712192531328 Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-21 07:10:04,293 app.views 72 138712192531328 Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-21 07:10:04,320 app.utils 72 138712192531328 Predicted clusters for 1148 samples
+[INFO] 2025-06-21 07:10:04,373 app.utils 72 138712192531328 Updated flag to True for 287 timestamps
+[INFO] 2025-06-21 07:10:04,377 app.views 72 138712192531328 sassshape, shape: (1148, 72)
+[INFO] 2025-06-21 07:10:04,377 app.views 72 138712192531328 Status labels assigned based on test_score
+[INFO] 2025-06-21 07:10:04,380 app.utils 72 138712192531328 Dropped duplicate timestamps in input DataFrame.
+[INFO] 2025-06-21 07:10:04,575 app.utils 72 138712192531328 Fetched 8787 existing timestamps from DB.
+[WARNING] 2025-06-21 07:10:04,577 app.utils 72 138712192531328 All timestamps already exist in DB. No new records to insert.
+[INFO] 2025-06-21 07:10:04,614 app.views 72 138712192531328 Testing model with data for mount_id: 3840
+[INFO] 2025-06-21 07:10:05,526 app.utils 72 138712192531328 Parsed 287 records into DataFrame
+[INFO] 2025-06-21 07:10:05,526 app.views 72 138712192531328 DataFrame created with 287 records
+[INFO] 2025-06-21 07:10:05,654 app.views 72 138712192531328 Split data into windows, shape: (1148, 8)
+[INFO] 2025-06-21 07:10:05,926 app.views 72 138712192531328 Extracted PSD features and combined data, shape: (1148, 69)
+[INFO] 2025-06-21 07:10:05,932 app.utils 72 138712192531328 Predicted clusters for 1148 samples
+[INFO] 2025-06-21 07:10:05,978 app.utils 72 138712192531328 Updated flag to True for 287 timestamps
+[INFO] 2025-06-21 07:10:05,981 app.views 72 138712192531328 sassshape, shape: (1148, 72)
+[INFO] 2025-06-21 07:10:05,981 app.views 72 138712192531328 Status labels assigned based on test_score
+[INFO] 2025-06-21 07:10:05,984 app.utils 72 138712192531328 Dropped duplicate timestamps in input DataFrame.
+[INFO] 2025-06-21 07:10:06,149 app.utils 72 138712192531328 Fetched 8053 existing timestamps from DB.
+[WARNING] 2025-06-21 07:10:06,153 app.utils 72 138712192531328 All timestamps already exist in DB. No new records to insert.
+[INFO] 2025-06-21 07:10:06,194 app.views 72 138712192531328 Testing model with data for mount_id: 3841
+[INFO] 2025-06-21 07:10:07,093 app.utils 72 138712192531328 Parsed 289 records into DataFrame
+[INFO] 2025-06-21 07:10:07,094 app.views 72 138712192531328 DataFrame created with 289 records
+[INFO] 2025-06-21 07:10:07,198 app.views 72 138712192531328 Split data into windows, shape: (1156, 8)
+[INFO] 2025-06-21 07:10:07,486 app.views 72 138712192531328 Extracted PSD features and combined data, shape: (1156, 69)
+[INFO] 2025-06-21 07:10:07,493 app.utils 72 138712192531328 Predicted clusters for 1156 samples
+[INFO] 2025-06-21 07:10:07,538 app.utils 72 138712192531328 Updated flag to True for 289 timestamps
+[INFO] 2025-06-21 07:10:07,540 app.views 72 138712192531328 sassshape, shape: (1156, 72)
+[INFO] 2025-06-21 07:10:07,540 app.views 72 138712192531328 Status labels assigned based on test_score
+[INFO] 2025-06-21 07:10:07,547 app.utils 72 138712192531328 Dropped duplicate timestamps in input DataFrame.
+[INFO] 2025-06-21 07:10:07,642 app.utils 72 138712192531328 Fetched 8463 existing timestamps from DB.
+[WARNING] 2025-06-21 07:10:07,645 app.utils 72 138712192531328 All timestamps already exist in DB. No new records to insert.
+[INFO] 2025-06-21 07:50:11,766 django.utils.autoreload 59 130626828909440 Watching for file changes with StatReloader
+[INFO] 2025-06-21 07:50:11,766 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 07:50:12
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:26:51,192 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-21 08:26:51,192 django.utils.autoreload 59 130626828909440 /app/app/utils.py changed, reloading.
+[INFO] 2025-06-21 08:26:52,033 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:26:52,033 django.utils.autoreload 73 134526363794304 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:26:53
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:26:57,182 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-21 08:26:57,182 django.utils.autoreload 73 134526363794304 /app/app/utils.py changed, reloading.
+[INFO] 2025-06-21 08:26:58,049 django.utils.autoreload 84 135170720418688 Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:26:58,049 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:26:59
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:30:30,016 app.views 84 135170300573376 Testing model with data for mount_id: 384
+[INFO] 2025-06-21 08:30:30,016 app.views Testing model with data for mount_id: 384
+[WARNING] 2025-06-21 08:30:30,182 app.views No data found with flag=True for mount_id: 384
+[WARNING] 2025-06-21 08:30:30,182 app.views 84 135170300573376 No data found with flag=True for mount_id: 384
+[WARNING] 2025-06-21 08:30:30,185 django.request Not Found: /api/test/
+[WARNING] 2025-06-21 08:30:30,185 django.request 84 135170300573376 Not Found: /api/test/
+[WARNING] 2025-06-21 08:30:30,188 django.server "GET /api/test/?mount_id=384 HTTP/1.1" 404 50
+[WARNING] 2025-06-21 08:30:30,188 django.server 84 135170300573376 "GET /api/test/?mount_id=384 HTTP/1.1" 404 50
+[INFO] 2025-06-21 08:46:51,937 django.utils.autoreload 84 135170720418688 /app/app/urls.py changed, reloading.
+[INFO] 2025-06-21 08:46:51,937 django.utils.autoreload /app/app/urls.py changed, reloading.
+[INFO] 2025-06-21 08:46:52,761 django.utils.autoreload 96 129930756873088 Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:46:52,761 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 442, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (urls.E004) Your URL pattern functools.partial(<function _path at 0x762bdb29bcb0>, Pattern=<class 'django.urls.resolvers.RoutePattern'>) is invalid. Ensure that urlpatterns is a list of path() and/or re_path() instances.
+
+System check identified 1 issue (0 silenced).
+
+[INFO] 2025-06-21 08:52:06,331 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:52:06,331 django.utils.autoreload 59 124861671635840 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:52:07
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:53:02,867 django.server "GET /api/operating_mode_count/?mount_id=3839 HTTP/1.1" 200 126
+[INFO] 2025-06-21 08:53:02,867 django.server 59 124861244503744 "GET /api/operating_mode_count/?mount_id=3839 HTTP/1.1" 200 126
+[INFO] 2025-06-21 08:53:32,887 django.server "GET /api/operating_mode_count/?mount_id=3941 HTTP/1.1" 200 2
+[INFO] 2025-06-21 08:53:32,887 django.server 59 124861244503744 "GET /api/operating_mode_count/?mount_id=3941 HTTP/1.1" 200 2
+[INFO] 2025-06-21 08:54:45,667 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:54:45,667 django.utils.autoreload 59 124861671635840 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:54:46,590 django.utils.autoreload 71 124177068985216 Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:54:46,590 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data,predict_rms,operating_mode_count
+ImportError: cannot import name 'operating_mode_count' from 'app.views' (/app/app/views.py)
+
+[INFO] 2025-06-21 08:54:48,994 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:54:48,994 django.utils.autoreload 71 124177068985216 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:54:49,859 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:54:49,859 django.utils.autoreload 82 135047897639808 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:54:51
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:54:54,142 django.utils.autoreload 82 135047897639808 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:54:54,142 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:54:55,002 django.utils.autoreload 93 124449466362752 Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:54:55,002 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:54:56
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:54:58,115 django.utils.autoreload 93 124449466362752 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:54:58,115 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:54:59,013 django.utils.autoreload 104 128687305722752 Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:54:59,013 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:55:00
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:55:01,159 django.utils.autoreload 104 128687305722752 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:55:01,159 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:55:02,003 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:55:02,003 django.utils.autoreload 115 133060566322048 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:55:03
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:55:06,334 app.views 115 133060142036672 API request received for operating_mode_count.
+[INFO] 2025-06-21 08:55:06,334 app.views API request received for operating_mode_count.
+[INFO] 2025-06-21 08:55:06,334 app.views Fetching operating_mode counts for mount_id=3941
+[INFO] 2025-06-21 08:55:06,334 app.views 115 133060142036672 Fetching operating_mode counts for mount_id=3941
+[INFO] 2025-06-21 08:55:06,518 app.views Query successful. Found 0 operating_mode groups.
+[INFO] 2025-06-21 08:55:06,518 app.views 115 133060142036672 Query successful. Found 0 operating_mode groups.
+[INFO] 2025-06-21 08:55:06,520 django.server 115 133060142036672 "GET /api/operating_mode_count/?mount_id=3941 HTTP/1.1" 200 2
+[INFO] 2025-06-21 08:55:06,520 django.server "GET /api/operating_mode_count/?mount_id=3941 HTTP/1.1" 200 2
+[INFO] 2025-06-21 08:55:17,483 app.views API request received for operating_mode_count.
+[INFO] 2025-06-21 08:55:17,483 app.views 115 133060142036672 API request received for operating_mode_count.
+[INFO] 2025-06-21 08:55:17,483 app.views Fetching operating_mode counts for mount_id=3839
+[INFO] 2025-06-21 08:55:17,483 app.views 115 133060142036672 Fetching operating_mode counts for mount_id=3839
+[INFO] 2025-06-21 08:55:17,517 app.views Query successful. Found 3 operating_mode groups.
+[INFO] 2025-06-21 08:55:17,517 app.views 115 133060142036672 Query successful. Found 3 operating_mode groups.
+[INFO] 2025-06-21 08:55:17,518 django.server 115 133060142036672 "GET /api/operating_mode_count/?mount_id=3839 HTTP/1.1" 200 126
+[INFO] 2025-06-21 08:55:17,518 django.server "GET /api/operating_mode_count/?mount_id=3839 HTTP/1.1" 200 126
+[INFO] 2025-06-21 08:56:04,919 app.views API request received for operating_mode_count.
+[INFO] 2025-06-21 08:56:04,919 app.views 115 133060142036672 API request received for operating_mode_count.
+[INFO] 2025-06-21 08:56:04,920 app.views 115 133060142036672 Fetching operating_mode counts for mount_id=3845
+[INFO] 2025-06-21 08:56:04,920 app.views Fetching operating_mode counts for mount_id=3845
+[INFO] 2025-06-21 08:56:04,954 app.views Query successful. Found 0 operating_mode groups.
+[INFO] 2025-06-21 08:56:04,954 app.views 115 133060142036672 Query successful. Found 0 operating_mode groups.
+[INFO] 2025-06-21 08:56:04,956 django.server "GET /api/operating_mode_count/?mount_id=3845 HTTP/1.1" 200 2
+[INFO] 2025-06-21 08:56:04,956 django.server 115 133060142036672 "GET /api/operating_mode_count/?mount_id=3845 HTTP/1.1" 200 2
+[INFO] 2025-06-21 08:56:33,472 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:56:33,472 django.utils.autoreload 115 133060566322048 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:56:34,343 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:56:34,343 django.utils.autoreload 127 132705981401984 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:56:35
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:59:14,389 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:14,389 django.utils.autoreload 127 132705981401984 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:15,234 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:59:15,234 django.utils.autoreload 138 125161913555840 Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/urls.py", line 22, in <module>
+    path('', include('app.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/app/urls.py", line 2, in <module>
+    from .views import train_model_with_data,test_model_with_data,predict_rms,operating_mode_count
+ImportError: cannot import name 'operating_mode_count' from 'app.views' (/app/app/views.py)
+
+[INFO] 2025-06-21 08:59:23,592 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:23,592 django.utils.autoreload 138 125161913555840 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:24,427 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:59:24,427 django.utils.autoreload 149 123806169631616 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:59:25
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:59:32,912 app.views API request received for operating_mode_count.
+[INFO] 2025-06-21 08:59:32,912 app.views 149 123805745804992 API request received for operating_mode_count.
+[INFO] 2025-06-21 08:59:32,912 app.views 149 123805745804992 Fetching operating_mode counts for mount_id=3845
+[INFO] 2025-06-21 08:59:32,912 app.views Fetching operating_mode counts for mount_id=3845
+[INFO] 2025-06-21 08:59:33,079 app.views No data found for mount_id=3845
+[INFO] 2025-06-21 08:59:33,079 app.views 149 123805745804992 No data found for mount_id=3845
+[WARNING] 2025-06-21 08:59:33,080 django.request 149 123805745804992 Not Found: /api/operating_mode_count/
+[WARNING] 2025-06-21 08:59:33,080 django.request Not Found: /api/operating_mode_count/
+[WARNING] 2025-06-21 08:59:33,082 django.server "GET /api/operating_mode_count/?mount_id=3845 HTTP/1.1" 404 45
+[WARNING] 2025-06-21 08:59:33,082 django.server 149 123805745804992 "GET /api/operating_mode_count/?mount_id=3845 HTTP/1.1" 404 45
+[INFO] 2025-06-21 08:59:40,089 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:40,089 django.utils.autoreload 149 123806169631616 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:40,962 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:59:40,962 django.utils.autoreload 161 137243161381760 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:59:42
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:59:43,335 app.views API request received for operating_mode_count.
+[INFO] 2025-06-21 08:59:43,335 app.views 161 137242771191488 API request received for operating_mode_count.
+[INFO] 2025-06-21 08:59:43,335 app.views Fetching operating_mode counts for mount_id=3839
+[INFO] 2025-06-21 08:59:43,335 app.views 161 137242771191488 Fetching operating_mode counts for mount_id=3839
+[INFO] 2025-06-21 08:59:43,502 app.views 161 137242771191488 Query successful. Found 3 operating_mode groups for mount_id=3839
+[INFO] 2025-06-21 08:59:43,502 app.views Query successful. Found 3 operating_mode groups for mount_id=3839
+[INFO] 2025-06-21 08:59:43,504 django.server "GET /api/operating_mode_count/?mount_id=3839 HTTP/1.1" 200 126
+[INFO] 2025-06-21 08:59:43,504 django.server 161 137242771191488 "GET /api/operating_mode_count/?mount_id=3839 HTTP/1.1" 200 126
+[INFO] 2025-06-21 08:59:53,670 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:53,670 django.utils.autoreload 161 137243161381760 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:54,561 django.utils.autoreload 173 136496979028864 Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:59:54,561 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:59:55
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 08:59:56,689 django.utils.autoreload /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:56,689 django.utils.autoreload 173 136496979028864 /app/app/views.py changed, reloading.
+[INFO] 2025-06-21 08:59:57,524 django.utils.autoreload 184 136125261462400 Watching for file changes with StatReloader
+[INFO] 2025-06-21 08:59:57,524 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 08:59:58
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-21 10:17:19,611 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-21 10:17:19,611 django.utils.autoreload 184 136125261462400 /app/app/utils.py changed, reloading.
+[INFO] 2025-06-21 10:17:20,305 django.utils.autoreload 201 132048123304832 Watching for file changes with StatReloader
+[INFO] 2025-06-21 10:17:20,305 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 10:17:21
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
