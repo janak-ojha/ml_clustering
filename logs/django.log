@@ -7133,3 +7133,125 @@ Quit the server with CONTROL-C.
 [INFO] 2025-06-25 12:54:07,581 app.views 77 139888824073088 Combined data for cluster label assignment
 [INFO] 2025-06-25 12:54:07,587 app.views 77 139888824073088 Cluster RMS averages: {'3': 0.06333333333333334, '1': 0.06999999999999999, '2': 0.07193548387096774, '0': 0.08495726495726495}
 [ERROR] 2025-06-25 12:54:07,624 app.views 77 139888824073088 No RMS vertical values found for mount_id = 9
+[INFO] 2025-06-25 13:08:45,982 django.utils.autoreload 59 129961670163328 Watching for file changes with StatReloader
+[INFO] 2025-06-25 13:08:45,982 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 25, 2025 - 13:08:47
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-25 13:09:03,564 app.views 77 129176398556032 Testing model with data for mount_id: 2
+[WARNING] 2025-06-25 13:09:04,014 app.views 76 129279610551168 Only 24 points found for mount_id: 2. Minimum required is 100.
+[INFO] 2025-06-25 13:09:04,535 app.utils 77 129176398556032 Parsed 24 records into DataFrame
+[INFO] 2025-06-25 13:09:04,535 app.views 77 129176398556032 DataFrame created with (24, 8) records
+[INFO] 2025-06-25 13:09:04,584 app.views 77 129176398556032 Split data into windows, shape: (96, 8)
+[INFO] 2025-06-25 13:09:04,647 app.views 77 129176398556032 Extracted PSD features and combined data, shape: (96, 71)
+[ERROR] 2025-06-25 13:09:04,648 app.utils 77 129176398556032 Prediction error: Trained model not found for this mount_id :2
+[INFO] 2025-06-25 13:09:06,815 app.views 78 136811857918848 Raw data shape: (157, 3)
+[INFO] 2025-06-25 13:09:07,528 app.views 78 136811857918848 RMS computed for raw data, shape: (157, 5)
+[INFO] 2025-06-25 13:09:07,595 app.views 78 136811857918848 Operating mode data shape: (471, 2)
+[INFO] 2025-06-25 13:09:07,598 app.views 78 136811857918848 Combined data for cluster label assignment
+[INFO] 2025-06-25 13:09:07,602 app.views 78 136811857918848 Cluster RMS averages: {'3': 0.06333333333333334, '1': 0.06999999999999999, '2': 0.07193548387096774, '0': 0.08495726495726495}
+[ERROR] 2025-06-25 13:09:07,634 app.views 78 136811857918848 No RMS vertical values found for mount_id = 9
+[INFO] 2025-06-25 13:09:17,525 app.views 78 136811857918848 Raw data shape: (583, 3)
+[INFO] 2025-06-25 13:09:20,316 app.views 78 136811857918848 RMS computed for raw data, shape: (583, 5)
+[INFO] 2025-06-25 13:09:20,417 app.views 78 136811857918848 Operating mode data shape: (1698, 2)
+[INFO] 2025-06-25 13:09:20,420 app.views 78 136811857918848 Combined data for cluster label assignment
+[INFO] 2025-06-25 13:09:20,422 app.views 78 136811857918848 Cluster RMS averages: {'3': 0.07544776119402985, '2': 0.08166666666666667, '0': 0.08882618510158014, '1': nan}
+[ERROR] 2025-06-25 13:09:20,455 app.views 78 136811857918848 No RMS vertical values found for mount_id = 5
+[INFO] 2025-06-25 13:09:28,566 app.views 78 136811857918848 Raw data shape: (543, 3)
+[INFO] 2025-06-25 13:09:31,155 app.views 78 136811857918848 RMS computed for raw data, shape: (543, 5)
+[INFO] 2025-06-25 13:09:31,256 app.views 78 136811857918848 Operating mode data shape: (1629, 2)
+[INFO] 2025-06-25 13:09:31,259 app.views 78 136811857918848 Combined data for cluster label assignment
+[INFO] 2025-06-25 13:09:31,262 app.views 78 136811857918848 Cluster RMS averages: {'1': 0.06777777777777777, '2': 0.07333333333333333, '3': 0.0862, '0': 0.08622047244094488}
+[ERROR] 2025-06-25 13:09:31,294 app.views 78 136811857918848 No RMS vertical values found for mount_id = 6
+[INFO] 2025-06-25 13:09:31,946 app.views 78 136811857918848 Raw data shape: (24, 3)
+[INFO] 2025-06-25 13:09:32,080 app.views 78 136811857918848 RMS computed for raw data, shape: (24, 5)
+[INFO] 2025-06-25 13:09:32,145 app.views 78 136811857918848 Operating mode data shape: (14, 2)
+[INFO] 2025-06-25 13:09:32,147 app.views 78 136811857918848 Combined data for cluster label assignment
+[INFO] 2025-06-25 13:09:32,150 app.views 78 136811857918848 Cluster RMS averages: {'0': 0.06, '3': 0.06, '2': 0.06166666666666667, '1': 0.07}
+[ERROR] 2025-06-25 13:09:32,183 app.views 78 136811857918848 No RMS vertical values found for mount_id = 2
+[INFO] 2025-06-25 13:09:36,356 app.views 78 136811857918848 Raw data shape: (305, 3)
+[INFO] 2025-06-25 13:09:37,837 app.views 78 136811857918848 RMS computed for raw data, shape: (305, 5)
+[INFO] 2025-06-25 13:09:37,933 app.views 78 136811857918848 Operating mode data shape: (915, 2)
+[INFO] 2025-06-25 13:09:37,936 app.views 78 136811857918848 Combined data for cluster label assignment
+[INFO] 2025-06-25 13:09:37,939 app.views 78 136811857918848 Cluster RMS averages: {'2': 0.06666666666666667, '1': 0.08523809523809524, '0': 0.09315217391304348, '3': nan}
+[ERROR] 2025-06-25 13:09:37,973 app.views 78 136811857918848 No RMS vertical values found for mount_id = 7
+[INFO] 2025-06-25 13:10:02,976 app.views 113 127405279087488 Testing model with data for mount_id: 2
+[WARNING] 2025-06-25 13:10:03,952 app.views 112 138841388784512 Only 24 points found for mount_id: 2. Minimum required is 100.
+[INFO] 2025-06-25 13:10:03,953 app.utils 113 127405279087488 Parsed 24 records into DataFrame
+[INFO] 2025-06-25 13:10:03,953 app.views 113 127405279087488 DataFrame created with (24, 8) records
+[INFO] 2025-06-25 13:10:03,996 app.views 113 127405279087488 Split data into windows, shape: (96, 8)
+[INFO] 2025-06-25 13:10:04,075 app.views 113 127405279087488 Extracted PSD features and combined data, shape: (96, 71)
+[ERROR] 2025-06-25 13:10:04,076 app.utils 113 127405279087488 Prediction error: Trained model not found for this mount_id :2
+[INFO] 2025-06-25 13:10:05,736 app.views 114 136814188092288 Raw data shape: (157, 3)
+[INFO] 2025-06-25 13:10:06,566 app.views 114 136814188092288 RMS computed for raw data, shape: (157, 5)
+[INFO] 2025-06-25 13:10:06,625 app.views 114 136814188092288 Operating mode data shape: (471, 2)
+[INFO] 2025-06-25 13:10:06,628 app.views 114 136814188092288 Combined data for cluster label assignment
+[INFO] 2025-06-25 13:10:06,632 app.views 114 136814188092288 Cluster RMS averages: {'3': 0.06333333333333334, '1': 0.06999999999999999, '2': 0.07193548387096774, '0': 0.08495726495726495}
+[ERROR] 2025-06-25 13:10:06,662 app.views 114 136814188092288 No RMS vertical values found for mount_id = 9
+[INFO] 2025-06-25 13:10:16,152 app.views 114 136814188092288 Raw data shape: (583, 3)
+[INFO] 2025-06-25 13:10:16,950 django.utils.autoreload 59 129961670163328 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-25 13:10:16,950 django.utils.autoreload /app/project/settings.py changed, reloading.
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/__init__.py", line 345, in execute
+    settings.INSTALLED_APPS
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/project/settings.py", line 222
+    CRON_TZ = 'UTC'
+            ^
+SyntaxError: invalid syntax
+[INFO] 2025-06-25 13:12:51,652 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-25 13:12:51,652 django.utils.autoreload 59 129615424084864 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 25, 2025 - 13:12:52
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-25 13:13:10,243 django.utils.autoreload 59 129615424084864 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-25 13:13:10,243 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-25 13:13:10,981 django.utils.autoreload 70 133150154341248 Watching for file changes with StatReloader
+[INFO] 2025-06-25 13:13:10,981 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 25, 2025 - 13:13:12
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-25 13:13:41,014 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-25 13:13:41,014 django.utils.autoreload 70 133150154341248 /app/project/settings.py changed, reloading.
+[INFO] 2025-06-25 13:13:41,838 django.utils.autoreload 81 140357560785792 Watching for file changes with StatReloader
+[INFO] 2025-06-25 13:13:41,838 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 25, 2025 - 13:13:42
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.

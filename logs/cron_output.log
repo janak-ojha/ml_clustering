@@ -2375,3 +2375,46 @@
 [INFO] 2025-06-25 12:54:05,387 cron 76 140405813410688 Data saved in db succesfully
 [ERROR] 2025-06-25 12:54:07,716 cron 77 139888824073088 Failed to process mount_id: 9, Status: 404, Data: {'error': 'No RMS values found'}
 [INFO] 2025-06-25 12:54:07,716 cron 77 139888824073088 Processing mount_id: 5
+[INFO] 2025-06-25 13:09:03,361 cron 77 129176398556032 Starting model prediction cron job
+[INFO] 2025-06-25 13:09:03,361 cron 76 129279610551168 Starting model prediction cron job
+[INFO] 2025-06-25 13:09:03,361 cron 78 136811857918848 Starting model prediction cron job
+[INFO] 2025-06-25 13:09:03,558 cron 76 129279610551168 Found 1 mount_ids to process: ['2']
+[INFO] 2025-06-25 13:09:03,559 cron 76 129279610551168 Processing mount_id: 2
+[INFO] 2025-06-25 13:09:03,563 cron 78 136811857918848 Found 5 mount_ids to process: ['9', '5', '6', '2', '7']
+[INFO] 2025-06-25 13:09:03,563 cron 77 129176398556032 Found 1 mount_ids to process: ['2']
+[INFO] 2025-06-25 13:09:03,563 cron 78 136811857918848 Processing mount_id: 9
+[INFO] 2025-06-25 13:09:03,563 cron 77 129176398556032 Processing mount_id: 2
+[ERROR] 2025-06-25 13:09:04,021 cron 76 129279610551168 Failed to process mount_id: 2, Status: 400, Data: {'message': 'Not enough data points. At least 100 required.'}
+[INFO] 2025-06-25 13:09:04,021 cron 76 129279610551168 Model prediction cron job completed successfully
+[INFO] 2025-06-25 13:09:04,021 cron 76 129279610551168 Data saved in db succesfully
+[ERROR] 2025-06-25 13:09:04,667 cron 77 129176398556032 Failed to process mount_id: 2, Status: 500, Data: {'error': 'Prediction error: Trained model not found for this mount_id :2'}
+[INFO] 2025-06-25 13:09:04,667 cron 77 129176398556032 Model prediction cron job completed successfully
+[INFO] 2025-06-25 13:09:04,667 cron 77 129176398556032 Data saved in db succesfully
+[ERROR] 2025-06-25 13:09:07,704 cron 78 136811857918848 Failed to process mount_id: 9, Status: 404, Data: {'error': 'No RMS values found'}
+[INFO] 2025-06-25 13:09:07,705 cron 78 136811857918848 Processing mount_id: 5
+[ERROR] 2025-06-25 13:09:20,648 cron 78 136811857918848 Failed to process mount_id: 5, Status: 404, Data: {'error': 'No RMS values found'}
+[INFO] 2025-06-25 13:09:20,651 cron 78 136811857918848 Processing mount_id: 6
+[ERROR] 2025-06-25 13:09:31,486 cron 78 136811857918848 Failed to process mount_id: 6, Status: 404, Data: {'error': 'No RMS values found'}
+[INFO] 2025-06-25 13:09:31,486 cron 78 136811857918848 Processing mount_id: 2
+[ERROR] 2025-06-25 13:09:32,200 cron 78 136811857918848 Failed to process mount_id: 2, Status: 404, Data: {'error': 'No RMS values found'}
+[INFO] 2025-06-25 13:09:32,200 cron 78 136811857918848 Processing mount_id: 7
+[ERROR] 2025-06-25 13:09:38,087 cron 78 136811857918848 Failed to process mount_id: 7, Status: 404, Data: {'error': 'No RMS values found'}
+[INFO] 2025-06-25 13:09:38,088 cron 78 136811857918848 Model prediction cron job completed successfully
+[INFO] 2025-06-25 13:09:38,088 cron 78 136811857918848 Data saved in db succesfully
+[INFO] 2025-06-25 13:10:02,792 cron 113 127405279087488 Starting model prediction cron job
+[INFO] 2025-06-25 13:10:02,792 cron 114 136814188092288 Starting model prediction cron job
+[INFO] 2025-06-25 13:10:02,793 cron 112 138841388784512 Starting model prediction cron job
+[INFO] 2025-06-25 13:10:02,975 cron 113 127405279087488 Found 1 mount_ids to process: ['2']
+[INFO] 2025-06-25 13:10:02,975 cron 113 127405279087488 Processing mount_id: 2
+[INFO] 2025-06-25 13:10:02,978 cron 114 136814188092288 Found 5 mount_ids to process: ['9', '5', '6', '2', '7']
+[INFO] 2025-06-25 13:10:02,978 cron 114 136814188092288 Processing mount_id: 9
+[INFO] 2025-06-25 13:10:02,991 cron 112 138841388784512 Found 1 mount_ids to process: ['2']
+[INFO] 2025-06-25 13:10:02,991 cron 112 138841388784512 Processing mount_id: 2
+[ERROR] 2025-06-25 13:10:03,962 cron 112 138841388784512 Failed to process mount_id: 2, Status: 400, Data: {'message': 'Not enough data points. At least 100 required.'}
+[INFO] 2025-06-25 13:10:03,962 cron 112 138841388784512 Model prediction cron job completed successfully
+[INFO] 2025-06-25 13:10:03,962 cron 112 138841388784512 Data saved in db succesfully
+[ERROR] 2025-06-25 13:10:04,095 cron 113 127405279087488 Failed to process mount_id: 2, Status: 500, Data: {'error': 'Prediction error: Trained model not found for this mount_id :2'}
+[INFO] 2025-06-25 13:10:04,095 cron 113 127405279087488 Model prediction cron job completed successfully
+[INFO] 2025-06-25 13:10:04,095 cron 113 127405279087488 Data saved in db succesfully
+[ERROR] 2025-06-25 13:10:06,730 cron 114 136814188092288 Failed to process mount_id: 9, Status: 404, Data: {'error': 'No RMS values found'}
+[INFO] 2025-06-25 13:10:06,730 cron 114 136814188092288 Processing mount_id: 5
