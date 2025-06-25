@@ -13,6 +13,9 @@ class RawDataMaster(models.Model):
     composite = models.CharField(max_length=150, blank=True, null=True)
     last_update = models.DateTimeField(blank=True, null=True)
     mount_id = models.CharField(max_length=150, blank=True, null=True)
+    predict_flag = models.BooleanField()
+    train_flag = models.BooleanField()
+ 
 
     class Meta:
         managed = False
@@ -102,6 +105,7 @@ class AccelerationStatTimeOptimized(models.Model):
     variation_coefficient_axial = models.DecimalField(db_column='variation_coefficient_Axial', max_digits=20, decimal_places=2, blank=True, null=True)  # Field name made lowercase.
     variation_coefficient_horizontal = models.DecimalField(db_column='variation_coefficient_Horizontal', max_digits=20, decimal_places=2, blank=True, null=True)  # Field name made lowercase.
     variation_coefficient_vertical = models.DecimalField(db_column='variation_coefficient_Vertical', max_digits=20, decimal_places=2, blank=True, null=True)  # Field name made lowercase.
+    cluster_flag = models.BooleanField() 
 
     class Meta:
         managed = False

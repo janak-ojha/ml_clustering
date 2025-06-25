@@ -76,15 +76,27 @@ TEMPLATES = [
 WSGI_APPLICATION = 'project.wsgi.application'
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.getenv('DB_NAME', 'staging'),
+#         'USER': os.getenv('DB_USER', 'postgres'),
+#         'PASSWORD': os.getenv('DB_PASSWORD', '49Oc6fOMoeT50n'),
+#         'HOST': os.getenv('DB_HOST', '15.207.122.61'),
+#         'PORT': os.getenv('DB_PORT', '5432'),
+#         'CONN_MAX_AGE': int(os.getenv('DB_CONN_MAX_AGE', 120)),
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'pdm'),
-        'USER': os.getenv('DB_USER', 'postgres'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'postgres'),
-        'HOST': os.getenv('DB_HOST', '3.110.58.149'),
-        'PORT': os.getenv('DB_PORT', '5432'),
-        'CONN_MAX_AGE': int(os.getenv('DB_CONN_MAX_AGE', 0)),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
+        'CONN_MAX_AGE': int(os.getenv('DB_CONN_MAX_AGE')),
     }
 }
 
@@ -194,11 +206,17 @@ LOGGING = {
 
 CRONJOBS = [
     # Run every minute - calls the cron function
-    ('0 */12 * * *', 'app.cron.run_model_prediction_cron', '>> /tmp/cron_model_prediction.log 2>&1'),
+    ('0 */12 * * *', 'app.cron.run_model_prediction_cron_prediction', '>> /tmp/cron_model_prediction.log 2>&1'),
 
 
-    # Alternative: Run every 5 minutes (uncomment if needed)
-    # ('* * * * *', 'app.cron.run_model_prediction_cron', '>> /tmp/cron_model_prediction.log 2>&1'),
+    # # Alternative: Run every 5 minutes (uncomment if needed)
+
+    ('* * * * *', 'app.cron.run_model_prediction_cron_prediction', '>> /tmp/cron_model_prediction.log 2>&1'),
+
+    ('* * * * *', 'app.cron.run_model_prediction_cron_training', '>> /tmp/cron_model_prediction.log 2>&1'),
+
+
+    ('* * * * *', 'app.cron.run_model_prediction_cron_prediction_rms', '>> /tmp/cron_model_prediction.log 2>&1'),
 ]
 
 CRON_TZ = 'UTC'

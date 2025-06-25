@@ -9,9 +9,7 @@ import pickle
 from django.conf import settings
 import logging
 import os
-from .models import TestRawDataMaster
-from app.models import AssetOperatingModeMaster
-from django.utils import timezone
+from .models import RawDataMaster
 from scipy import signal
 import logging
 from django.utils.timezone import make_aware, is_aware
@@ -19,7 +17,6 @@ from datetime import datetime
 from django.utils import timezone
 from django.db import transaction
 from app.models import AssetOperatingModeMaster
-import logging
 logger= logging.getLogger(__name__)
 
 
@@ -280,6 +277,14 @@ def perform_gmm_clustering(psd_df, mount_id, logger):
 
     logger.info(f"Saved trained model to {model_path}")
 
+    RawDataMaster.objects.filter(
+            mount_id=mount_id,
+            axis='Vertical',
+            train_flag=False
+        ).update(train_flag=True)
+    
+    logger.info(f"Updated flag to True for  mount_id {mount_id}")
+
     return best_n_clusters, model_filename
 
 
@@ -290,11 +295,11 @@ def predict_gmm_clusters(psd_df_clean, mount_id):
     try:
         logger.debug(psd_df_clean.head())
 
-        test_df = psd_df_clean.drop(['timestamp', 'mount_id', 'composite','asset_id'], axis=1)
+        test_df = psd_df_clean.drop(['timestamp', 'mount_id', 'composite','asset_id','raw_data','fs'], axis=1)
 
         model_path = os.path.join(settings.BASE_DIR, 'saved_models', f'gmm_model_mount_{mount_id}.pickle')
         if not os.path.exists(model_path):
-            raise FileNotFoundError(f"Trained model not found at {model_path}")
+            raise FileNotFoundError(f"Trained model not found for this mount_id :{mount_id}")
 
         with open(model_path, 'rb') as f:
             model_bundle = pickle.load(f)
@@ -309,7 +314,7 @@ def predict_gmm_clusters(psd_df_clean, mount_id):
 
         psd_df_clean['cluster_id'] = cluster_labels
        
-        psd_df_clean['v_coeff_mean'] = psd_df_clean.loc[:, 'V_coeff_1':'V_coeff_65'].mean(axis=1)
+        # psd_df_clean['v_coeff_mean'] = psd_df_clean.loc[:, 'V_coeff_1':'V_coeff_65'].mean(axis=1)
 
      
         logger.info(f"Predicted clusters for {len(cluster_labels)} samples")
@@ -325,12 +330,12 @@ def predict_gmm_clusters(psd_df_clean, mount_id):
         ]
 
        # Adjust import as per your project
-        TestRawDataMaster.objects.filter(
+        RawDataMaster.objects.filter(
             mount_id=mount_id,
             timestamp__in=used_timestamps,
             axis='Vertical',
-            flag=False
-        ).update(flag=True)
+            predict_flag=False
+        ).update(predict_flag=True)
         logger.info(f"Updated flag to True for {len(used_timestamps)} timestamps")
 
         return result_df
@@ -343,7 +348,7 @@ def predict_gmm_clusters(psd_df_clean, mount_id):
 
 
 #provide label to cluster
-def assign_cluster_labels(df, score_col='v_coeff_mean', cluster_col='cluster_id', labels=['off_mode', 'mode_1', 'mode_2', 'mode_3']):
+def assign_cluster_labels(df, score_col='rms', cluster_col='cluster_id', labels=['off_mode', 'mode_1', 'mode_2', 'mode_3']):
     
     n_clusters = df[cluster_col].nunique()
 
@@ -459,23 +464,7 @@ def save_operating_mode_data(result_df, mount_id):
         )
     )
 
-    # Convert new_df timestamps to Unix seconds for comparison
-    new_df['timestamp_unix'] = new_df['timestamp'].apply(lambda x: int(x.timestamp()))
-
-    # Get existing timestamps from DB and convert to Unix seconds
-    existing_timestamps = AssetOperatingModeMaster.objects.filter(mount_id=mount_id) \
-        .values_list('timestamp', flat=True)
-    existing_unix = set(int(ts.timestamp()) for ts in existing_timestamps)
-
-    logger.info(f"Fetched {len(existing_unix)} existing timestamps from DB.")
-
-    # Filter: only rows with unique Unix timestamps
-    new_df = new_df[~new_df['timestamp_unix'].isin(existing_unix)]
-    if new_df.empty:
-        logger.warning("All timestamps already exist in DB. No new records to insert.")
-        return 0
-
-    logger.info(f"{len(new_df)} new records to save after filtering existing timestamps.")
+    logger.info(f"{len(new_df)} new records to save after filtering duplicate timestamps.")
 
     records = []
     for _, row in new_df.iterrows():
