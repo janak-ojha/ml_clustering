@@ -38,4 +38,5 @@ echo "📝 Live logs will appear below..."
 echo "=================================================="
 
 # Start Django with logging to both file and console
-python manage.py runserver 0.0.0.0:8001 2>&1 | tee -a /app/logs/django.log
+python manage.py runserver 0.0.0.0:8001 2>&1 
+# | tee -a /app/logs/django.log

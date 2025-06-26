@@ -76,8 +76,6 @@ def train_model_with_data(request):
 
 
 
-
-
 #api for prediction and saving data with label
 @api_view(['GET'])
 def test_model_with_data(request):
@@ -87,7 +85,6 @@ def test_model_with_data(request):
         return Response({"error": "mount_id parameter is required"}, status=400)
     logger.info(f"Testing model with data for mount_id: {mount_id}")
     
-
     raw_queryset = RawDataMaster.objects.filter(
         mount_id=mount_id, axis='Vertical', predict_flag=False,
     ).values('timestamp', 'fs', 'no_of_samples', 'raw_data', 'axis', 'mount_id','composite','asset_id').order_by('timestamp')
@@ -157,9 +154,6 @@ def test_model_with_data(request):
         "saved_records": saved_count,        
     })
     
-
-
-
 
 
 
@@ -248,8 +242,6 @@ def predict_rms(request):
     except Exception as e:
         logger.exception("Error occurred in predict_rms view")
         return Response({"error": str(e)}, status=500)
-
-
 
 
 

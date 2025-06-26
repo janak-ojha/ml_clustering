@@ -7255,3 +7255,406 @@ June 25, 2025 - 13:13:42
 Django version 3.1.7, using settings 'project.settings'
 Starting development server at http://0.0.0.0:8001/
 Quit the server with CONTROL-C.
+[INFO] 2025-06-26 05:20:54,063 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-26 05:20:54,063 django.utils.autoreload 59 126706078075776 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 05:20:55
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 06:36:57,065 app.views API request received for operating_mode_count.
+[INFO] 2025-06-26 06:36:57,065 app.views 59 126705658230464 API request received for operating_mode_count.
+[INFO] 2025-06-26 06:36:57,065 app.views Fetching operating_mode counts for mount_id=9
+[INFO] 2025-06-26 06:36:57,065 app.views 59 126705658230464 Fetching operating_mode counts for mount_id=9
+[INFO] 2025-06-26 06:36:57,343 app.views Query successful. Found 4 operating_mode groups for mount_id=9
+[INFO] 2025-06-26 06:36:57,343 app.views 59 126705658230464 Query successful. Found 4 operating_mode groups for mount_id=9
+[INFO] 2025-06-26 06:36:57,345 django.server "GET /api/operating_mode_count/?mount_id=9 HTTP/1.1" 200 160
+[INFO] 2025-06-26 06:36:57,345 django.server 59 126705658230464 "GET /api/operating_mode_count/?mount_id=9 HTTP/1.1" 200 160
+[INFO] 2025-06-26 06:37:00,732 app.views 59 126705658230464 API request received for operating_mode_count.
+[INFO] 2025-06-26 06:37:00,732 app.views API request received for operating_mode_count.
+[INFO] 2025-06-26 06:37:00,733 app.views Fetching operating_mode counts for mount_id=2
+[INFO] 2025-06-26 06:37:00,733 app.views 59 126705658230464 Fetching operating_mode counts for mount_id=2
+[INFO] 2025-06-26 06:37:00,775 app.views 59 126705658230464 Query successful. Found 4 operating_mode groups for mount_id=2
+[INFO] 2025-06-26 06:37:00,775 app.views Query successful. Found 4 operating_mode groups for mount_id=2
+[INFO] 2025-06-26 06:37:00,776 django.server 59 126705658230464 "GET /api/operating_mode_count/?mount_id=2 HTTP/1.1" 200 155
+[INFO] 2025-06-26 06:37:00,776 django.server "GET /api/operating_mode_count/?mount_id=2 HTTP/1.1" 200 155
+[INFO] 2025-06-26 06:37:05,554 app.views 59 126705658230464 API request received for operating_mode_count.
+[INFO] 2025-06-26 06:37:05,554 app.views API request received for operating_mode_count.
+[INFO] 2025-06-26 06:37:05,554 app.views Fetching operating_mode counts for mount_id=5
+[INFO] 2025-06-26 06:37:05,554 app.views 59 126705658230464 Fetching operating_mode counts for mount_id=5
+[INFO] 2025-06-26 06:37:05,597 app.views 59 126705658230464 Query successful. Found 4 operating_mode groups for mount_id=5
+[INFO] 2025-06-26 06:37:05,597 app.views Query successful. Found 4 operating_mode groups for mount_id=5
+[INFO] 2025-06-26 06:37:05,597 django.server "GET /api/operating_mode_count/?mount_id=5 HTTP/1.1" 200 163
+[INFO] 2025-06-26 06:37:05,597 django.server 59 126705658230464 "GET /api/operating_mode_count/?mount_id=5 HTTP/1.1" 200 163
+[INFO] 2025-06-26 06:39:21,966 django.utils.autoreload 59 139147358415744 Watching for file changes with StatReloader
+[INFO] 2025-06-26 06:39:21,966 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 06:39:22
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 06:39:34,610 app.views 59 139146974721728 API request received for operating_mode_count.
+[INFO] 2025-06-26 06:39:34,610 app.views API request received for operating_mode_count.
+[INFO] 2025-06-26 06:39:34,610 app.views Fetching operating_mode counts for mount_id=5
+[INFO] 2025-06-26 06:39:34,610 app.views 59 139146974721728 Fetching operating_mode counts for mount_id=5
+[INFO] 2025-06-26 06:39:34,847 app.views Query successful. Found 4 operating_mode groups for mount_id=5
+[INFO] 2025-06-26 06:39:34,847 app.views 59 139146974721728 Query successful. Found 4 operating_mode groups for mount_id=5
+[INFO] 2025-06-26 06:39:34,849 django.server 59 139146974721728 "GET /api/operating_mode_count/?mount_id=5 HTTP/1.1" 200 163
+[INFO] 2025-06-26 06:39:34,849 django.server "GET /api/operating_mode_count/?mount_id=5 HTTP/1.1" 200 163
+[INFO] 2025-06-26 06:39:40,436 app.views Testing model with data for mount_id: 7
+[INFO] 2025-06-26 06:39:40,436 app.views 59 139146974721728 Testing model with data for mount_id: 7
+[WARNING] 2025-06-26 06:39:40,472 app.views 59 139146974721728 No data found with flag=True for mount_id: 7
+[WARNING] 2025-06-26 06:39:40,472 app.views No data found with flag=True for mount_id: 7
+[WARNING] 2025-06-26 06:39:40,473 django.request Not Found: /api/test/
+[WARNING] 2025-06-26 06:39:40,473 django.request 59 139146974721728 Not Found: /api/test/
+[WARNING] 2025-06-26 06:39:40,473 django.server 59 139146974721728 "GET /api/test/?mount_id=7 HTTP/1.1" 404 50
+[WARNING] 2025-06-26 06:39:40,473 django.server "GET /api/test/?mount_id=7 HTTP/1.1" 404 50
+[INFO] 2025-06-26 06:39:49,928 app.views 59 139146974721728 Testing model with data for mount_id: 6
+[INFO] 2025-06-26 06:39:49,928 app.views Testing model with data for mount_id: 6
+[WARNING] 2025-06-26 06:39:49,965 app.views No data found with flag=True for mount_id: 6
+[WARNING] 2025-06-26 06:39:49,965 app.views 59 139146974721728 No data found with flag=True for mount_id: 6
+[WARNING] 2025-06-26 06:39:49,967 django.request 59 139146974721728 Not Found: /api/test/
+[WARNING] 2025-06-26 06:39:49,967 django.request Not Found: /api/test/
+[WARNING] 2025-06-26 06:39:49,967 django.server "GET /api/test/?mount_id=6 HTTP/1.1" 404 50
+[WARNING] 2025-06-26 06:39:49,967 django.server 59 139146974721728 "GET /api/test/?mount_id=6 HTTP/1.1" 404 50
+length of raw query 0
+[WARNING] 2025-06-26 06:39:57,732 app.views No data found for mount_id: 6
+[WARNING] 2025-06-26 06:39:57,732 app.views 59 139146974721728 No data found for mount_id: 6
+[WARNING] 2025-06-26 06:39:57,733 django.request Not Found: /api/train/
+[WARNING] 2025-06-26 06:39:57,733 django.request 59 139146974721728 Not Found: /api/train/
+[WARNING] 2025-06-26 06:39:57,733 django.server "GET /api/train/?mount_id=6 HTTP/1.1" 404 50
+[WARNING] 2025-06-26 06:39:57,733 django.server 59 139146974721728 "GET /api/train/?mount_id=6 HTTP/1.1" 404 50
+[INFO] 2025-06-26 06:40:04,480 app.views 59 139146974721728 API request received for operating_mode_count.
+[INFO] 2025-06-26 06:40:04,480 app.views API request received for operating_mode_count.
+[INFO] 2025-06-26 06:40:04,480 app.views Fetching operating_mode counts for mount_id=6
+[INFO] 2025-06-26 06:40:04,480 app.views 59 139146974721728 Fetching operating_mode counts for mount_id=6
+[INFO] 2025-06-26 06:40:04,513 app.views 59 139146974721728 Query successful. Found 4 operating_mode groups for mount_id=6
+[INFO] 2025-06-26 06:40:04,513 app.views Query successful. Found 4 operating_mode groups for mount_id=6
+[INFO] 2025-06-26 06:40:04,513 django.server "GET /api/operating_mode_count/?mount_id=6 HTTP/1.1" 200 163
+[INFO] 2025-06-26 06:40:04,513 django.server 59 139146974721728 "GET /api/operating_mode_count/?mount_id=6 HTTP/1.1" 200 163
+[INFO] 2025-06-26 06:40:24,689 app.views 59 139146974721728 Raw data shape: (543, 3)
+[INFO] 2025-06-26 06:40:24,689 app.views Raw data shape: (543, 3)
+[INFO] 2025-06-26 06:40:26,877 app.views 59 139146974721728 RMS computed for raw data, shape: (543, 5)
+[INFO] 2025-06-26 06:40:26,877 app.views RMS computed for raw data, shape: (543, 5)
+[INFO] 2025-06-26 06:40:26,978 app.views 59 139146974721728 Operating mode data shape: (1629, 2)
+[INFO] 2025-06-26 06:40:26,978 app.views Operating mode data shape: (1629, 2)
+[INFO] 2025-06-26 06:40:26,982 app.views 59 139146974721728 Combined data for cluster label assignment
+[INFO] 2025-06-26 06:40:26,982 app.views Combined data for cluster label assignment
+Average RMS of each cluster:
+ cluster_id
+1    0.067778
+2    0.073333
+3    0.086200
+0    0.086220
+Name: rms, dtype: float64
+[INFO] 2025-06-26 06:40:26,985 app.views Cluster RMS averages: {'1': 0.06777777777777777, '2': 0.07333333333333333, '3': 0.0862, '0': 0.08622047244094488}
+[INFO] 2025-06-26 06:40:26,985 app.views 59 139146974721728 Cluster RMS averages: {'1': 0.06777777777777777, '2': 0.07333333333333333, '3': 0.0862, '0': 0.08622047244094488}
+[ERROR] 2025-06-26 06:40:27,019 app.views No RMS vertical values found for mount_id = 6
+[ERROR] 2025-06-26 06:40:27,019 app.views 59 139146974721728 No RMS vertical values found for mount_id = 6
+[WARNING] 2025-06-26 06:40:27,182 django.request Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 06:40:27,182 django.request 59 139146974721728 Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 06:40:27,183 django.server 59 139146974721728 "GET /api/predict_mode_rms/?mount_id=6 HTTP/1.1" 404 31
+[WARNING] 2025-06-26 06:40:27,183 django.server "GET /api/predict_mode_rms/?mount_id=6 HTTP/1.1" 404 31
+[INFO] 2025-06-26 06:41:55,153 django.utils.autoreload 59 124613358492544 Watching for file changes with StatReloader
+[INFO] 2025-06-26 06:41:55,153 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 06:41:55
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 06:42:12,101 app.views 59 124612933318336 Raw data shape: (543, 3)
+[INFO] 2025-06-26 06:42:12,101 app.views Raw data shape: (543, 3)
+[INFO] 2025-06-26 06:42:14,183 app.views RMS computed for raw data, shape: (543, 5)
+[INFO] 2025-06-26 06:42:14,183 app.views 59 124612933318336 RMS computed for raw data, shape: (543, 5)
+[INFO] 2025-06-26 06:42:14,309 app.views Operating mode data shape: (1629, 2)
+[INFO] 2025-06-26 06:42:14,309 app.views 59 124612933318336 Operating mode data shape: (1629, 2)
+[INFO] 2025-06-26 06:42:14,313 app.views Combined data for cluster label assignment
+[INFO] 2025-06-26 06:42:14,313 app.views 59 124612933318336 Combined data for cluster label assignment
+Average RMS of each cluster:
+ cluster_id
+1    0.067778
+2    0.073333
+3    0.086200
+0    0.086220
+Name: rms, dtype: float64
+[INFO] 2025-06-26 06:42:14,317 app.views 59 124612933318336 Cluster RMS averages: {'1': 0.06777777777777777, '2': 0.07333333333333333, '3': 0.0862, '0': 0.08622047244094488}
+[INFO] 2025-06-26 06:42:14,317 app.views Cluster RMS averages: {'1': 0.06777777777777777, '2': 0.07333333333333333, '3': 0.0862, '0': 0.08622047244094488}
+[ERROR] 2025-06-26 06:42:14,359 app.views No RMS vertical values found for mount_id = 6
+[ERROR] 2025-06-26 06:42:14,359 app.views 59 124612933318336 No RMS vertical values found for mount_id = 6
+[WARNING] 2025-06-26 06:42:14,501 django.request 59 124612933318336 Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 06:42:14,501 django.request Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 06:42:14,502 django.server "GET /api/predict_mode_rms/?mount_id=6 HTTP/1.1" 404 31
+[WARNING] 2025-06-26 06:42:14,502 django.server 59 124612933318336 "GET /api/predict_mode_rms/?mount_id=6 HTTP/1.1" 404 31
+length of raw query 318
+[INFO] 2025-06-26 06:54:22,141 app.utils Parsed 318 records into DataFrame
+[INFO] 2025-06-26 06:54:22,141 app.utils 59 124612977358528 Parsed 318 records into DataFrame
+[INFO] 2025-06-26 06:54:22,141 app.views DataFrame created with (318, 8) records
+[INFO] 2025-06-26 06:54:22,141 app.views 59 124612977358528 DataFrame created with (318, 8) records
+[INFO] 2025-06-26 06:54:22,633 app.views 59 124612977358528 Split data into time windows, resulting shape: (1272, 8)
+[INFO] 2025-06-26 06:54:22,633 app.views Split data into time windows, resulting shape: (1272, 8)
+[INFO] 2025-06-26 06:54:23,223 app.views 59 124612977358528 Extracted PSD features, resulting shape: (1272, 65)
+[INFO] 2025-06-26 06:54:23,223 app.views Extracted PSD features, resulting shape: (1272, 65)
+[INFO] 2025-06-26 06:54:23,225 app.views 59 124612977358528 Dropped NaNs from PSD features, clean shape: (1272, 65)
+[INFO] 2025-06-26 06:54:23,225 app.views Dropped NaNs from PSD features, clean shape: (1272, 65)
+[INFO] 2025-06-26 06:54:23,229 app.views Scaled features using MinMaxScaler
+[INFO] 2025-06-26 06:54:23,229 app.views 59 124612977358528 Scaled features using MinMaxScaler
+[INFO] 2025-06-26 06:54:23,244 app.views Selected 8 PCA components with cumulative variance: 0.9878
+[INFO] 2025-06-26 06:54:23,244 app.views 59 124612977358528 Selected 8 PCA components with cumulative variance: 0.9878
+[INFO] 2025-06-26 06:54:23,254 app.views 59 124612977358528 Applied PCA, reduced shape: (1272, 8)
+[INFO] 2025-06-26 06:54:23,254 app.views Applied PCA, reduced shape: (1272, 8)
+[INFO] 2025-06-26 06:54:24,889 app.views Best GMM had 9 clusters, capping to 4.
+[INFO] 2025-06-26 06:54:24,889 app.views 59 124612977358528 Best GMM had 9 clusters, capping to 4.
+[INFO] 2025-06-26 06:54:25,048 app.views Final GMM selected with 4 clusters and covariance type 'full'
+[INFO] 2025-06-26 06:54:25,048 app.views 59 124612977358528 Final GMM selected with 4 clusters and covariance type 'full'
+[INFO] 2025-06-26 06:54:25,052 app.views Saved trained model to /app/saved_models/gmm_model_mount_8.pickle
+[INFO] 2025-06-26 06:54:25,052 app.views 59 124612977358528 Saved trained model to /app/saved_models/gmm_model_mount_8.pickle
+[INFO] 2025-06-26 06:54:25,104 app.views Updated flag to True for  mount_id 8
+[INFO] 2025-06-26 06:54:25,104 app.views 59 124612977358528 Updated flag to True for  mount_id 8
+[INFO] 2025-06-26 06:54:25,307 django.server 59 124612977358528 "GET /api/train/?mount_id=8 HTTP/1.1" 200 119
+[INFO] 2025-06-26 06:54:25,307 django.server "GET /api/train/?mount_id=8 HTTP/1.1" 200 119
+[INFO] 2025-06-26 06:55:19,720 app.views 59 124612469847744 Testing model with data for mount_id: 8
+[INFO] 2025-06-26 06:55:19,720 app.views Testing model with data for mount_id: 8
+[INFO] 2025-06-26 06:55:25,743 app.utils Parsed 318 records into DataFrame
+[INFO] 2025-06-26 06:55:25,743 app.utils 59 124612469847744 Parsed 318 records into DataFrame
+[INFO] 2025-06-26 06:55:25,743 app.views 59 124612469847744 DataFrame created with (318, 8) records
+[INFO] 2025-06-26 06:55:25,743 app.views DataFrame created with (318, 8) records
+[INFO] 2025-06-26 06:55:26,206 app.views 59 124612469847744 Split data into windows, shape: (1272, 8)
+[INFO] 2025-06-26 06:55:26,206 app.views Split data into windows, shape: (1272, 8)
+[INFO] 2025-06-26 06:55:26,771 app.views Extracted PSD features and combined data, shape: (1272, 71)
+[INFO] 2025-06-26 06:55:26,771 app.views 59 124612469847744 Extracted PSD features and combined data, shape: (1272, 71)
+[INFO] 2025-06-26 06:55:26,776 app.utils 59 124612469847744 Predicted clusters for 1272 samples
+[INFO] 2025-06-26 06:55:26,776 app.utils Predicted clusters for 1272 samples
+[INFO] 2025-06-26 06:55:26,839 app.utils Updated flag to True for 308 timestamps
+[INFO] 2025-06-26 06:55:26,839 app.utils 59 124612469847744 Updated flag to True for 308 timestamps
+[INFO] 2025-06-26 06:55:29,674 app.views 59 124612469847744 RMS computed for raw data, shape: (318, 8)
+[INFO] 2025-06-26 06:55:29,674 app.views RMS computed for raw data, shape: (318, 8)
+[INFO] 2025-06-26 06:55:29,677 app.views total , shape: (1272, 75)
+[INFO] 2025-06-26 06:55:29,677 app.views 59 124612469847744 total , shape: (1272, 75)
+[INFO] 2025-06-26 06:55:29,677 app.views Status labels assigned based on test_score
+[INFO] 2025-06-26 06:55:29,677 app.views 59 124612469847744 Status labels assigned based on test_score
+[INFO] 2025-06-26 06:55:29,680 app.utils Dropped duplicate timestamps in input DataFrame.
+[INFO] 2025-06-26 06:55:29,680 app.utils 59 124612469847744 Dropped duplicate timestamps in input DataFrame.
+[INFO] 2025-06-26 06:55:29,682 app.utils 59 124612469847744 308 new records to save after filtering duplicate timestamps.
+[INFO] 2025-06-26 06:55:29,682 app.utils 308 new records to save after filtering duplicate timestamps.
+[INFO] 2025-06-26 06:55:29,898 app.utils 59 124612469847744 Successfully saved 308 new records via bulk_create.
+[INFO] 2025-06-26 06:55:29,898 app.utils Successfully saved 308 new records via bulk_create.
+[INFO] 2025-06-26 06:55:30,070 django.server "GET /api/test/?mount_id=8 HTTP/1.1" 200 64
+[INFO] 2025-06-26 06:55:30,070 django.server 59 124612469847744 "GET /api/test/?mount_id=8 HTTP/1.1" 200 64
+[INFO] 2025-06-26 06:55:51,477 app.views 59 124612469847744 API request received for operating_mode_count.
+[INFO] 2025-06-26 06:55:51,477 app.views API request received for operating_mode_count.
+[INFO] 2025-06-26 06:55:51,477 app.views Fetching operating_mode counts for mount_id=8
+[INFO] 2025-06-26 06:55:51,477 app.views 59 124612469847744 Fetching operating_mode counts for mount_id=8
+[INFO] 2025-06-26 06:55:51,509 app.views 59 124612469847744 Query successful. Found 4 operating_mode groups for mount_id=8
+[INFO] 2025-06-26 06:55:51,509 app.views Query successful. Found 4 operating_mode groups for mount_id=8
+[INFO] 2025-06-26 06:55:51,510 django.server "GET /api/operating_mode_count/?mount_id=8 HTTP/1.1" 200 158
+[INFO] 2025-06-26 06:55:51,510 django.server 59 124612469847744 "GET /api/operating_mode_count/?mount_id=8 HTTP/1.1" 200 158
+[INFO] 2025-06-26 06:56:08,508 app.views Raw data shape: (318, 3)
+[INFO] 2025-06-26 06:56:08,508 app.views 59 124612469847744 Raw data shape: (318, 3)
+[INFO] 2025-06-26 06:56:09,911 app.views 59 124612469847744 RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 06:56:09,911 app.views RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 06:56:09,994 app.views Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 06:56:09,994 app.views 59 124612469847744 Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 06:56:09,995 app.views Combined data for cluster label assignment
+[INFO] 2025-06-26 06:56:09,995 app.views 59 124612469847744 Combined data for cluster label assignment
+Average RMS of each cluster:
+ cluster_id
+1    0.067839
+3    0.140294
+2    0.320000
+0    0.430000
+Name: rms, dtype: float64
+[INFO] 2025-06-26 06:56:09,997 app.views Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[INFO] 2025-06-26 06:56:09,997 app.views 59 124612469847744 Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[ERROR] 2025-06-26 06:56:10,036 app.views No RMS vertical values found for mount_id = 8
+[ERROR] 2025-06-26 06:56:10,036 app.views 59 124612469847744 No RMS vertical values found for mount_id = 8
+[WARNING] 2025-06-26 06:56:10,130 django.request Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 06:56:10,130 django.request 59 124612469847744 Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 06:56:10,131 django.server "GET /api/predict_mode_rms/?mount_id=8 HTTP/1.1" 404 31
+[WARNING] 2025-06-26 06:56:10,131 django.server 59 124612469847744 "GET /api/predict_mode_rms/?mount_id=8 HTTP/1.1" 404 31
+[INFO] 2025-06-26 06:57:42,923 django.utils.autoreload Watching for file changes with StatReloader
+[INFO] 2025-06-26 06:57:42,923 django.utils.autoreload 59 139687821036416 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 06:57:43
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 06:58:01,118 app.views 59 139687396112064 Raw data shape: (318, 3)
+[INFO] 2025-06-26 06:58:01,118 app.views Raw data shape: (318, 3)
+[INFO] 2025-06-26 06:58:02,581 app.views 59 139687396112064 RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 06:58:02,581 app.views RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 06:58:02,646 app.views Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 06:58:02,646 app.views 59 139687396112064 Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 06:58:02,647 app.views Combined data for cluster label assignment
+[INFO] 2025-06-26 06:58:02,647 app.views 59 139687396112064 Combined data for cluster label assignment
+Average RMS of each cluster:
+ cluster_id
+1    0.067839
+3    0.140294
+2    0.320000
+0    0.430000
+Name: rms, dtype: float64
+[INFO] 2025-06-26 06:58:02,649 app.views 59 139687396112064 Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[INFO] 2025-06-26 06:58:02,649 app.views Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[ERROR] 2025-06-26 06:58:02,684 app.views No RMS vertical values found for mount_id = 8
+[ERROR] 2025-06-26 06:58:02,684 app.views 59 139687396112064 No RMS vertical values found for mount_id = 8
+[WARNING] 2025-06-26 06:58:02,777 django.request Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 06:58:02,777 django.request 59 139687396112064 Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 06:58:02,778 django.server "GET /api/predict_mode_rms/?mount_id=8 HTTP/1.1" 404 31
+[WARNING] 2025-06-26 06:58:02,778 django.server 59 139687396112064 "GET /api/predict_mode_rms/?mount_id=8 HTTP/1.1" 404 31
+[INFO] 2025-06-26 07:03:27,008 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 07:03:28
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 07:03:41,467 app.views 59 137833819928256 Raw data shape: (318, 3)
+[INFO] 2025-06-26 07:03:41,467 app.views Raw data shape: (318, 3)
+[INFO] 2025-06-26 07:03:43,223 app.views 59 137833819928256 RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 07:03:43,223 app.views RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 07:03:43,294 app.views Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 07:03:43,294 app.views 59 137833819928256 Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 07:03:43,297 app.views Combined data for cluster label assignment
+[INFO] 2025-06-26 07:03:43,297 app.views 59 137833819928256 Combined data for cluster label assignment
+Average RMS of each cluster:
+ cluster_id
+1    0.067839
+3    0.140294
+2    0.320000
+0    0.430000
+Name: rms, dtype: float64
+[INFO] 2025-06-26 07:03:43,301 app.views Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[INFO] 2025-06-26 07:03:43,301 app.views 59 137833819928256 Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[ERROR] 2025-06-26 07:03:43,337 app.views 59 137833819928256 No RMS vertical values found for mount_id = 8
+[ERROR] 2025-06-26 07:03:43,337 app.views No RMS vertical values found for mount_id = 8
+[WARNING] 2025-06-26 07:03:43,464 django.request Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 07:03:43,465 django.server "GET /api/predict_mode_rms/?mount_id=8 HTTP/1.1" 404 31
+[INFO] 2025-06-26 07:04:15,501 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 07:04:16
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 07:04:28,370 app.views 59 124159220774592 Raw data shape: (318, 3)
+[INFO] 2025-06-26 07:04:28,370 app.views Raw data shape: (318, 3)
+[INFO] 2025-06-26 07:04:30,099 app.views 59 124159220774592 RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 07:04:30,099 app.views RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 07:04:30,172 app.views Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 07:04:30,172 app.views 59 124159220774592 Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 07:04:30,175 app.views Combined data for cluster label assignment
+[INFO] 2025-06-26 07:04:30,175 app.views 59 124159220774592 Combined data for cluster label assignment
+Average RMS of each cluster:
+ cluster_id
+1    0.067839
+3    0.140294
+2    0.320000
+0    0.430000
+Name: rms, dtype: float64
+[INFO] 2025-06-26 07:04:30,179 app.views Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[INFO] 2025-06-26 07:04:30,179 app.views 59 124159220774592 Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[ERROR] 2025-06-26 07:04:30,217 app.views 59 124159220774592 No RMS vertical values found for mount_id = 8
+[ERROR] 2025-06-26 07:04:30,217 app.views No RMS vertical values found for mount_id = 8
+[WARNING] 2025-06-26 07:04:30,335 django.request Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 07:04:30,335 django.server "GET /api/predict_mode_rms/?mount_id=8 HTTP/1.1" 404 31
+[INFO] 2025-06-26 07:15:07,898 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 07:15:09
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 07:15:19,535 app.views 59 123154825475776 Raw data shape: (318, 3)
+[INFO] 2025-06-26 07:15:19,535 app.views Raw data shape: (318, 3)
+[INFO] 2025-06-26 07:15:21,241 app.views RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 07:15:21,241 app.views 59 123154825475776 RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 07:15:21,318 app.views Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 07:15:21,318 app.views 59 123154825475776 Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 07:15:21,320 app.views Combined data for cluster label assignment
+[INFO] 2025-06-26 07:15:21,320 app.views 59 123154825475776 Combined data for cluster label assignment
+Average RMS of each cluster:
+ cluster_id
+1    0.067839
+3    0.140294
+2    0.320000
+0    0.430000
+Name: rms, dtype: float64
+[INFO] 2025-06-26 07:15:21,325 app.views Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[INFO] 2025-06-26 07:15:21,325 app.views 59 123154825475776 Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[ERROR] 2025-06-26 07:15:21,364 app.views No RMS vertical values found for mount_id = 8
+[ERROR] 2025-06-26 07:15:21,364 app.views 59 123154825475776 No RMS vertical values found for mount_id = 8
+[WARNING] 2025-06-26 07:15:21,485 django.request Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 07:15:21,485 django.server "GET /api/predict_mode_rms/?mount_id=8 HTTP/1.1" 404 31
+[INFO] 2025-06-26 07:15:41,988 django.utils.autoreload /app/project/settings.py changed, reloading.
+[INFO] 2025-06-26 07:15:42,873 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 07:15:44
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 07:16:09,173 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 07:16:10
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 07:16:44,847 app.views 59 123726035146432 Raw data shape: (318, 3)
+[INFO] 2025-06-26 07:16:44,847 app.views Raw data shape: (318, 3)
+[INFO] 2025-06-26 07:16:46,616 app.views 59 123726035146432 RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 07:16:46,616 app.views RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 07:16:46,745 app.views 59 123726035146432 Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 07:16:46,745 app.views Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 07:16:46,747 app.views Combined data for cluster label assignment
+[INFO] 2025-06-26 07:16:46,747 app.views 59 123726035146432 Combined data for cluster label assignment
+Average RMS of each cluster:
+ cluster_id
+1    0.067839
+3    0.140294
+2    0.320000
+0    0.430000
+Name: rms, dtype: float64
+[INFO] 2025-06-26 07:16:46,752 app.views Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[INFO] 2025-06-26 07:16:46,752 app.views 59 123726035146432 Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[ERROR] 2025-06-26 07:16:46,816 app.views No RMS vertical values found for mount_id = 8
+[ERROR] 2025-06-26 07:16:46,816 app.views 59 123726035146432 No RMS vertical values found for mount_id = 8
+[WARNING] 2025-06-26 07:16:46,946 django.request Not Found: /api/predict_mode_rms/
+[WARNING] 2025-06-26 07:16:46,947 django.server "GET /api/predict_mode_rms/?mount_id=8 HTTP/1.1" 404 31
+[INFO] 2025-06-26 07:18:43,560 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-26 07:18:44,609 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 07:18:46
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 07:18:50,190 django.utils.autoreload /app/app/utils.py changed, reloading.
+[INFO] 2025-06-26 07:18:51,047 django.utils.autoreload Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 07:18:52
+Django version 3.1.7, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+[INFO] 2025-06-26 07:23:26,596 app.views 58 128153433405120 Raw data shape: (318, 3)
+[INFO] 2025-06-26 07:23:28,323 app.views 58 128153433405120 RMS computed for raw data, shape: (318, 5)
+[INFO] 2025-06-26 07:23:28,386 app.views 58 128153433405120 Operating mode data shape: (308, 2)
+[INFO] 2025-06-26 07:23:28,388 app.views 58 128153433405120 Combined data for cluster label assignment
+[INFO] 2025-06-26 07:23:28,392 app.views 58 128153433405120 Cluster RMS averages: {'1': 0.06783898305084744, '3': 0.14029411764705885, '2': 0.32, '0': 0.43}
+[ERROR] 2025-06-26 07:23:28,424 app.views 58 128153433405120 No RMS vertical values found for mount_id = 8

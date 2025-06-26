@@ -137,6 +137,61 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import sys
 
 
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'verbose': {
+#             'format': '[{levelname}] {asctime} {name} {process:d} {thread:d} {message}',
+#             'style': '{',
+#         },
+#         'simple': {
+#             'format': '[{levelname}] {asctime} {name} {message}',
+#             'style': '{',
+#         },
+#     },
+#     'handlers': {
+#         'console': {
+#             'level': 'INFO',
+#             'class': 'logging.StreamHandler',
+#             'formatter': 'simple',
+#         },
+#         'file': {
+#             'level': 'INFO',
+#             'class': 'logging.FileHandler',
+#             'filename': '/app/logs/django.log',
+#             'formatter': 'verbose',
+#         },
+#         'cron_file': {
+#             'level': 'INFO',
+#             'class': 'logging.FileHandler',
+#             'filename': '/app/logs/cron_output.log',
+#             'formatter': 'verbose',
+#         },
+#     },
+#     'root': {
+#         'handlers': ['console', 'file'],
+#         'level': 'INFO',
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['console', 'file'],
+#             'level': 'INFO',
+#             'propagate': False,
+#         },
+#         'cron': {
+#             'handlers': ['console', 'cron_file'],
+#             'level': 'INFO',
+#             'propagate': False,
+#         },
+#         'app': {  # Replace 'app' with your actual app name
+#             'handlers': ['console', 'file'],
+#             'level': 'INFO',
+#             'propagate': False,
+#         },
+#     },
+# }
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -162,36 +217,34 @@ LOGGING = {
             'filename': '/app/logs/django.log',
             'formatter': 'verbose',
         },
-        'cron_file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': '/app/logs/cron_output.log',
-            'formatter': 'verbose',
-        },
     },
     'root': {
-        'handlers': ['console', 'file'],
-        'level': 'INFO',
+        'handlers': ['console'],
+        'level': 'WARNING',
     },
     'loggers': {
+        'app': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        # 'app.views': {  # ✅ Added this block
+        #     'handlers': ['console', 'file'],
+        #     'level': 'INFO',
+        #     'propagate': False,
+        # },
         'django': {
-            'handlers': ['console', 'file'],
+            'handlers': ['console'],
             'level': 'INFO',
             'propagate': False,
         },
-        'cron': {
-            'handlers': ['console', 'cron_file'],
-            'level': 'INFO',
-            'propagate': False,
-        },
-        'app': {  # Replace 'app' with your actual app name
-            'handlers': ['console', 'file'],
-            'level': 'INFO',
-            'propagate': False,
-        },
+        # 'app.utils': {
+        # 'handlers': ['console', 'file'],
+        # 'level': 'INFO',
+        # 'propagate': False,
+        # },
     },
 }
-
 
 
 CRONJOBS = [
@@ -199,7 +252,7 @@ CRONJOBS = [
     ('0 */12 * * *', 'app.cron.run_model_prediction_cron_prediction', '>> /tmp/cron_model_prediction.log 2>&1'),
 
 
-    # # # Alternative: Run every 5 minutes (uncomment if needed)
+    # # # Alternative: Run every 1 minutes (uncomment if needed)
 
     # ('* * * * *', 'app.cron.run_model_prediction_cron_prediction', '>> /tmp/cron_model_prediction.log 2>&1'),
 
